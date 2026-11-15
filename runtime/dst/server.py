@@ -49,6 +49,8 @@ class H(http.server.BaseHTTPRequestHandler):
    return self.reply({})
   if self.path=='/event':
    with lock:events.append(data);append('events.jsonl',data)
+   if data.get('type') in ('dawn','death','timeout','abort','invalid'):
+    (OUT/'terminal-time.txt').write_text(str(time.time()))
    return self.reply({})
   if self.path=='/observe':
    begin()

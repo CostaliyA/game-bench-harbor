@@ -1,5 +1,8 @@
 [下载排版版 PDF](Game_Bench_Harbor_Report.pdf) · [原始工程审计](TECHNICAL_AUDIT.zh-CN.md)
 
+> **2026-11-16 更新：DST 完整首夜通关，reward 1.00。** 新轮次明确配置 500k 上下文，取消累计 500k 截断，97 次动作运行至自然 dawn，0 个 Harbor 异常；最大单次输入 165,265，累计 7,456,375 tokens。启动时曾关闭自动暂停面板。详见[新轮次分析与完整轨迹](../results/dst-context500k-003/REPORT.zh-CN.md)。PDF 已在最前面增加本轮结果与轨迹附录；下文保留首轮历史分析，不能与最新录像逐步对齐。
+
+
 游戏环境 Agent Benchmark · 技术报告
 
 # 饥荒与沉星之序 Agent 评测环境构造与分析

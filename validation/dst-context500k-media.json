@@ -1,0 +1,18 @@
+{
+  "original_full_decode": "passed: ffmpeg -v error -i ORIGINAL -f null -; exit 0",
+  "annotated_full_decode": "passed: ffmpeg -v error -i ANNOTATED -f null -; exit 0",
+  "matching_duration_seconds": 574.6,
+  "matching_frame_count": 5746,
+  "annotated_dimensions": [
+    1280,
+    960
+  ],
+  "original_dimensions": [
+    1280,
+    720
+  ],
+  "fps": 10,
+  "visual_review": "Action/reasoning frame and final dawn frame inspected; no clipping or camera rotation.",
+  "pdf_pages": 12,
+  "pdf_review": "Both new pages inspected at full size; all 12 pages rendered and visually checked."
+}

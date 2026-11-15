@@ -1,5 +1,7 @@
 # 交付清单与复现指南
 
+2026-11-16 更新：最新 DST 500k 上下文配置试跑已完整通关，reward 1.00。详见[最新分析](../results/dst-context500k-003/REPORT.zh-CN.md)与[运行说明](../runtime/dst/CONTEXT500K.zh-CN.md)。原始录像位于 [GitHub Release](https://github.com/CostaliyA/game-bench-harbor/releases/tag/dst-context500k-20261116)，注释版在仓库 videos/。历史分数与下面的旧复核命令仍保留。
+
 ## 在线入口
 
 - 公开代码、报告与证据：https://github.com/CostaliyA/game-bench-harbor
@@ -69,3 +71,5 @@ OOTSS视频见videos/ootss-wiki-replay.mp4。视频按原trajectory.jsonl逐步�
 发布版已在a800实际执行两份配置的dry-run、OOTSS oracle Harbor trial，以及两款历史轨迹重算。oracle结果1.00、0 exceptions；历史轨迹重算DST=0.30、OOTSS=0.24。验证文件见validation/。
 
 这份文档不把网页移植等同商业原版，也不把DST启动干预后的试跑等同严格无干预实验。本文和深度报告共同给出可直接使用的结果、复核方式和仍需实现的验收条件。
+
+最新轮次离线核对：`python3 scripts/validate_dst_context500k.py`。实际单次输入最大 165,265 tokens，累计用量 7,456,375；不能把前者配置的 500k 窗口误解为后者的阈值。

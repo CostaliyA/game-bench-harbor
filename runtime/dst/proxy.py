@@ -1,5 +1,7 @@
 import os,http.server,urllib.request,urllib.error,json,pathlib,time,threading
 OUT=pathlib.Path('/home/steam/dst-eval-runtime')/os.environ.get('DST_RUN_ID','run-001')/'api';OUT.mkdir(parents=True,exist_ok=True)
+# A context window is per request; zero disables the separate cumulative budget.
+TOKEN_LIMIT=int(os.environ.get('DST_TOKEN_LIMIT','0'))
 lock=threading.Lock();total=sum(json.loads(l)["usage"]["total_tokens"] for l in (OUT/"usage.jsonl").read_text().splitlines()) if (OUT/"usage.jsonl").exists() else 0;counter=max([int(p.name.split("-")[0]) for p in OUT.glob("*-request.json")],default=0)
 class H(http.server.BaseHTTPRequestHandler):
  def log_message(self,*a):pass
@@ -11,9 +13,10 @@ class H(http.server.BaseHTTPRequestHandler):
   with lock:
    counter+=1;i=counter
   (OUT/f'{i:04d}-request.json').write_text(json.dumps(data,ensure_ascii=False,indent=2))
-  if total>=500000:
+  if TOKEN_LIMIT>0 and total>=TOKEN_LIMIT:
    self.send_error(429,'Evaluation token budget exhausted');return
-  data['max_tokens']=min(data.get('max_tokens',4096),4096,max(1,500000-total))
+  data['max_tokens']=min(data.get('max_tokens',4096),4096)
+  if TOKEN_LIMIT>0:data['max_tokens']=min(data['max_tokens'],max(1,TOKEN_LIMIT-total))
   if data.get('stream'):data['stream_options']={'include_usage':True}
   req=urllib.request.Request('https://api.deepseek.com'+self.path,json.dumps(data).encode(),{'Content-Type':'application/json','Authorization':self.headers.get('Authorization','')})
   try:

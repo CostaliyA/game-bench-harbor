@@ -1,0 +1,6 @@
+{
+  "credential_redactions": [],
+  "excluded": "OpenCode credential/cache databases, login directories, game binary and private starting save are not published.",
+  "raw_video": "Published as a GitHub Release asset; media-manifest.json provides its SHA256 and size.",
+  "opencode_stdout": "Stored losslessly with gzip; timestamps and game evidence retained."
+}

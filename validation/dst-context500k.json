@@ -1,0 +1,32 @@
+{
+  "score": {
+    "task": "dst-first-night-v1",
+    "complete": true,
+    "terminal": "dawn",
+    "success": true,
+    "reward": 1.0,
+    "milestones": [
+      "built_campfire",
+      "crafted_axe",
+      "gathered_logs",
+      "night_fire_30s",
+      "starter_materials"
+    ]
+  },
+  "context_limit": {
+    "context": 500000,
+    "input": 495904,
+    "output": 4096
+  },
+  "actual_max_prompt_tokens": 165265,
+  "cumulative_total_tokens": 7456375,
+  "actions": 97,
+  "camera_samples": 961,
+  "harbor_exception": null,
+  "startup_intervention": {
+    "kind": "operator_pressed_Escape_once",
+    "phase": "before first resource gathering action",
+    "reason": "Startup click exposed a skill tree overlay and the game remained auto-paused. First observe raised RuntimeError; the next 3 model actions were move(0,0), wait(5), wait(15) against an empty state. The requested move lay outside the 30-unit movement bound; the first sampled position remained at the baseline coordinates. Operator closed the overlay once, then supplied no gameplay actions.",
+    "recorded_at_unix": 1794762214.3678265
+  }
+}

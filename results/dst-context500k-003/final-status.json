@@ -1,0 +1,632 @@
+{
+  "started": true,
+  "terminal": true,
+  "state": {
+    "inventory": [
+      {
+        "id": 127768,
+        "pickup": false,
+        "x": -337.32968139648,
+        "count": 1,
+        "z": -209.45227050781,
+        "pickable": false,
+        "chop": false,
+        "prefab": "log",
+        "burning": false
+      },
+      {
+        "id": 128221,
+        "pickup": false,
+        "x": -337.32968139648,
+        "count": 1,
+        "z": -209.45227050781,
+        "pickable": false,
+        "chop": false,
+        "prefab": "torch",
+        "burning": false
+      },
+      {
+        "id": 127566,
+        "equipped": true,
+        "pickup": false,
+        "x": -337.32968139648,
+        "count": 1,
+        "z": -209.45227050781,
+        "pickable": false,
+        "chop": false,
+        "prefab": "axe",
+        "burning": false
+      }
+    ],
+    "active": true,
+    "day_fraction": 0.0011069297790527,
+    "time": 497.90002596751,
+    "camera_target": 45,
+    "hunger": 75,
+    "phase": "day",
+    "sanity": 179.99999895685,
+    "camera_heading": 45,
+    "alive": true,
+    "cycle": 1,
+    "health": 147.29166652542,
+    "z": -209.45227050781,
+    "recipes": {
+      "campfire": {
+        "ingredients": {
+          "cutgrass": 3,
+          "log": 2
+        },
+        "can_build": false
+      },
+      "torch": {
+        "ingredients": {
+          "cutgrass": 2,
+          "twigs": 2
+        },
+        "can_build": false
+      },
+      "axe": {
+        "ingredients": {
+          "twigs": 1,
+          "flint": 1
+        },
+        "can_build": false
+      }
+    },
+    "nearby": [
+      {
+        "id": 129724,
+        "pickup": false,
+        "x": -339.17938232422,
+        "count": 1,
+        "z": -209.53225708008,
+        "pickable": false,
+        "chop": false,
+        "prefab": "campfire",
+        "burning": true
+      },
+      {
+        "id": 111427,
+        "pickup": false,
+        "x": -334.82000732422,
+        "count": 1,
+        "z": -205.24000549316,
+        "pickable": false,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      },
+      {
+        "id": 107655,
+        "pickup": false,
+        "x": -337.10998535156,
+        "count": 1,
+        "z": -218.05999755859,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 107690,
+        "pickup": false,
+        "x": -334.26000976562,
+        "count": 1,
+        "z": -201.10000610352,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 111412,
+        "pickup": false,
+        "x": -330.73001098633,
+        "count": 1,
+        "z": -202.9700012207,
+        "pickable": false,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      },
+      {
+        "id": 115780,
+        "pickup": false,
+        "x": -346.58999633789,
+        "count": 1,
+        "z": -210.28999328613,
+        "pickable": true,
+        "chop": false,
+        "prefab": "grass",
+        "burning": false
+      },
+      {
+        "id": 107657,
+        "pickup": false,
+        "x": -330.73999023438,
+        "count": 1,
+        "z": -218,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 115767,
+        "pickup": false,
+        "x": -326.30999755859,
+        "count": 1,
+        "z": -209.4700012207,
+        "pickable": false,
+        "chop": false,
+        "prefab": "grass",
+        "burning": false
+      },
+      {
+        "id": 107688,
+        "pickup": false,
+        "x": -333.61999511719,
+        "count": 1,
+        "z": -198.07000732422,
+        "pickable": false,
+        "chop": false,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 115765,
+        "pickup": false,
+        "x": -346.9700012207,
+        "count": 1,
+        "z": -202.32000732422,
+        "pickable": false,
+        "chop": false,
+        "prefab": "grass",
+        "burning": false
+      },
+      {
+        "id": 109267,
+        "pickup": false,
+        "x": -325.2200012207,
+        "count": 1,
+        "z": -206.35000610352,
+        "pickable": true,
+        "chop": false,
+        "prefab": "carrot_planted",
+        "burning": false
+      },
+      {
+        "id": 107653,
+        "pickup": false,
+        "x": -349.26000976562,
+        "count": 1,
+        "z": -213.66000366211,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 107672,
+        "pickup": false,
+        "x": -346.45001220703,
+        "count": 1,
+        "z": -218.49000549316,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 107677,
+        "pickup": false,
+        "x": -333.98999023438,
+        "count": 1,
+        "z": -222.66999816895,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 111431,
+        "pickup": false,
+        "x": -350.4700012207,
+        "count": 1,
+        "z": -205.63999938965,
+        "pickable": true,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      },
+      {
+        "id": 106608,
+        "pickup": false,
+        "x": -346.60998535156,
+        "count": 1,
+        "z": -221.44999694824,
+        "pickable": true,
+        "chop": false,
+        "prefab": "berrybush_juicy",
+        "burning": false
+      },
+      {
+        "id": 111413,
+        "pickup": false,
+        "x": -350.79000854492,
+        "count": 1,
+        "z": -201.41000366211,
+        "pickable": true,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      },
+      {
+        "id": 111407,
+        "pickup": false,
+        "x": -326.32998657227,
+        "count": 1,
+        "z": -197.94999694824,
+        "pickable": true,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      },
+      {
+        "id": 106607,
+        "pickup": false,
+        "x": -350.51998901367,
+        "count": 1,
+        "z": -218.42999267578,
+        "pickable": true,
+        "chop": false,
+        "prefab": "berrybush_juicy",
+        "burning": false
+      },
+      {
+        "id": 107654,
+        "pickup": false,
+        "x": -333.0299987793,
+        "count": 1,
+        "z": -193.60000610352,
+        "pickable": false,
+        "chop": false,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 107670,
+        "pickup": false,
+        "x": -322.33999633789,
+        "count": 1,
+        "z": -202.41999816895,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 107649,
+        "pickup": false,
+        "x": -341.75,
+        "count": 1,
+        "z": -225.44000244141,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 111417,
+        "pickup": false,
+        "x": -329.79998779297,
+        "count": 1,
+        "z": -193.13000488281,
+        "pickable": true,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      },
+      {
+        "id": 107648,
+        "pickup": false,
+        "x": -350.79998779297,
+        "count": 1,
+        "z": -197.5299987793,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 111416,
+        "pickup": false,
+        "x": -353.39001464844,
+        "count": 1,
+        "z": -218.75999450684,
+        "pickable": true,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      },
+      {
+        "id": 115794,
+        "pickup": false,
+        "x": -326.39999389648,
+        "count": 1,
+        "z": -194.41999816895,
+        "pickable": false,
+        "chop": false,
+        "prefab": "grass",
+        "burning": false
+      },
+      {
+        "id": 115775,
+        "pickup": false,
+        "x": -329.89999389648,
+        "count": 1,
+        "z": -190.91000366211,
+        "pickable": false,
+        "chop": false,
+        "prefab": "grass",
+        "burning": false
+      },
+      {
+        "id": 107689,
+        "pickup": false,
+        "x": -321.38000488281,
+        "count": 1,
+        "z": -221.86000061035,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 107694,
+        "pickup": false,
+        "x": -338.92001342773,
+        "count": 1,
+        "z": -189.21000671387,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 115766,
+        "pickup": false,
+        "x": -353.73999023438,
+        "count": 1,
+        "z": -197.00999450684,
+        "pickable": true,
+        "chop": false,
+        "prefab": "grass",
+        "burning": false
+      },
+      {
+        "id": 107695,
+        "pickup": false,
+        "x": -350.79000854492,
+        "count": 1,
+        "z": -225.69999694824,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 105525,
+        "pickup": false,
+        "x": -357.54000854492,
+        "count": 1,
+        "z": -202.55999755859,
+        "pickable": true,
+        "chop": false,
+        "prefab": "flower",
+        "burning": false
+      },
+      {
+        "id": 107664,
+        "pickup": false,
+        "x": -317.75,
+        "count": 1,
+        "z": -218.05999755859,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 115788,
+        "pickup": false,
+        "x": -337.5,
+        "count": 1,
+        "z": -230.91000366211,
+        "pickable": true,
+        "chop": false,
+        "prefab": "grass",
+        "burning": false
+      },
+      {
+        "id": 107652,
+        "pickup": false,
+        "x": -345.7799987793,
+        "count": 1,
+        "z": -229.80999755859,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 107676,
+        "pickup": false,
+        "x": -321.42999267578,
+        "count": 1,
+        "z": -193.25999450684,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 105524,
+        "pickup": false,
+        "x": -338.89001464844,
+        "count": 1,
+        "z": -186.58999633789,
+        "pickable": true,
+        "chop": false,
+        "prefab": "flower",
+        "burning": false
+      },
+      {
+        "id": 107017,
+        "pickup": true,
+        "x": -357.85000610352,
+        "count": 1,
+        "z": -221.05999755859,
+        "pickable": false,
+        "chop": false,
+        "prefab": "flint",
+        "burning": false
+      },
+      {
+        "id": 107684,
+        "pickup": false,
+        "x": -357.88000488281,
+        "count": 1,
+        "z": -197.41999816895,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 111421,
+        "pickup": false,
+        "x": -314.35998535156,
+        "count": 1,
+        "z": -217.03999328613,
+        "pickable": true,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      },
+      {
+        "id": 105523,
+        "pickup": false,
+        "x": -319,
+        "count": 1,
+        "z": -225.33000183105,
+        "pickable": true,
+        "chop": false,
+        "prefab": "flower",
+        "burning": false
+      },
+      {
+        "id": 111426,
+        "pickup": false,
+        "x": -357.23001098633,
+        "count": 1,
+        "z": -194.58999633789,
+        "pickable": true,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      },
+      {
+        "id": 105520,
+        "pickup": false,
+        "x": -362.01998901367,
+        "count": 1,
+        "z": -205.86999511719,
+        "pickable": true,
+        "chop": false,
+        "prefab": "flower",
+        "burning": false
+      },
+      {
+        "id": 111419,
+        "pickup": false,
+        "x": -322.2200012207,
+        "count": 1,
+        "z": -229.33999633789,
+        "pickable": true,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      }
+    ],
+    "last_action": {
+      "id": 97,
+      "action": "wait",
+      "status": "success"
+    },
+    "x": -337.32968139648
+  },
+  "events": [
+    {
+      "seq": 0,
+      "online": false,
+      "game_time": 17.400000907481,
+      "cycle": 0,
+      "phase": "day",
+      "type": "start",
+      "task": "dst-first-night-v1",
+      "character": "wilson"
+    },
+    {
+      "type": "milestone",
+      "name": "crafted_axe",
+      "phase": "day",
+      "cycle": 0,
+      "seq": 1,
+      "game_time": 64.066670008004
+    },
+    {
+      "type": "milestone",
+      "name": "starter_materials",
+      "phase": "day",
+      "cycle": 0,
+      "seq": 2,
+      "game_time": 85.900004480034
+    },
+    {
+      "type": "milestone",
+      "name": "gathered_logs",
+      "phase": "day",
+      "cycle": 0,
+      "seq": 3,
+      "game_time": 144.90000755712
+    },
+    {
+      "type": "milestone",
+      "name": "built_campfire",
+      "phase": "dusk",
+      "cycle": 0,
+      "seq": 4,
+      "game_time": 341.6333511509
+    },
+    {
+      "type": "milestone",
+      "name": "night_fire_30s",
+      "phase": "night",
+      "cycle": 0,
+      "seq": 5,
+      "game_time": 467.40002437681
+    },
+    {
+      "type": "dawn",
+      "game_time": 497.90002596751,
+      "phase": "day",
+      "cycle": 1,
+      "alive": true,
+      "night_fire_seconds": 60.000003129244,
+      "health": 147.29166652542,
+      "hunger": 75,
+      "seq": 6
+    }
+  ]
+}

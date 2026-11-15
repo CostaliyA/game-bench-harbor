@@ -1,0 +1,31 @@
+{
+  "run_id": "run-003-context500k",
+  "job_name": "dst-context500k-deepseek-004",
+  "model": "deepseek-flash",
+  "display_name": "DeepSeek V4.1 Flash",
+  "context_window_tokens": 500000,
+  "input_limit_tokens": 495904,
+  "output_limit_tokens": 4096,
+  "cumulative_token_limit": null,
+  "wall_limit_seconds": 1800,
+  "thinking": "enabled",
+  "reasoning_effort": "low",
+  "camera_heading": 45,
+  "seed": 341784114,
+  "baseline_sha256": "99b902f93a3a1ee234845a32a3d5e6d4fb87b652d679d9fdcfedabfeefcfebdf",
+  "start_preparation": "Uses the already restored, paused baseline prepared before this session. Preflight confirms day 1 morning, empty inventory, full stats, original coordinates. No gameplay action performed by operator during the trial.",
+  "runtime_sha256": {
+    "server.py": "59bba7b9935bc21366cdba5ed4ce4080a140d0c9c347dc15b14a258c2e4f6104",
+    "proxy.py": "3abbeb047bbdc40fe7c5927a309abfdead0b30682e922d5844855764eccc42e6",
+    "watchdog.py": "6eb2d1f79f327221df0dc460e47653df7465ac4c21e9b2432c07bae75c7de29a",
+    "bridge.lua": "a02172abaa5c3730d15b32a5ebbdcdfb9f44812aab6189f32c72665336a21cf6",
+    "camera.lua": "ec116a8900d89c9096b7916d745eb627e23d9722f491a8a2fbf3497bd54d0027",
+    "observer.lua": "c5791edc1fedcfd1a03cd62f0d6b6bc384e438bcb5c0cd82751d8ccb3df7a3ef"
+  },
+  "startup_intervention": {
+    "kind": "operator_pressed_Escape_once",
+    "phase": "before first resource gathering action",
+    "reason": "Startup click exposed a skill tree overlay and the game remained auto-paused. First observe raised RuntimeError; the next 3 model actions were move(0,0), wait(5), wait(15) against an empty state. The requested move lay outside the 30-unit movement bound; the first sampled position remained at the baseline coordinates. Operator closed the overlay once, then supplied no gameplay actions.",
+    "recorded_at_unix": 1794762214.3678265
+  }
+}
