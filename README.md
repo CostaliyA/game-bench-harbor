@@ -2,7 +2,7 @@
 
 DST 真实离线首夜任务与《沉星之序》固定网页移植关卡的 Harbor 实验代码、轨迹、视频及验收报告。
 
-**[深度技术报告（中文）](docs/TECHNICAL_REPORT.zh-CN.md)** · **[交付与复现指南](docs/DELIVERY.zh-CN.md)** · **[HF 镜像归档](https://huggingface.co/datasets/CostaliyA/game-bench-harbor-images)**
+**[深度技术报告 PDF](docs/Game_Bench_Harbor_Report.pdf)** · [Markdown 版](docs/TECHNICAL_REPORT.zh-CN.md) · **[交付与复现指南](docs/DELIVERY.zh-CN.md)** · **[HF 镜像归档](https://huggingface.co/datasets/CostaliyA/game-bench-harbor-images)**
 
 | 任务 | 模型与观察 | 结果 | 关键边界 |
 |---|---|---|---|

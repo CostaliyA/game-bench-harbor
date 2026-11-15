@@ -6,3 +6,6 @@ __pycache__/
 *.pyc
 images/*.tar*
 .git-credentials
+
+# Intermediate PDF layout previews
+docs/report-assets/page-*.png
