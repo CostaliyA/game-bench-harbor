@@ -1,0 +1,14 @@
+{
+  "seed": 341784114,
+  "baseline_sha256": "99b902f93a3a1ee234845a32a3d5e6d4fb87b652d679d9fdcfedabfeefcfebdf",
+  "model": "deepseek-flash",
+  "thinking": "enabled",
+  "reasoning_effort": "low",
+  "token_budget": 500000,
+  "wall_clock_limit": 1800,
+  "camera_heading": 45,
+  "run_id": "run-002",
+  "harbor_job": "dst-fixed-camera-deepseek-003",
+  "initialization": "Restore baseline archive; normalize morning and full stats before trial; empty inventory and original player position verified.",
+  "changes": "Camera Update pins heading and target to 45; startup releases rotation keys; new run output directory; state logging includes camera orientation. Gameplay action/reward logic unchanged."
+}

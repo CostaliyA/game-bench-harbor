@@ -29,7 +29,7 @@ local function observe()
   for _,v in ipairs(r.ingredients) do ingredients[v.type]=v.amount end
   recipes[name]={ingredients=ingredients,can_build=p.components.builder:HasIngredients(r)}
  end
- return {time=GetTime(),cycle=TheWorld.state.cycles,day_fraction=TheWorld.state.time,phase=TheWorld.state.phase,
+ return {camera_heading=TheCamera and TheCamera:GetHeading() or nil,camera_target=TheCamera and TheCamera:GetHeadingTarget() or nil,time=GetTime(),cycle=TheWorld.state.cycles,day_fraction=TheWorld.state.time,phase=TheWorld.state.phase,
  x=x,z=z,health=p.components.health.currenthealth,hunger=p.components.hunger.current,sanity=p.components.sanity.current,
  alive=not p:HasTag('playerghost') and not p.components.health:IsDead(),inventory=inv,nearby=nearby,recipes=recipes,last_action=last,active=active}
 end

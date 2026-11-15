@@ -1,5 +1,5 @@
-import http.server,urllib.request,urllib.error,json,pathlib,time,threading
-OUT=pathlib.Path('/home/steam/dst-eval-runtime/run-001/api');OUT.mkdir(parents=True,exist_ok=True)
+import os,http.server,urllib.request,urllib.error,json,pathlib,time,threading
+OUT=pathlib.Path('/home/steam/dst-eval-runtime')/os.environ.get('DST_RUN_ID','run-001')/'api';OUT.mkdir(parents=True,exist_ok=True)
 lock=threading.Lock();total=sum(json.loads(l)["usage"]["total_tokens"] for l in (OUT/"usage.jsonl").read_text().splitlines()) if (OUT/"usage.jsonl").exists() else 0;counter=max([int(p.name.split("-")[0]) for p in OUT.glob("*-request.json")],default=0)
 class H(http.server.BaseHTTPRequestHandler):
  def log_message(self,*a):pass

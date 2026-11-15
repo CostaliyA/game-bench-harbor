@@ -1,0 +1,261 @@
+{
+    "schema_version": 1,
+    "id": "885a863c-3061-4f61-8785-6d2b981f8f44",
+    "task_name": "first-night",
+    "trial_name": "first-night__LFSNRGa",
+    "trial_uri": "file:///root/zyr/dst-sandbox/harbor/jobs/dst-fixed-camera-deepseek-003/first-night__LFSNRGa",
+    "task_id": {
+        "path": "tasks/first-night"
+    },
+    "source": null,
+    "task_checksum": "64572e5b577ac9fd86dcbd748ae25f202730ae076754239c8282e9f0cc6f5150",
+    "config": {
+        "schema_version": 1,
+        "task": {
+            "path": "tasks/first-night",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "first-night__LFSNRGa",
+        "trials_dir": "jobs/dst-fixed-camera-deepseek-003",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "opencode-v2",
+            "import_path": null,
+            "model_name": "deepseek/deepseek-flash",
+            "base_url": "http://172.17.0.2:18766/v1",
+            "model_api_key_name": "DEEPSEEK_API_KEY",
+            "model_api_format": "openai_chat_completions",
+            "skip_model_parsing": false,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "version": "2.2.5",
+                "disable_web_search": true,
+                "opencode_config": {
+                    "providers": {
+                        "deepseek": {
+                            "name": "DeepSeek",
+                            "env": [
+                                "DEEPSEEK_API_KEY"
+                            ],
+                            "package": "@opencode/ai/providers/openai-compatible",
+                            "settings": {
+                                "baseURL": "http://172.17.0.2:18766/v1"
+                            },
+                            "models": {
+                                "deepseek-flash": {
+                                    "name": "DeepSeek V4.1 Flash",
+                                    "modelID": "deepseek-flash",
+                                    "capabilities": {
+                                        "tools": true,
+                                        "input": [
+                                            "text",
+                                            "image"
+                                        ],
+                                        "output": [
+                                            "text"
+                                        ],
+                                        "reasoning": {
+                                            "supported": true
+                                        }
+                                    },
+                                    "compatibility": {
+                                        "reasoningField": "reasoning_content"
+                                    },
+                                    "body": {
+                                        "thinking": {
+                                            "type": "enabled"
+                                        },
+                                        "reasoning_effort": "low"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "policies": [
+                        {
+                            "action": "tool.use",
+                            "resource": "shell:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "read:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "edit:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "glob:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "grep:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "list:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "browser:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "webfetch:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "websearch:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "subagent:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "mcp.use",
+                            "resource": "*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "mcp.use",
+                            "resource": "dst",
+                            "effect": "allow"
+                        }
+                    ]
+                }
+            },
+            "mcp_servers": [
+                {
+                    "name": "dst",
+                    "transport": "stdio",
+                    "url": null,
+                    "command": "python3",
+                    "args": [
+                        "/app/serve.py"
+                    ]
+                }
+            ]
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "stream": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "override_error_policy": {},
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "d6efcb79-fff7-49f4-a666-061cf2a7f118",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "opencode-v2",
+        "version": "2.2.5",
+        "model_info": {
+            "name": "deepseek-flash",
+            "provider": "deepseek"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 494834,
+        "n_cache_tokens": 482176,
+        "n_output_tokens": 3158,
+        "cost_usd": 0.006976427999999999,
+        "model_usage": {
+            "deepseek/deepseek-flash": {
+                "n_input_tokens": 494834,
+                "n_cache_tokens": 482176,
+                "n_output_tokens": 3158,
+                "cost_usd": 0.006976427999999999
+            }
+        },
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.3
+        }
+    },
+    "verifier_environment_mode": "shared",
+    "exception_info": {
+        "exception_type": "ApiRateLimitError",
+        "exception_message": "Command failed (exit 1): set -o pipefail; /home/steam/.harbor/agents/opencode-v2/node_modules/.bin/opencode run --standalone --model=deepseek/deepseek-flash --format=json --thinking --auto -- 'Play the real Don'\"'\"'t Starve Together offline world as Wilson and complete dst-first-night-v1.\nUse only the dst MCP tools. First call observe. Game runs in REAL TIME during your thinking and tool calls; one game day lasts approximately 480 seconds. Work efficiently. Do not stop until a terminal event (dawn or death) is reported.\n\nStart: day 1 autumn morning, empty inventory, full stats, fixed seed 341784114 with a frozen save. Goals:\n1. Hold at least 3 cutgrass, 1 twig and 1 flint at some point (each tracked separately): 0.10.\n2. Craft an axe yourself: 0.20.\n3. After crafting the axe, hold at least 2 logs: 0.15.\n4. Build a campfire yourself: 0.15.\n5. During night spend at least 30 game seconds within 6 world units of your own burning campfire: 0.10.\n6. Complete all above, stay alive until day 2 dawn with health>=50 and hunger>=20: 0.30.\nDeath terminates immediately. No resurrection. Milestones only pay once. Maximum reward 1.0. Waiting until dawn without prerequisites cannot earn the final 0.30.\n\nTools expose local radius 25 and native semantic actions. Movement is normal walking, never teleportation. Coordinates are world x,z. Explore to find resources. Inventory uses entity IDs. Equip the axe then repeatedly chop trees (one swing per chop); pick up fallen logs. Crafting consumes real ingredients, shown in recipes. A campfire needs 3 grass and 2 logs, so reserve these after the axe. Keep some fuel for night and food to preserve hunger. Inspect success feedback and plan briefly before acting. Your tool calls and all returned reasoning are recorded. No console, shell, scripts, reset, hidden map access, pausing, cheats or external help. Do not ask the operator to play.\n' 2>&1 </dev/null | stdbuf -oL tee /logs/agent/opencode-v2.txt\nstdout: {\"type\":\"step_start\",\"timestamp\":1794756556375,\"sessionID\":\"ses_e202c4fc7ffeBtCPUp4f3ZGJ3a\",\"part\":{\"id\":\"prt_1dfd3b657001H1Cg710MT7mr7h\",\"sessionID\":\"ses_e202c4fc7ffeBtCPUp4f3ZGJ3a\",\"messageID\":\"msg_1dfd3b330001DqBEkDJgMOkvDW\",\"type\":\"step-start\"}}\n ... [144106 chars truncated] ... \"error\",\"timestamp\":1794756743551,\"sessionID\":\"ses_e202c4fc7ffeBtCPUp4f3ZGJ3a\",\"error\":{\"type\":\"provider.rate-limit\",\"message\":\"Provider request failed with HTTP 429\",\"status\":429,\"response\":{\"body\":\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01//EN\\\"\\n        \\\"http://www.w3.org/TR/html4/strict.dtd\\\">\\n<html>\\n    <head>\\n        <meta http-equiv=\\\"Content-Type\\\" content=\\\"text/html;charset=utf-8\\\">\\n        <title>Error response</title>\\n    </head>\\n    <body>\\n        <h1>Error response</h1>\\n        <p>Error code: 429</p>\\n        <p>Message: Evaluation token budget exhausted.</p>\\n        <p>Error code explanation: 429 - The user has sent too many requests in a given amount of time (\\\"rate limiting\\\").</p>\\n    </body>\\n</html>\\n\"}}}\n\nstderr: None",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/trial/single_step.py\", line 77, in _run_agent\n    await self._run_agent_phase(\n  File \"/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 780, in _run_agent_phase\n    await asyncio.wait_for(\n  File \"/root/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 194, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/agents/installed/opencode_v2.py\", line 400, in run\n    await self.exec_as_agent(\n  File \"/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 1114, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n  File \"/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 1081, in _exec\n    raise self._classify_exec_error(command, result)\nharbor.agents.installed.base.ApiRateLimitError: Command failed (exit 1): set -o pipefail; /home/steam/.harbor/agents/opencode-v2/node_modules/.bin/opencode run --standalone --model=deepseek/deepseek-flash --format=json --thinking --auto -- 'Play the real Don'\"'\"'t Starve Together offline world as Wilson and complete dst-first-night-v1.\nUse only the dst MCP tools. First call observe. Game runs in REAL TIME during your thinking and tool calls; one game day lasts approximately 480 seconds. Work efficiently. Do not stop until a terminal event (dawn or death) is reported.\n\nStart: day 1 autumn morning, empty inventory, full stats, fixed seed 341784114 with a frozen save. Goals:\n1. Hold at least 3 cutgrass, 1 twig and 1 flint at some point (each tracked separately): 0.10.\n2. Craft an axe yourself: 0.20.\n3. After crafting the axe, hold at least 2 logs: 0.15.\n4. Build a campfire yourself: 0.15.\n5. During night spend at least 30 game seconds within 6 world units of your own burning campfire: 0.10.\n6. Complete all above, stay alive until day 2 dawn with health>=50 and hunger>=20: 0.30.\nDeath terminates immediately. No resurrection. Milestones only pay once. Maximum reward 1.0. Waiting until dawn without prerequisites cannot earn the final 0.30.\n\nTools expose local radius 25 and native semantic actions. Movement is normal walking, never teleportation. Coordinates are world x,z. Explore to find resources. Inventory uses entity IDs. Equip the axe then repeatedly chop trees (one swing per chop); pick up fallen logs. Crafting consumes real ingredients, shown in recipes. A campfire needs 3 grass and 2 logs, so reserve these after the axe. Keep some fuel for night and food to preserve hunger. Inspect success feedback and plan briefly before acting. Your tool calls and all returned reasoning are recorded. No console, shell, scripts, reset, hidden map access, pausing, cheats or external help. Do not ask the operator to play.\n' 2>&1 </dev/null | stdbuf -oL tee /logs/agent/opencode-v2.txt\nstdout: {\"type\":\"step_start\",\"timestamp\":1794756556375,\"sessionID\":\"ses_e202c4fc7ffeBtCPUp4f3ZGJ3a\",\"part\":{\"id\":\"prt_1dfd3b657001H1Cg710MT7mr7h\",\"sessionID\":\"ses_e202c4fc7ffeBtCPUp4f3ZGJ3a\",\"messageID\":\"msg_1dfd3b330001DqBEkDJgMOkvDW\",\"type\":\"step-start\"}}\n ... [144106 chars truncated] ... \"error\",\"timestamp\":1794756743551,\"sessionID\":\"ses_e202c4fc7ffeBtCPUp4f3ZGJ3a\",\"error\":{\"type\":\"provider.rate-limit\",\"message\":\"Provider request failed with HTTP 429\",\"status\":429,\"response\":{\"body\":\"<!DOCTYPE HTML PUBLIC \\\"-//W3C//DTD HTML 4.01//EN\\\"\\n        \\\"http://www.w3.org/TR/html4/strict.dtd\\\">\\n<html>\\n    <head>\\n        <meta http-equiv=\\\"Content-Type\\\" content=\\\"text/html;charset=utf-8\\\">\\n        <title>Error response</title>\\n    </head>\\n    <body>\\n        <h1>Error response</h1>\\n        <p>Error code: 429</p>\\n        <p>Message: Evaluation token budget exhausted.</p>\\n        <p>Error code explanation: 429 - The user has sent too many requests in a given amount of time (\\\"rate limiting\\\").</p>\\n    </body>\\n</html>\\n\"}}}\n\nstderr: None\n",
+        "occurred_at": "2026-11-15T15:32:23.892550Z",
+        "policy": {
+            "should_retry": true,
+            "should_grade": true,
+            "has_valid_reward": false
+        }
+    },
+    "started_at": "2026-11-15T15:29:10.135845Z",
+    "finished_at": "2026-11-15T15:32:36.138764Z",
+    "environment_setup": {
+        "started_at": "2026-11-15T15:29:10.152636Z",
+        "finished_at": "2026-11-15T15:29:12.709984Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-11-15T15:29:12.710072Z",
+        "finished_at": "2026-11-15T15:29:14.021268Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-11-15T15:29:14.021704Z",
+        "finished_at": "2026-11-15T15:32:23.891086Z"
+    },
+    "verifier": {
+        "started_at": "2026-11-15T15:32:24.668198Z",
+        "finished_at": "2026-11-15T15:32:25.449738Z"
+    },
+    "step_results": null,
+    "reward_valid": false
+}

@@ -1,5 +1,5 @@
 import http.server,json,pathlib,threading,time,subprocess,os
-ROOT=pathlib.Path('/home/steam/dst-eval-runtime');OUT=ROOT/'run-001';OUT.mkdir(exist_ok=True)
+ROOT=pathlib.Path('/home/steam/dst-eval-runtime');OUT=ROOT/os.environ.get('DST_RUN_ID','run-001');OUT.mkdir(exist_ok=True)
 lock=threading.RLock();state={};events=[];commands=[];counter=0;started=False;started_at=0
 
 def append(name,obj):
@@ -21,7 +21,8 @@ def begin():
  log=(OUT/'video.log').open('w')
  proc=subprocess.Popen(['ffmpeg','-y','-loglevel','warning','-f','x11grab','-framerate','10','-video_size','1280x720','-i',':99','-c:v','libx264','-preset','ultrafast','-crf','26','-pix_fmt','yuv420p',str(OUT/'episode.mp4')],stdout=log,stderr=log)
  (OUT/'ffmpeg.pid').write_text(str(proc.pid))
- console('dst_eval_begin()')
+ subprocess.run(['xdotool','keyup','q','e','Left','Right'],env={**os.environ,'DISPLAY':':99'},check=True)
+ console('dofile("/home/steam/dst-eval-runtime/camera.lua"); dst_eval_begin()')
  # Console may reveal the pause menu underneath. Close its known button.
  subprocess.run(['xdotool','mousemove','640','530','mousedown','1'],env={**os.environ,'DISPLAY':':99'});time.sleep(.2)
  subprocess.run(['xdotool','mouseup','1'],env={**os.environ,'DISPLAY':':99'})

@@ -1,5 +1,5 @@
 import pathlib,json,time,urllib.request,subprocess,os
-root=pathlib.Path('/home/steam/dst-eval-runtime/run-001');env={**os.environ,'DISPLAY':':99'}
+root=pathlib.Path('/home/steam/dst-eval-runtime')/os.environ.get('DST_RUN_ID','run-001');env={**os.environ,'DISPLAY':':99'}
 def key(k):
  subprocess.run(['xdotool','keydown',k],env=env);time.sleep(.2);subprocess.run(['xdotool','keyup',k],env=env);time.sleep(.3)
 while True:

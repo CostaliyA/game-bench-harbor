@@ -1,0 +1,35 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 960
+WrapStyle: 2
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Main,Noto Sans CJK SC,25,&H00FFFFFF,&H00FFFFFF,&H00101820,&H00101820,0,0,0,0,100,100,0,0,1,0,0,7,28,28,20,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:05.13,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}DST | DeepSeek Flash | 新一轮实测{\b0\fs25\c&HFFFFFF&}\N\N推理摘要：固定朝向 45° · 原速录像 · 模型读取局部结构化状态\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:00:05.13,0:00:10.96,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 01/23 | pick(target=111437, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：先采最近的树苗取得树枝，再向西采草并寻找燧石。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:00:10.96,0:00:15.11,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 02/23 | move(x=-286.0, z=-198.0, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：已有 1 根树枝，向西侧草丛移动，同时观察附近是否有燧石。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:00:15.11,0:00:18.70,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 03/23 | move(x=-286.0, z=-198.0, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：移动仍在进行，继续前往同一草丛。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:00:18.70,0:00:22.37,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 04/23 | pick(target=115802, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：已接近草丛，先采草，再向北探索。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:00:22.37,0:00:26.77,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 05/23 | move(x=-287.0, z=-176.0, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：还缺两份草和燧石，向北侧树苗方向移动以扩大观察范围。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:00:26.77,0:00:30.22,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 06/23 | move(x=-300.0, z=-174.0, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：发现西北侧更多草丛，向它们靠近；优先凑齐营火所需材料。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:00:30.22,0:00:33.16,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 07/23 | move(x=-302.0, z=-174.0, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：继续靠近目标草丛，准备采集。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:00:33.16,0:00:36.40,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 08/23 | pick(target=115786, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：采集目标草丛。（本次 API 未返回独立推理，意图承接前一步。）\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:00:36.40,0:00:40.12,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 09/23 | move(x=-315.0, z=-181.0, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：还差一份草，继续向西侧草丛移动，同时寻找燧石。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:00:40.12,0:00:47.42,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 10/23 | pick(target=115778, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：附近草很多但尚未见燧石，先采第三份草，再扩大探索。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:00:47.42,0:00:51.26,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 11/23 | move(x=-300.0, z=-165.0, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：草和树枝已够，转向东北探索，优先寻找燧石。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:00:51.26,0:00:54.95,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 12/23 | move(x=-314.0, z=-202.0, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：观察到南侧有燧石，尝试改变移动目标，前往拾取。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:00:54.95,0:00:59.03,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 13/23 | move(x=-314.0, z=-202.0, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：模型认为新移动正在执行，继续朝燧石位置移动。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:00:59.03,0:01:02.66,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 14/23 | move(x=-312.0, z=-186.0, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：发现连续移动没有生效，判断目标超过 30 单位限制，改走中间点。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:01:02.66,0:01:06.58,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 15/23 | move(x=-313.0, z=-198.0, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：已开始向南移动，继续靠近燧石。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:01:06.58,0:01:09.56,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 16/23 | move(x=-315.0, z=-203.0, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：燧石仍有一段距离，继续移动到它的位置。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:01:09.56,0:01:16.88,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 17/23 | pick(target=107009, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：对燧石提交 pick。（本次 API 未返回独立推理。）\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:01:16.88,0:01:19.98,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 18/23 | pickup(target=107009, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：发现燧石标记为 pickup=true、pickable=false，将采集改为拾取。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:01:19.98,0:01:25.06,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 19/23 | craft(recipe=axe, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：材料条件已满足，制作斧头。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:01:25.06,0:01:29.00,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 20/23 | equip(item=128321, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：准备装备斧头并砍树，收集营火和后续燃料所需木材。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:01:29.00,0:01:34.98,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 21/23 | equip(target=128321, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：装备反馈失败，尝试将斧头 ID 从 item 参数改为 target 参数。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:01:34.98,0:01:38.49,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 22/23 | chop(target=107668, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：斧头未出现在所选背包列表中，推测可能已装备，尝试砍树验证。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:01:38.49,0:01:39.42,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}STEP 23/23 | chop(target=107668, seconds=2){\b0\fs25\c&HFFFFFF&}\N\N推理摘要：砍树已成功，继续砍同一棵树；计划树倒后再拾取木材。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md
+Dialogue: 0,0:01:39.42,0:02:17.90,Main,,0,0,0,,{\pos(28,738)\fs27\b1\c&H66D9FF&}预算终止 | 本轮动作已结束{\b0\fs25\c&HFFFFFF&}\N\N结果：累计 502,379 token；达到预算上限。最终判分与异常详情见本轮报告。\N{\fs18\c&HAAAAAA&}据本轮模型原始 reasoning 整理；完整记录见 thinking-actions.md

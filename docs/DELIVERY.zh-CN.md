@@ -56,6 +56,8 @@ harbor run -c configs/ootss.yaml --job-name ootss-new-001 -n 1
 
 当前代码还没有把整段生命周期封装为每次`harbor run`自动执行。默认连接地址为`http://172.17.0.2:18765`，可通过Agent容器和verifier的`DST_BRIDGE_URL`环境变量覆盖；Docker网络必须允许访问已有服务。不能把一个仍留着上局事件的服务当作新trial环境。DST完整自动复位与成功oracle验收是未完成项，见技术报告第10节。
 
+固定视角重测视频现位于 videos/dst-annotated.mp4；本轮23次动作、193条相机采样，报告见 [重测结果](../results/dst-fixed-camera-002/REPORT.zh-CN.md)。下述旧 DST 注释时间轴对应首轮归档。
+
 ## 5. 如何对应视频与轨迹
 
 DST注释视频使用`results/dst/start-time.txt`作为墙钟零点，动作时间来自actions.jsonl；video-annotations.json保存字幕区间。摘要来自真实DeepSeek reasoning_content，不是另一个模型重新解释游戏。原文在thinking-actions.md和api/。

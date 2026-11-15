@@ -1,0 +1,11 @@
+{
+  "task": "dst-first-night-v1",
+  "complete": true,
+  "terminal": "timeout",
+  "success": false,
+  "reward": 0.3,
+  "milestones": [
+    "crafted_axe",
+    "starter_materials"
+  ]
+}

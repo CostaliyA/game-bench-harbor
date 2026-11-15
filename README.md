@@ -48,11 +48,13 @@ harbor run -c configs/dst.yaml --job-name dst-my-new-run -n 1
 
 **不要直接对上一次尚未复位的 DST 服务运行新 trial。** 当前目录格式可被 Harbor 加载，但自动加载游戏和恢复固定存档不是其生命周期的一部分。仓库公开了实际桥接与评分代码，未把该工程缺口隐藏在成功返回码里。
 
+固定视角重测已完成：193条相机采样均为45°，verifier得分0.30；500k token预算触发退出，Harbor记录ApiRateLimitError。新视频对应新轨迹，首轮报告与证据保留。
+
 ## 视频与完整轨迹
 
-- [DST 注释版：Step / Action / 推理摘要](videos/dst-annotated.mp4)；[原始录屏](videos/dst-original.mp4)。完整约6分2秒，原速10 FPS。
+- [DST 固定视角重测：Step / Action / 推理摘要](videos/dst-annotated.mp4)；[原始录屏](videos/dst-original.mp4)。约2分18秒，原速10 FPS，23次动作；[重测结果与完整证据](results/dst-fixed-camera-002/REPORT.zh-CN.md)。
 - [沉星之序：动作与推理注释视频](videos/ootss-wiki-replay.mp4)。视频重放完整的222动作轨迹，不是商业客户端连续录屏；模型原始输入截图保留在 results/ 中。
-- [DST 全部证据](results/dst/)：原始请求/返回、thinking、动作、状态、事件、Harbor结果。
+- [DST 首轮证据](results/dst/)（技术报告 PDF 对应首轮；[首轮视频](https://github.com/CostaliyA/game-bench-harbor/blob/590c53b/videos/dst-annotated.mp4)）：原始请求/返回、thinking、动作、状态、事件、Harbor结果。
 - [OOTSS thinking-low 证据](results/ootss/thinking-low-001/)：截图、状态轨迹、推理、原始OpenCode日志（gzip）、原始job结果与v2报告。
 - [参考成功轨迹](results/ootss/reference/)；[非thinking对照](results/ootss/nonthinking-002/)。
 
