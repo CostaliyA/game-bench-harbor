@@ -51,7 +51,7 @@ harbor run -c configs/dst.yaml --job-name dst-my-new-run -n 1
 ## 视频与完整轨迹
 
 - [DST 注释版：Step / Action / 推理摘要](videos/dst-annotated.mp4)；[原始录屏](videos/dst-original.mp4)。完整约6分2秒，原速10 FPS。
-- [沉星之序本地浏览器轨迹回放](videos/ootss-local-replay.mp4)；[WikiTactics 渲染及推理注释回放](videos/ootss-wiki-replay.mp4)。两者重放同一条222动作的模型轨迹；不是商业客户端连续录屏。
+- [沉星之序：动作与推理注释视频](videos/ootss-wiki-replay.mp4)。视频重放完整的222动作轨迹，不是商业客户端连续录屏；模型原始输入截图保留在 results/ 中。
 - [DST 全部证据](results/dst/)：原始请求/返回、thinking、动作、状态、事件、Harbor结果。
 - [OOTSS thinking-low 证据](results/ootss/thinking-low-001/)：截图、状态轨迹、推理、原始OpenCode日志（gzip）、原始job结果与v2报告。
 - [参考成功轨迹](results/ootss/reference/)；[非thinking对照](results/ootss/nonthinking-002/)。

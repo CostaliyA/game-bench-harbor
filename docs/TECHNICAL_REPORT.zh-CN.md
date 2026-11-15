@@ -46,7 +46,7 @@ DST 本轮 reward
 
 动作少不意味着规划简单。一次交换或推动可能让眼前的位置更好，却破坏另一名角色的通路。难点在于理解规则，并安排多个物件与角色的先后关系。
 
-图 2　本项目由 Agent 辅助复现的关卡初态，也是被测模型实际看到的本地画面；不是商业客户端截图。
+图 2　本项目复现关卡的初态：两名角色需要借助巨石与 Rod，分别到达两个出口。
 
 01 / 从游戏结构到任务切片
 
@@ -228,7 +228,7 @@ DST scorer 不重建整个游戏，而信任独立观察器产生的事件；因
 
 这说明模型能修正局部位置、使用角色机制，却尚未把两个角色和巨石组织成一个共同可完成的布局。
 
-图 4　模型实际看到的第 140 步截图。单人进入出口触发 v2 过程分；两人同时占据两个出口才算成功。
+图 4　第 140 步的关卡状态。单人进入出口得 0.24；两人同时到达才算成功。
 
 > “Oops active hero was Gemsman, not Wizard! We forgot switch after activate…”DeepSeek 原始 reasoning 事件 57，对应第 138–140 步；随后执行角色切换并继续移动。
 
@@ -241,6 +241,30 @@ DST scorer 不重建整个游戏，而信任独立观察器产生的事件；因
 | 缺少全局进展 | 巨石未进入左侧关键通道 | 局部有效动作没有组成完整的因果计划 |
 
 成功参考轨迹 97 步、reward=1.00。它验证了一条可行解，但不是模型必须逐步模仿的唯一答案。当前只分析一条 thinking-low 轨迹，不能据此估计模型的一般通关率。
+
+讨论 / 与游戏 Agent Benchmark 对照
+
+## 局部能力如何转化为完整任务
+
+本轮 DeepSeek 已能完成部分材料准备、工具使用与局部纠错，但没有持续把观察变化转化为推进终局的动作。结合其他游戏 Agent benchmark，更有解释力的判断是：局部能力已经显现，状态更新、反馈利用和多步计划之间的衔接仍不稳定。
+
+### 从“知道怎么做”到“在当前局面做对”
+
+BALROG 在 NetHack 等游戏中观察到 knowing–doing gap：模型能回答机制问题，却在实际行动中违反这些知识；其轨迹分析还指出复杂空间推理和系统探索的困难。[1] 本轮 DST 在制斧之后，没有根据 chop=false 与地面 log 切换到拾取，说明动作计划未随状态更新。这个案例可以借用上述框架解释，但我们没有单独测试该模型的机制知识，因此尚不能断言它“明知故犯”。
+
+### 局部进展与完整通关应分别衡量
+
+GameWorld 发现，Agent 经常取得部分进展，却难以稳定完成全部目标；其分析强调动作落实、轨迹记忆和长程执行的可靠性。[2] 本轮沉星之序能交换、推动和纠正角色混淆，但巨石始终没有进入左侧关键通道。0.24 说明它实现了一个局部里程碑，并不表示已经完成约四分之一的解题计划；过程分与终局成功应同时报告。
+
+### 失败发生在模型与交互系统的共同作用中
+
+GameWorld 还将实时环境中的推理延迟纳入任务难度，指出接口与记忆设置会影响表现。[2] 本轮 DST 的 running 反馈未明确暴露目标失效，且预算在白天耗尽。由此应优先检验动作状态是否清晰、模型是否使用最新观察，不能把所有重复动作归结为模型能力，也不能据此评价它的夜间生存决策。
+
+据此，下一轮应检验三个改动：显式保存角色与关键物件状态；执行短计划后核对预期变化；连续无进展时停止重复并重新规划。用固定初态、多次试跑和消融对照衡量效果。这些是由本轮轨迹与外部研究提出的待验证假设；两条 thinking-low 轨迹不足以推断 DeepSeek 系列的一般能力或模型排名。
+
+[1] [BALROG，§4.1 Qualitative analysis](https://arxiv.org/html/2411.13543v1#S4.SS1)
+
+[2] [GameWorld，§4.5 与 §7](https://arxiv.org/html/2604.07429v1)
 
 讨论 / 复现入口
 
@@ -270,7 +294,7 @@ DST scorer 不重建整个游戏，而信任独立观察器产生的事件；因
 
 代码与完整证据：[github.com/CostaliyA/game-bench-harbor](https://github.com/CostaliyA/game-bench-harbor) 镜像归档：[huggingface.co/datasets/CostaliyA/game-bench-harbor-images](https://huggingface.co/datasets/CostaliyA/game-bench-harbor-images)
 
-关卡与攻略参考：[WikiTactics · Heroes and Artifacts 7](https://sinkingstar.wikitactics.com/areas/heroes-and-artifacts/#heroes-and-artifacts-7)。复现所使用的公开引擎许可保留在仓库的 JORIC-LICENSE。WikiTactics 风格视频是已保存状态的渲染回放，不是商业客户端录像。
+关卡与攻略参考：[WikiTactics · Heroes and Artifacts 7](https://sinkingstar.wikitactics.com/areas/heroes-and-artifacts/#heroes-and-artifacts-7)。复现所使用的公开引擎许可保留在仓库的 JORIC-LICENSE。视频根据保存的动作与状态重放。
 
 框架参考：[Harbor Tasks](https://docs.harborframework.com/tasks/overview)；[DeepSeek Thinking Mode](https://api-docs.deepseek.com/guides/thinking_mode/)。实验输入、原始 reasoning、完整动作轨迹和历史报告均保存在 results/；视频字幕是原始推理的摘要，不替代原文。
 

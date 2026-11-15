@@ -16,7 +16,7 @@
 | runtime/dst | DST的Lua桥接、观察器、HTTP服务、API记录、预算监控与视频注释代码 |
 | scripts | 不调用模型的历史轨迹重评分，以及OOTSS视频工具 |
 | results | 两款任务的原始试跑轨迹、推理、状态、Judge与Harbor结果 |
-| videos | DST原始/注释视频，OOTSS本地/WikiTactics逐动作回放 |
+| videos | DST原始/注释视频，OOTSS逐动作轨迹回放 |
 | validation | 发布版dry-run、OOTSS oracle实跑及重评分证据 |
 | images | 镜像构造脚本、来源和许可边界 |
 
@@ -60,7 +60,7 @@ harbor run -c configs/ootss.yaml --job-name ootss-new-001 -n 1
 
 DST注释视频使用`results/dst/start-time.txt`作为墙钟零点，动作时间来自actions.jsonl；video-annotations.json保存字幕区间。摘要来自真实DeepSeek reasoning_content，不是另一个模型重新解释游戏。原文在thinking-actions.md和api/。
 
-OOTSS视频按原trajectory.jsonl逐步呈现状态；原始截图位于thinking-low-001/frames，推理对应reasoning.jsonl，完整OpenCode输出用gzip保存。WikiTactics版借用渲染器展示本地移植状态，不重新验证动作，不是商业客户端实时视频。
+OOTSS视频见videos/ootss-wiki-replay.mp4。视频按原trajectory.jsonl逐步呈现状态；原始截图位于thinking-low-001/frames，推理对应reasoning.jsonl，完整OpenCode输出用gzip保存。视频展示复现关卡的记录状态，不重新验证动作，不是商业客户端实时视频。
 
 ## 6. 发布验收状态
 

@@ -43,7 +43,7 @@ P.append('''<section class="page">
 <div class="eyebrow">01 / 游戏差异</div><h2>一个世界在继续运转，<br>一个棋盘等待下一步</h2>
 <img class="figure" src="dst-crafting.png"/>
 <div class="caption">图 1　真实 DST 客户端。模型已完成材料收集和制斧，角色仍需继续取得木材、建火并应对夜晚。截图取自本轮原始录像，约 04:10。</div>
-<div class="photo-row"><img src="ootss-initial.png" style="width:88mm"/><div class="aside"><h3>有限规则，组合空间仍然很大</h3><p>沉星之序复现的是 Heroes and Artifacts 7：两名角色、两个出口、巨石和 Rod。每次只执行一个离散动作，棋盘随后进入下一个状态。</p><p>动作少不意味着规划简单。一次交换或推动可能让眼前的位置更好，却破坏另一名角色的通路。难点在于理解规则，并安排多个物件与角色的先后关系。</p><p class="caption">图 2　本项目由 Agent 辅助复现的关卡初态，也是被测模型实际看到的本地画面；不是商业客户端截图。</p></div></div>
+<div class="photo-row"><img src="ootss-initial.png" style="width:88mm"/><div class="aside"><h3>有限规则，组合空间仍然很大</h3><p>沉星之序复现的是 Heroes and Artifacts 7：两名角色、两个出口、巨石和 Rod。每次只执行一个离散动作，棋盘随后进入下一个状态。</p><p>动作少不意味着规划简单。一次交换或推动可能让眼前的位置更好，却破坏另一名角色的通路。难点在于理解规则，并安排多个物件与角色的先后关系。</p><p class="caption">图 2　本项目复现关卡的初态：两名角色需要借助巨石与 Rod，分别到达两个出口。</p></div></div>
 </section>''')
 P.append('''<section class="page">
 <div class="eyebrow">01 / 从游戏结构到任务切片</div><h2>保留什么复杂性，<br>就考察什么能力</h2>
@@ -118,11 +118,20 @@ P.append('''<section class="page">
 P.append('''<section class="page">
 <div class="eyebrow">03 / 沉星之序轨迹分析</div><h2>一个角色到了出口，<br>整体布局仍没有解开</h2>
 <div class="photo-row"><img src="ootss-step140.png" style="width:101mm"/><div class="aside"><div class="num">0.24</div><p class="small">第 140 步达到的最佳里程碑</p><p>蓝色 Wizard 已进入左侧出口，另一名角色仍在中部，巨石没有进入左出口接近通道。</p><p>这说明模型能修正局部位置、使用角色机制，却尚未把两个角色和巨石组织成一个共同可完成的布局。</p></div></div>
-<div class="caption">图 4　模型实际看到的第 140 步截图。单人进入出口触发 v2 过程分；两人同时占据两个出口才算成功。</div>
+<div class="caption">图 4　第 140 步的关卡状态。单人进入出口得 0.24；两人同时到达才算成功。</div>
 <div class="quote">“Oops active hero was Gemsman, not Wizard! We forgot switch after activate…”<small>DeepSeek 原始 reasoning 事件 57，对应第 138–140 步；随后执行角色切换并继续移动。</small></div>
 <p>这段推理显示模型能从受阻反馈中发现角色混淆。纠正之后，它确实让一名英雄到达出口，因而 0.24 有明确的行为依据。但局部纠错并没有解决巨石布局：222 次动作里，巨石只出现在初始位置和右侧一格，没有形成进入左侧通道的安排。作为对照，成功参考在第 31 步已把巨石向左移动两格，第 70 步进入左出口接近通道。模型没有完成这段空间准备。</p>
 <table><tr><th>轨迹现象</th><th>证据</th><th>反映的问题</th></tr><tr><td>能使用机制</td><td>128 次有效行走、7 次交换、4 次 Rod 推动</td><td>已能正确使用部分局部机制</td></tr><tr><td>反复回退与试探</td><td>6 次重置、10 次撤销、39 次未改变局面</td><td>角色状态跟踪和预期结果检查不稳</td></tr><tr><td>缺少全局进展</td><td>巨石未进入左侧关键通道</td><td>局部有效动作没有组成完整的因果计划</td></tr></table>
 <p class="small">成功参考轨迹 97 步、reward=1.00。它验证了一条可行解，但不是模型必须逐步模仿的唯一答案。当前只分析一条 thinking-low 轨迹，不能据此估计模型的一般通关率。</p>
+</section>''')
+P.append('''<section class="page">
+<div class="eyebrow">讨论 / 与游戏 Agent Benchmark 对照</div><h2>局部能力如何转化为完整任务</h2>
+<p>本轮 DeepSeek 已能完成部分材料准备、工具使用与局部纠错，但没有持续把观察变化转化为推进终局的动作。结合其他游戏 Agent benchmark，更有解释力的判断是：局部能力已经显现，状态更新、反馈利用和多步计划之间的衔接仍不稳定。</p>
+<h3>从“知道怎么做”到“在当前局面做对”</h3><p>BALROG 在 NetHack 等游戏中观察到 knowing–doing gap：模型能回答机制问题，却在实际行动中违反这些知识；其轨迹分析还指出复杂空间推理和系统探索的困难。<a href="https://arxiv.org/html/2411.13543v1#S4.SS1">[1]</a> 本轮 DST 在制斧之后，没有根据 chop=false 与地面 log 切换到拾取，说明动作计划未随状态更新。这个案例可以借用上述框架解释，但我们没有单独测试该模型的机制知识，因此尚不能断言它“明知故犯”。</p>
+<h3>局部进展与完整通关应分别衡量</h3><p>GameWorld 发现，Agent 经常取得部分进展，却难以稳定完成全部目标；其分析强调动作落实、轨迹记忆和长程执行的可靠性。<a href="https://arxiv.org/html/2604.07429v1">[2]</a> 本轮沉星之序能交换、推动和纠正角色混淆，但巨石始终没有进入左侧关键通道。0.24 说明它实现了一个局部里程碑，并不表示已经完成约四分之一的解题计划；过程分与终局成功应同时报告。</p>
+<h3>失败发生在模型与交互系统的共同作用中</h3><p>GameWorld 还将实时环境中的推理延迟纳入任务难度，指出接口与记忆设置会影响表现。<a href="https://arxiv.org/html/2604.07429v1">[2]</a> 本轮 DST 的 running 反馈未明确暴露目标失效，且预算在白天耗尽。由此应优先检验动作状态是否清晰、模型是否使用最新观察，不能把所有重复动作归结为模型能力，也不能据此评价它的夜间生存决策。</p>
+<div class="box"><p>据此，下一轮应检验三个改动：显式保存角色与关键物件状态；执行短计划后核对预期变化；连续无进展时停止重复并重新规划。用固定初态、多次试跑和消融对照衡量效果。这些是由本轮轨迹与外部研究提出的待验证假设；两条 thinking-low 轨迹不足以推断 DeepSeek 系列的一般能力或模型排名。</p></div>
+<div class="refs"><p>[1] <a href="https://arxiv.org/html/2411.13543v1#S4.SS1">BALROG，§4.1 Qualitative analysis</a></p><p>[2] <a href="https://arxiv.org/html/2604.07429v1">GameWorld，§4.5 与 §7</a></p></div>
 </section>''')
 P.append('''<section class="page">
 <div class="eyebrow">讨论 / 复现入口</div><h2>下一步应先修什么</h2>
@@ -133,7 +142,7 @@ P.append('''<section class="page">
 <div class="box"><p><strong>复核结果：</strong>DST 事件重算与 Harbor verifier 均为 0.30；沉星之序模型旧轨迹 v2 重放为 0.24；发布版参考解通过完整 Harbor trial，得分 1.00、0 个异常。新报告没有新增模型试跑，也没有改写旧实验得分。</p></div>
 <h3>代码、视频与参考资料</h3>
 <div class="refs"><p>代码与完整证据：<a href="https://github.com/CostaliyA/game-bench-harbor">github.com/CostaliyA/game-bench-harbor</a><br>镜像归档：<a href="https://huggingface.co/datasets/CostaliyA/game-bench-harbor-images">huggingface.co/datasets/CostaliyA/game-bench-harbor-images</a></p>
-<p>关卡与攻略参考：<a href="https://sinkingstar.wikitactics.com/areas/heroes-and-artifacts/#heroes-and-artifacts-7">WikiTactics · Heroes and Artifacts 7</a>。复现所使用的公开引擎许可保留在仓库的 JORIC-LICENSE。WikiTactics 风格视频是已保存状态的渲染回放，不是商业客户端录像。</p>
+<p>关卡与攻略参考：<a href="https://sinkingstar.wikitactics.com/areas/heroes-and-artifacts/#heroes-and-artifacts-7">WikiTactics · Heroes and Artifacts 7</a>。复现所使用的公开引擎许可保留在仓库的 JORIC-LICENSE。视频根据保存的动作与状态重放。</p>
 <p>框架参考：<a href="https://docs.harborframework.com/tasks/overview">Harbor Tasks</a>；<a href="https://api-docs.deepseek.com/guides/thinking_mode/">DeepSeek Thinking Mode</a>。实验输入、原始 reasoning、完整动作轨迹和历史报告均保存在 results/；视频字幕是原始推理的摘要，不替代原文。</p></div>
 <p class="small">日期：2026 年 11 月 15 日。实验机器：a800-server1。Docker 发布镜像不包含 Steam 登录信息、商业游戏本体或私有起点存档。详细工程审计与复现限制另见仓库原技术报告及交付指南。</p>
 </section>''')
