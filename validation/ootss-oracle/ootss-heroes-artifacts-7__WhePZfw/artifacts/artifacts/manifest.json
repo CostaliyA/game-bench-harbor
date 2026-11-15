@@ -1,0 +1,59 @@
+{
+  "task": "heroes-and-artifacts-7",
+  "backend": "joric-renderer-with-task-specific-transition-extension",
+  "max_actions": 300,
+  "max_seconds": 1800,
+  "action_space": [
+    "up",
+    "down",
+    "left",
+    "right",
+    "switch",
+    "activate",
+    "undo",
+    "reset"
+  ],
+  "board_sha256": "a121f4fbe0d2cc1b4b442d2570b190701540baf7bcde9b70d02bc3f7e2f372df",
+  "initial": {
+    "state": {
+      "heroes": [
+        {
+          "id": 46137429,
+          "kind": "gemsman",
+          "p": [
+            -4,
+            6
+          ],
+          "dir": "right",
+          "rod": false
+        },
+        {
+          "id": 46137431,
+          "kind": "wizard",
+          "p": [
+            0,
+            6
+          ],
+          "dir": "left",
+          "rod": false
+        }
+      ],
+      "rocks": [
+        {
+          "id": 46137467,
+          "p": [
+            -1,
+            4
+          ]
+        }
+      ],
+      "rod": [
+        -2,
+        7
+      ],
+      "active": 0
+    },
+    "won": false
+  },
+  "observation": "920x930 page screenshot; no right-hand action panel or source/state tool"
+}

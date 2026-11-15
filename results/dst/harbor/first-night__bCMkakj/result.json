@@ -1,0 +1,261 @@
+{
+    "schema_version": 1,
+    "id": "ed5bf29b-f49c-42ff-9016-3a1c26b5f232",
+    "task_name": "first-night",
+    "trial_name": "first-night__bCMkakj",
+    "trial_uri": "file:///root/zyr/dst-sandbox/harbor/jobs/dst-first-night-deepseek-flash-002/first-night__bCMkakj",
+    "task_id": {
+        "path": "tasks/first-night"
+    },
+    "source": null,
+    "task_checksum": "64572e5b577ac9fd86dcbd748ae25f202730ae076754239c8282e9f0cc6f5150",
+    "config": {
+        "schema_version": 1,
+        "task": {
+            "path": "tasks/first-night",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "first-night__bCMkakj",
+        "trials_dir": "jobs/dst-first-night-deepseek-flash-002",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "opencode-v2",
+            "import_path": null,
+            "model_name": "deepseek/deepseek-flash",
+            "base_url": "http://172.17.0.2:18766/v1",
+            "model_api_key_name": "DEEPSEEK_API_KEY",
+            "model_api_format": "openai_chat_completions",
+            "skip_model_parsing": false,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "version": "2.2.5",
+                "disable_web_search": true,
+                "opencode_config": {
+                    "providers": {
+                        "deepseek": {
+                            "name": "DeepSeek",
+                            "env": [
+                                "DEEPSEEK_API_KEY"
+                            ],
+                            "package": "@opencode/ai/providers/openai-compatible",
+                            "settings": {
+                                "baseURL": "http://172.17.0.2:18766/v1"
+                            },
+                            "models": {
+                                "deepseek-flash": {
+                                    "name": "DeepSeek V4.1 Flash",
+                                    "modelID": "deepseek-flash",
+                                    "capabilities": {
+                                        "tools": true,
+                                        "input": [
+                                            "text",
+                                            "image"
+                                        ],
+                                        "output": [
+                                            "text"
+                                        ],
+                                        "reasoning": {
+                                            "supported": true
+                                        }
+                                    },
+                                    "compatibility": {
+                                        "reasoningField": "reasoning_content"
+                                    },
+                                    "body": {
+                                        "thinking": {
+                                            "type": "enabled"
+                                        },
+                                        "reasoning_effort": "low"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "policies": [
+                        {
+                            "action": "tool.use",
+                            "resource": "shell:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "read:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "edit:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "glob:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "grep:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "list:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "browser:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "webfetch:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "websearch:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "subagent:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "mcp.use",
+                            "resource": "*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "mcp.use",
+                            "resource": "dst",
+                            "effect": "allow"
+                        }
+                    ]
+                }
+            },
+            "mcp_servers": [
+                {
+                    "name": "dst",
+                    "transport": "stdio",
+                    "url": null,
+                    "command": "python3",
+                    "args": [
+                        "/app/serve.py"
+                    ]
+                }
+            ]
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "stream": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "override_error_policy": {},
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "fbbd6ff7-5543-43bf-b0ce-6d7a4bd1d351",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "opencode-v2",
+        "version": "2.2.5",
+        "model_info": {
+            "name": "deepseek-flash",
+            "provider": "deepseek"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 516747,
+        "n_cache_tokens": 500608,
+        "n_output_tokens": 3757,
+        "cost_usd": 0.007968474,
+        "model_usage": {
+            "deepseek/deepseek-flash": {
+                "n_input_tokens": 516747,
+                "n_cache_tokens": 500608,
+                "n_output_tokens": 3757,
+                "cost_usd": 0.007968474
+            }
+        },
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.3
+        }
+    },
+    "verifier_environment_mode": "shared",
+    "exception_info": {
+        "exception_type": "NonZeroAgentExitCodeError",
+        "exception_message": "Command failed (exit 1): set -o pipefail; /home/steam/.harbor/agents/opencode-v2/node_modules/.bin/opencode run --standalone --model=deepseek/deepseek-flash --format=json --thinking --auto -- 'Play the real Don'\"'\"'t Starve Together offline world as Wilson and complete dst-first-night-v1.\nUse only the dst MCP tools. First call observe. Game runs in REAL TIME during your thinking and tool calls; one game day lasts approximately 480 seconds. Work efficiently. Do not stop until a terminal event (dawn or death) is reported.\n\nStart: day 1 autumn morning, empty inventory, full stats, fixed seed 341784114 with a frozen save. Goals:\n1. Hold at least 3 cutgrass, 1 twig and 1 flint at some point (each tracked separately): 0.10.\n2. Craft an axe yourself: 0.20.\n3. After crafting the axe, hold at least 2 logs: 0.15.\n4. Build a campfire yourself: 0.15.\n5. During night spend at least 30 game seconds within 6 world units of your own burning campfire: 0.10.\n6. Complete all above, stay alive until day 2 dawn with health>=50 and hunger>=20: 0.30.\nDeath terminates immediately. No resurrection. Milestones only pay once. Maximum reward 1.0. Waiting until dawn without prerequisites cannot earn the final 0.30.\n\nTools expose local radius 25 and native semantic actions. Movement is normal walking, never teleportation. Coordinates are world x,z. Explore to find resources. Inventory uses entity IDs. Equip the axe then repeatedly chop trees (one swing per chop); pick up fallen logs. Crafting consumes real ingredients, shown in recipes. A campfire needs 3 grass and 2 logs, so reserve these after the axe. Keep some fuel for night and food to preserve hunger. Inspect success feedback and plan briefly before acting. Your tool calls and all returned reasoning are recorded. No console, shell, scripts, reset, hidden map access, pausing, cheats or external help. Do not ask the operator to play.\n' 2>&1 </dev/null | stdbuf -oL tee /logs/agent/opencode-v2.txt\nstdout: {\"type\":\"step_start\",\"timestamp\":1794731430817,\"sessionID\":\"ses_e21abb1ccffeDkaTU9rEmhG67k\",\"part\":{\"id\":\"prt_1de5453a00018dLH6Y3FzK4oQE\",\"sessionID\":\"ses_e21abb1ccffeDkaTU9rEmhG67k\",\"messageID\":\"msg_1de544fad001atAFBDW6R3wB8W\",\"type\":\"step-start\"}}\n ... [161890 chars truncated] ... mestamp\":1794731780578,\"sessionID\":\"ses_e21abb1ccffeDkaTU9rEmhG67k\",\"part\":{\"id\":\"prt_1de59a9e2001H5wBz1lJDBXDum\",\"sessionID\":\"ses_e21abb1ccffeDkaTU9rEmhG67k\",\"messageID\":\"msg_1de59905d001f4uFyfclzq6Qjp\",\"type\":\"step-start\"}}\n{\"type\":\"step_start\",\"timestamp\":1794731788918,\"sessionID\":\"ses_e21abb1ccffeDkaTU9rEmhG67k\",\"part\":{\"id\":\"prt_1de59ca76001teGdza25cq2DdW\",\"sessionID\":\"ses_e21abb1ccffeDkaTU9rEmhG67k\",\"messageID\":\"msg_1de59905d001f4uFyfclzq6Qjp\",\"type\":\"step-start\"}}\n{\"type\":\"error\",\"timestamp\":1794731795861,\"sessionID\":\"ses_e21abb1ccffeDkaTU9rEmhG67k\",\"error\":{\"type\":\"unknown\",\"message\":\"Transport: ECONNRESET: The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()\"}}\n\nstderr: None",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/trial/single_step.py\", line 77, in _run_agent\n    await self._run_agent_phase(\n  File \"/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 780, in _run_agent_phase\n    await asyncio.wait_for(\n  File \"/root/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 194, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/agents/installed/opencode_v2.py\", line 400, in run\n    await self.exec_as_agent(\n  File \"/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 1114, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n  File \"/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 1081, in _exec\n    raise self._classify_exec_error(command, result)\nharbor.agents.installed.base.NonZeroAgentExitCodeError: Command failed (exit 1): set -o pipefail; /home/steam/.harbor/agents/opencode-v2/node_modules/.bin/opencode run --standalone --model=deepseek/deepseek-flash --format=json --thinking --auto -- 'Play the real Don'\"'\"'t Starve Together offline world as Wilson and complete dst-first-night-v1.\nUse only the dst MCP tools. First call observe. Game runs in REAL TIME during your thinking and tool calls; one game day lasts approximately 480 seconds. Work efficiently. Do not stop until a terminal event (dawn or death) is reported.\n\nStart: day 1 autumn morning, empty inventory, full stats, fixed seed 341784114 with a frozen save. Goals:\n1. Hold at least 3 cutgrass, 1 twig and 1 flint at some point (each tracked separately): 0.10.\n2. Craft an axe yourself: 0.20.\n3. After crafting the axe, hold at least 2 logs: 0.15.\n4. Build a campfire yourself: 0.15.\n5. During night spend at least 30 game seconds within 6 world units of your own burning campfire: 0.10.\n6. Complete all above, stay alive until day 2 dawn with health>=50 and hunger>=20: 0.30.\nDeath terminates immediately. No resurrection. Milestones only pay once. Maximum reward 1.0. Waiting until dawn without prerequisites cannot earn the final 0.30.\n\nTools expose local radius 25 and native semantic actions. Movement is normal walking, never teleportation. Coordinates are world x,z. Explore to find resources. Inventory uses entity IDs. Equip the axe then repeatedly chop trees (one swing per chop); pick up fallen logs. Crafting consumes real ingredients, shown in recipes. A campfire needs 3 grass and 2 logs, so reserve these after the axe. Keep some fuel for night and food to preserve hunger. Inspect success feedback and plan briefly before acting. Your tool calls and all returned reasoning are recorded. No console, shell, scripts, reset, hidden map access, pausing, cheats or external help. Do not ask the operator to play.\n' 2>&1 </dev/null | stdbuf -oL tee /logs/agent/opencode-v2.txt\nstdout: {\"type\":\"step_start\",\"timestamp\":1794731430817,\"sessionID\":\"ses_e21abb1ccffeDkaTU9rEmhG67k\",\"part\":{\"id\":\"prt_1de5453a00018dLH6Y3FzK4oQE\",\"sessionID\":\"ses_e21abb1ccffeDkaTU9rEmhG67k\",\"messageID\":\"msg_1de544fad001atAFBDW6R3wB8W\",\"type\":\"step-start\"}}\n ... [161890 chars truncated] ... mestamp\":1794731780578,\"sessionID\":\"ses_e21abb1ccffeDkaTU9rEmhG67k\",\"part\":{\"id\":\"prt_1de59a9e2001H5wBz1lJDBXDum\",\"sessionID\":\"ses_e21abb1ccffeDkaTU9rEmhG67k\",\"messageID\":\"msg_1de59905d001f4uFyfclzq6Qjp\",\"type\":\"step-start\"}}\n{\"type\":\"step_start\",\"timestamp\":1794731788918,\"sessionID\":\"ses_e21abb1ccffeDkaTU9rEmhG67k\",\"part\":{\"id\":\"prt_1de59ca76001teGdza25cq2DdW\",\"sessionID\":\"ses_e21abb1ccffeDkaTU9rEmhG67k\",\"messageID\":\"msg_1de59905d001f4uFyfclzq6Qjp\",\"type\":\"step-start\"}}\n{\"type\":\"error\",\"timestamp\":1794731795861,\"sessionID\":\"ses_e21abb1ccffeDkaTU9rEmhG67k\",\"error\":{\"type\":\"unknown\",\"message\":\"Transport: ECONNRESET: The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()\"}}\n\nstderr: None\n",
+        "occurred_at": "2026-11-15T08:36:36.095749Z",
+        "policy": {
+            "should_retry": false,
+            "should_grade": true,
+            "has_valid_reward": true
+        }
+    },
+    "started_at": "2026-11-15T08:30:24.822981Z",
+    "finished_at": "2026-11-15T08:36:48.308387Z",
+    "environment_setup": {
+        "started_at": "2026-11-15T08:30:24.836446Z",
+        "finished_at": "2026-11-15T08:30:27.178002Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-11-15T08:30:27.178075Z",
+        "finished_at": "2026-11-15T08:30:28.419402Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-11-15T08:30:28.419868Z",
+        "finished_at": "2026-11-15T08:36:36.094284Z"
+    },
+    "verifier": {
+        "started_at": "2026-11-15T08:36:36.878042Z",
+        "finished_at": "2026-11-15T08:36:37.655217Z"
+    },
+    "step_results": null,
+    "reward_valid": true
+}

@@ -1,0 +1,20 @@
+schema_version = "1.4"
+artifacts = ["/artifacts"]
+
+[metadata]
+category = "visual-game-evaluation"
+description = "Solve Heroes and Artifacts 7 in a browser recreation via screenshot-only MCP tools."
+
+[agent]
+timeout_sec = 1800
+user = "root"
+
+[verifier]
+timeout_sec = 120
+user = "root"
+
+[environment]
+build_timeout_sec = 900
+cpus = 4
+memory_mb = 4096
+storage_mb = 4096

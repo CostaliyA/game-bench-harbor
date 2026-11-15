@@ -1,0 +1,10 @@
+# rootfs.tar.gz is exported from the audited installed dependency image.
+# See IMAGE_BUILD.md for exact provenance and exclusions.
+FROM scratch
+ADD rootfs.tar.gz /
+RUN mkdir -p /tmp /logs /artifacts && chmod 1777 /tmp
+ENV HOME=/home/steam DISPLAY=:99 LIBGL_ALWAYS_SOFTWARE=1
+ENV NVM_DIR=/home/steam/.nvm
+WORKDIR /workspace
+USER root
+CMD ["sleep", "infinity"]

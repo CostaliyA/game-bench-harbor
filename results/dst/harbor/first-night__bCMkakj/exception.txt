@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/trial/single_step.py", line 77, in _run_agent
+    await self._run_agent_phase(
+  File "/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/trial/trial.py", line 780, in _run_agent_phase
+    await asyncio.wait_for(
+  File "/root/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py", line 194, in wrapper
+    return await fn(self, instruction, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/agents/installed/opencode_v2.py", line 400, in run
+    await self.exec_as_agent(
+  File "/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py", line 1114, in exec_as_agent
+    return await self._exec(
+           ^^^^^^^^^^^^^^^^^
+  File "/root/zyr/harbor-game-smoke/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py", line 1081, in _exec
+    raise self._classify_exec_error(command, result)
+harbor.agents.installed.base.NonZeroAgentExitCodeError: Command failed (exit 1): set -o pipefail; /home/steam/.harbor/agents/opencode-v2/node_modules/.bin/opencode run --standalone --model=deepseek/deepseek-flash --format=json --thinking --auto -- 'Play the real Don'"'"'t Starve Together offline world as Wilson and complete dst-first-night-v1.
+Use only the dst MCP tools. First call observe. Game runs in REAL TIME during your thinking and tool calls; one game day lasts approximately 480 seconds. Work efficiently. Do not stop until a terminal event (dawn or death) is reported.
+
+Start: day 1 autumn morning, empty inventory, full stats, fixed seed 341784114 with a frozen save. Goals:
+1. Hold at least 3 cutgrass, 1 twig and 1 flint at some point (each tracked separately): 0.10.
+2. Craft an axe yourself: 0.20.
+3. After crafting the axe, hold at least 2 logs: 0.15.
+4. Build a campfire yourself: 0.15.
+5. During night spend at least 30 game seconds within 6 world units of your own burning campfire: 0.10.
+6. Complete all above, stay alive until day 2 dawn with health>=50 and hunger>=20: 0.30.
+Death terminates immediately. No resurrection. Milestones only pay once. Maximum reward 1.0. Waiting until dawn without prerequisites cannot earn the final 0.30.
+
+Tools expose local radius 25 and native semantic actions. Movement is normal walking, never teleportation. Coordinates are world x,z. Explore to find resources. Inventory uses entity IDs. Equip the axe then repeatedly chop trees (one swing per chop); pick up fallen logs. Crafting consumes real ingredients, shown in recipes. A campfire needs 3 grass and 2 logs, so reserve these after the axe. Keep some fuel for night and food to preserve hunger. Inspect success feedback and plan briefly before acting. Your tool calls and all returned reasoning are recorded. No console, shell, scripts, reset, hidden map access, pausing, cheats or external help. Do not ask the operator to play.
+' 2>&1 </dev/null | stdbuf -oL tee /logs/agent/opencode-v2.txt
+stdout: {"type":"step_start","timestamp":1794731430817,"sessionID":"ses_e21abb1ccffeDkaTU9rEmhG67k","part":{"id":"prt_1de5453a00018dLH6Y3FzK4oQE","sessionID":"ses_e21abb1ccffeDkaTU9rEmhG67k","messageID":"msg_1de544fad001atAFBDW6R3wB8W","type":"step-start"}}
+ ... [161890 chars truncated] ... mestamp":1794731780578,"sessionID":"ses_e21abb1ccffeDkaTU9rEmhG67k","part":{"id":"prt_1de59a9e2001H5wBz1lJDBXDum","sessionID":"ses_e21abb1ccffeDkaTU9rEmhG67k","messageID":"msg_1de59905d001f4uFyfclzq6Qjp","type":"step-start"}}
+{"type":"step_start","timestamp":1794731788918,"sessionID":"ses_e21abb1ccffeDkaTU9rEmhG67k","part":{"id":"prt_1de59ca76001teGdza25cq2DdW","sessionID":"ses_e21abb1ccffeDkaTU9rEmhG67k","messageID":"msg_1de59905d001f4uFyfclzq6Qjp","type":"step-start"}}
+{"type":"error","timestamp":1794731795861,"sessionID":"ses_e21abb1ccffeDkaTU9rEmhG67k","error":{"type":"unknown","message":"Transport: ECONNRESET: The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"}}
+
+stderr: None

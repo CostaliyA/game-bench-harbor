@@ -1,0 +1,29 @@
+[
+  {
+    "tags": [
+      "game-bench-harbor/runtime:20261115"
+    ],
+    "id": "sha256:ad6520e3eac3ee2c28375d6367bfc13d55ab22a272e32161175e43ea2b41e32c",
+    "architecture": "amd64",
+    "os": "linux",
+    "size": 1085960810
+  },
+  {
+    "tags": [
+      "game-bench-harbor/ootss:20261115"
+    ],
+    "id": "sha256:8db49ab023672561c381d25a07f460f42f2a23b09a04576fa8794e37b2e2421e",
+    "architecture": "amd64",
+    "os": "linux",
+    "size": 1086072052
+  },
+  {
+    "tags": [
+      "game-bench-harbor/dst-agent:20261115"
+    ],
+    "id": "sha256:0aa4c5e352fe784319f2932b18013a4547e6f77b021d783bdc2c000a33c5d82a",
+    "architecture": "amd64",
+    "os": "linux",
+    "size": 1085963380
+  }
+]

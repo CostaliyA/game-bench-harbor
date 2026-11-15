@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><title>Heroes and Artifacts 7 — joric extension</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101722;color:#eee;font:18px Arial}header{height:106px;padding:15px 24px;background:#19283b}h1{font-size:24px;margin:0 0 9px}#stage{position:relative;width:920px;height:704px}#gameCanvas{position:absolute;width:100%;height:100%;image-rendering:pixelated}footer{padding:10px 24px;font-size:16px;line-height:1.5}#status{color:#ffcf70}#errormessage{color:red}button{font-size:16px}#debug,#muteButton,#unMuteButton{display:none}
+</style>
+<header><h1>Heroes and Artifacts 7 · PuzzleScript extension</h1><div id="status"></div><div id="feedback"></div></header>
+<div id="stage"><canvas id="gameCanvas" tabindex="0"></canvas><canvas id="grid" style="position:absolute;inset:0;pointer-events:none;width:100%;height:100%"></canvas></div>
+<footer>Orange = Gemsman · Blue = Wizard · Grey = Boulder · Gold cross = Rod<br>Green squares = exits · Thin brown lines = fences · Corner arrows = facing<br>Both heroes must occupy the two exits. <span id="result"></span></footer>
+<div id="errormessage"></div><div id="debug"></div><button id="muteButton"></button><button id="unMuteButton"></button>
+<script src="joric-engine.js"></script><script type="module" src="view.mjs"></script>

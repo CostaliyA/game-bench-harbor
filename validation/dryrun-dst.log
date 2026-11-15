@@ -1,0 +1,35 @@
+                  opencode-v2 agent auth resolution (dry run)                   
+┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Setting             ┃ Value                                                  ┃
+┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ Parsed provider     │ deepseek                                               │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Resolved model      │ deepseek-flash                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Endpoint            │ https://api.deepseek.com/v1                            │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ API format          │ openai_chat_completions                                │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ API key precedence  │ 1. --api-key-name DEEPSEEK_API_KEY — selected          │
+│                     │ (********3bcd)                                         │
+│                     │ 2. --ae DEEPSEEK_API_KEY — not set                     │
+│                     │ 3. --ae OPENAI_API_KEY — not set                       │
+│                     │ 4. ambient DEEPSEEK_API_KEY — not selected             │
+│                     │ (********3bcd)                                         │
+│                     │ 5. ambient OPENAI_API_KEY — not set                    │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Base URL precedence │ 1. --base-url — selected (https://api.deepseek.com/v1) │
+│                     │ 2. --ae DEEPSEEK_BASE_URL — not set                    │
+│                     │ 3. --ae DEEPSEEK_API_BASE — not set                    │
+│                     │ 4. --ae OPENAI_BASE_URL — not set                      │
+│                     │ 5. --ae OPENAI_API_BASE — not set                      │
+│                     │ 6. ambient DEEPSEEK_BASE_URL — not set                 │
+│                     │ 7. ambient DEEPSEEK_API_BASE — not set                 │
+│                     │ 8. ambient OPENAI_BASE_URL — not set                   │
+│                     │ 9. ambient OPENAI_API_BASE — not set                   │
+│                     │ 10. Default base URL — not selected                    │
+│                     │ (https://api.deepseek.com)                             │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+Keys and model availability were not verified. Native login or other 
+authentication may apply when no API key is found.
+Dry run OK — 1 trial(s); nothing was run.

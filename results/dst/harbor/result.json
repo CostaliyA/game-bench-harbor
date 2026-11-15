@@ -1,0 +1,44 @@
+{
+    "schema_version": 1,
+    "id": "fbbd6ff7-5543-43bf-b0ce-6d7a4bd1d351",
+    "started_at": "2026-11-15T16:30:24.788185",
+    "updated_at": "2026-11-15T16:36:48.314634",
+    "finished_at": "2026-11-15T16:36:48.314634",
+    "n_total_trials": 1,
+    "stats": {
+        "n_completed_trials": 1,
+        "n_errored_trials": 1,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "opencode-v2__deepseek-flash__adhoc": {
+                "n_trials": 1,
+                "n_errors": 1,
+                "metrics": [
+                    {
+                        "mean": 0.3
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.3": [
+                            "first-night__bCMkakj"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "NonZeroAgentExitCodeError": [
+                        "first-night__bCMkakj"
+                    ]
+                }
+            }
+        },
+        "n_input_tokens": 516747,
+        "n_cache_tokens": 500608,
+        "n_output_tokens": 3757,
+        "cost_usd": 0.007968474
+    }
+}

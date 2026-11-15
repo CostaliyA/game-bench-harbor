@@ -1,0 +1,17 @@
+{
+  "valid": true,
+  "reward_v2": 0.24,
+  "best_stage": "one_exit_occupied",
+  "best_step": 140,
+  "terminal_success": false,
+  "terminal_reward": 0,
+  "first_achieved_step": {
+    "rod_acquired": 11,
+    "one_exit_occupied": 140
+  },
+  "actions": 222,
+  "blocked": 39,
+  "resets": 6,
+  "undos": 10,
+  "note": "Judge v2 is wired into test.sh for new runs; historical traces may be scored offline."
+}

@@ -1,0 +1,8 @@
+.env
+*.key
+private/
+secrets/
+__pycache__/
+*.pyc
+images/*.tar*
+.git-credentials

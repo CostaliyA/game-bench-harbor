@@ -1,0 +1,254 @@
+[
+  {
+    "start": 0,
+    "end": 13.475074768066406,
+    "title": "DST 首夜任务  |  DeepSeek Flash × OpenCode × Harbor",
+    "reasoning_summary": "先调用 observe，读取局部环境与任务起点。",
+    "note": "原速完整录像 · 10 FPS · 固定 seed 341784114 · 本轮含启动排障"
+  },
+  {
+    "start": 13.475074768066406,
+    "end": 29.885693311691284,
+    "title": "STEP 01 / 34  |  ACTION: pick(target=102341)",
+    "reasoning_summary": "先采最近的树苗取得树枝，再采草并寻找燧石。",
+    "note": "现场说明：启动同步异常，模型前几次指令未立即执行。"
+  },
+  {
+    "start": 29.885693311691284,
+    "end": 93.27125453948975,
+    "title": "STEP 02 / 34  |  ACTION: move(x=-263.0, z=-201.0)",
+    "reasoning_summary": "观察到时间与状态未变化，尝试小幅移动判断是否能恢复。",
+    "note": "现场说明：这是对启动卡住的判断，不是正常采集阶段。"
+  },
+  {
+    "start": 93.27125453948975,
+    "end": 96.15277600288391,
+    "title": "STEP 03 / 34  |  ACTION: wait(seconds=1.0)",
+    "reasoning_summary": "发现 active 已变为 true，认为此前的采集指令开始执行。",
+    "note": "现场说明：active=true 后仍受到暂停菜单影响。"
+  },
+  {
+    "start": 96.15277600288391,
+    "end": 101.02813291549683,
+    "title": "STEP 04 / 34  |  ACTION: wait(seconds=3.0)",
+    "reasoning_summary": "采集仍在进行，继续等待并观察。",
+    "note": "按实际动作提交时间对齐；执行结果可能晚于动作提交。"
+  },
+  {
+    "start": 101.02813291549683,
+    "end": 108.80364179611206,
+    "title": "STEP 05 / 34  |  ACTION: wait(seconds=5.0)",
+    "reasoning_summary": "时间没有推进，怀疑角色或模拟卡住，再等待确认。",
+    "note": "按实际动作提交时间对齐；执行结果可能晚于动作提交。"
+  },
+  {
+    "start": 108.80364179611206,
+    "end": 115.84790515899658,
+    "title": "STEP 06 / 34  |  ACTION: pick(target=102341)",
+    "reasoning_summary": "状态持续不变，重新提交采树苗动作。",
+    "note": "按实际动作提交时间对齐；执行结果可能晚于动作提交。"
+  },
+  {
+    "start": 115.84790515899658,
+    "end": 134.97358584403992,
+    "title": "STEP 07 / 34  |  ACTION: wait(seconds=15.0)",
+    "reasoning_summary": "尝试等待 15 秒，比较游戏时间是否变化。",
+    "note": "现场说明：随后关闭暂停菜单，游戏时间开始持续推进。"
+  },
+  {
+    "start": 134.97358584403992,
+    "end": 148.8975338935852,
+    "title": "STEP 08 / 34  |  ACTION: move(x=-284.0, z=-198.0)",
+    "reasoning_summary": "确认取得树枝，移动到附近草丛，继续寻找燧石。",
+    "note": "按实际动作提交时间对齐；执行结果可能晚于动作提交。"
+  },
+  {
+    "start": 148.8975338935852,
+    "end": 159.19232439994812,
+    "title": "STEP 09 / 34  |  ACTION: pick(target=109919)",
+    "reasoning_summary": "已经到达草丛附近，执行采集。",
+    "note": "按实际动作提交时间对齐；执行结果可能晚于动作提交。"
+  },
+  {
+    "start": 159.19232439994812,
+    "end": 175.22594213485718,
+    "title": "STEP 10 / 34  |  ACTION: move(x=-285.0, z=-176.0)",
+    "reasoning_summary": "已有 1 份草，向北探索更多草和燧石。",
+    "note": "按实际动作提交时间对齐；执行结果可能晚于动作提交。"
+  },
+  {
+    "start": 175.22594213485718,
+    "end": 186.55977082252502,
+    "title": "STEP 11 / 34  |  ACTION: move(x=-302.0, z=-174.0)",
+    "reasoning_summary": "燧石是当前缺少的材料；先向西侧草丛移动。",
+    "note": "按实际动作提交时间对齐；执行结果可能晚于动作提交。"
+  },
+  {
+    "start": 186.55977082252502,
+    "end": 196.122474193573,
+    "title": "STEP 12 / 34  |  ACTION: pick(target=109903)",
+    "reasoning_summary": "采集眼前草丛，准备凑齐 3 份草。",
+    "note": "按实际动作提交时间对齐；执行结果可能晚于动作提交。"
+  },
+  {
+    "start": 196.122474193573,
+    "end": 206.7042875289917,
+    "title": "STEP 13 / 34  |  ACTION: move(x=-309.4, z=-184.9)",
+    "reasoning_summary": "确认草已有 2 份，移动到下一株草附近。",
+    "note": "按实际动作提交时间对齐；执行结果可能晚于动作提交。"
+  },
+  {
+    "start": 206.7042875289917,
+    "end": 213.426087141037,
+    "title": "STEP 14 / 34  |  ACTION: pick(target=109895)",
+    "reasoning_summary": "发现附近有燧石；先采第三份草。",
+    "note": "按实际动作提交时间对齐；执行结果可能晚于动作提交。"
+  },
+  {
+    "start": 213.426087141037,
+    "end": 226.4143772125244,
+    "title": "STEP 15 / 34  |  ACTION: move(x=-314.6, z=-202.6)",
+    "reasoning_summary": "草和树枝已够，向燧石位置移动。",
+    "note": "按实际动作提交时间对齐；执行结果可能晚于动作提交。"
+  },
+  {
+    "start": 226.4143772125244,
+    "end": 231.60068774223328,
+    "title": "STEP 16 / 34  |  ACTION: pick(target=106118)",
+    "reasoning_summary": "尝试对地面的燧石使用 pick。",
+    "note": "动作区别：pick 用于采植物；地面燧石应使用 pickup。"
+  },
+  {
+    "start": 231.60068774223328,
+    "end": 239.46617984771729,
+    "title": "STEP 17 / 34  |  ACTION: wait(seconds=5.0)",
+    "reasoning_summary": "燧石尚未取得，等待动作完成。",
+    "note": "按实际动作提交时间对齐；执行结果可能晚于动作提交。"
+  },
+  {
+    "start": 239.46617984771729,
+    "end": 245.90044403076172,
+    "title": "STEP 18 / 34  |  ACTION: pickup(target=106118)",
+    "reasoning_summary": "识别出地面物品需要 pickup，切换动作重新拾取。",
+    "note": "结果：基础材料里程碑达成，reward 增至 0.10。"
+  },
+  {
+    "start": 245.90044403076172,
+    "end": 257.3765399456024,
+    "title": "STEP 19 / 34  |  ACTION: craft(recipe=axe)",
+    "reasoning_summary": "已经取得燧石，现在制作斧头。",
+    "note": "结果：制斧里程碑达成，reward 增至 0.30。"
+  },
+  {
+    "start": 257.3765399456024,
+    "end": 263.1479125022888,
+    "title": "STEP 20 / 34  |  ACTION: equip(item=132375)",
+    "reasoning_summary": "准备装备斧头，再砍附近的树；还需木材建火和续燃。",
+    "note": "接口反馈：本次使用 item 参数；工具约定装备物品应传 target。"
+  },
+  {
+    "start": 263.1479125022888,
+    "end": 270.5574860572815,
+    "title": "STEP 21 / 34  |  ACTION: chop(target=107281)",
+    "reasoning_summary": "装备反馈失败，尝试直接砍树，观察是否可自动装备。",
+    "note": "按实际动作提交时间对齐；执行结果可能晚于动作提交。"
+  },
+  {
+    "start": 270.5574860572815,
+    "end": 278.88770937919617,
+    "title": "STEP 22 / 34  |  ACTION: chop(target=107281)",
+    "reasoning_summary": "一次砍击尚未掉木材，继续砍同一棵树。",
+    "note": "按实际动作提交时间对齐；执行结果可能晚于动作提交。"
+  },
+  {
+    "start": 278.88770937919617,
+    "end": 283.9051892757416,
+    "title": "STEP 23 / 34  |  ACTION: chop(target=107281)",
+    "reasoning_summary": "用最多 12 次循环砍树；背包出现木材或目标 ID 消失时停止。",
+    "note": "循环判断仅检查背包木材和目标 ID，没有检查 chop=false。"
+  },
+  {
+    "start": 283.9051892757416,
+    "end": 288.9219033718109,
+    "title": "STEP 24 / 34  |  ACTION: chop(target=107281)",
+    "reasoning_summary": "用最多 12 次循环砍树；背包出现木材或目标 ID 消失时停止。",
+    "note": "事后观察：树倒后实体 ID 仍存在；木头在地上，循环未触发退出。"
+  },
+  {
+    "start": 288.9219033718109,
+    "end": 293.93875885009766,
+    "title": "STEP 25 / 34  |  ACTION: chop(target=107281)",
+    "reasoning_summary": "用最多 12 次循环砍树；背包出现木材或目标 ID 消失时停止。",
+    "note": "事后观察：树倒后实体 ID 仍存在；木头在地上，循环未触发退出。"
+  },
+  {
+    "start": 293.93875885009766,
+    "end": 298.9546754360199,
+    "title": "STEP 26 / 34  |  ACTION: chop(target=107281)",
+    "reasoning_summary": "用最多 12 次循环砍树；背包出现木材或目标 ID 消失时停止。",
+    "note": "事后观察：树倒后实体 ID 仍存在；木头在地上，循环未触发退出。"
+  },
+  {
+    "start": 298.9546754360199,
+    "end": 303.97198462486267,
+    "title": "STEP 27 / 34  |  ACTION: chop(target=107281)",
+    "reasoning_summary": "用最多 12 次循环砍树；背包出现木材或目标 ID 消失时停止。",
+    "note": "事后观察：树倒后实体 ID 仍存在；木头在地上，循环未触发退出。"
+  },
+  {
+    "start": 303.97198462486267,
+    "end": 308.98852276802063,
+    "title": "STEP 28 / 34  |  ACTION: chop(target=107281)",
+    "reasoning_summary": "用最多 12 次循环砍树；背包出现木材或目标 ID 消失时停止。",
+    "note": "事后观察：树倒后实体 ID 仍存在；木头在地上，循环未触发退出。"
+  },
+  {
+    "start": 308.98852276802063,
+    "end": 314.0045166015625,
+    "title": "STEP 29 / 34  |  ACTION: chop(target=107281)",
+    "reasoning_summary": "用最多 12 次循环砍树；背包出现木材或目标 ID 消失时停止。",
+    "note": "事后观察：树倒后实体 ID 仍存在；木头在地上，循环未触发退出。"
+  },
+  {
+    "start": 314.0045166015625,
+    "end": 319.02072310447693,
+    "title": "STEP 30 / 34  |  ACTION: chop(target=107281)",
+    "reasoning_summary": "用最多 12 次循环砍树；背包出现木材或目标 ID 消失时停止。",
+    "note": "事后观察：树倒后实体 ID 仍存在；木头在地上，循环未触发退出。"
+  },
+  {
+    "start": 319.02072310447693,
+    "end": 324.03630352020264,
+    "title": "STEP 31 / 34  |  ACTION: chop(target=107281)",
+    "reasoning_summary": "用最多 12 次循环砍树；背包出现木材或目标 ID 消失时停止。",
+    "note": "事后观察：树倒后实体 ID 仍存在；木头在地上，循环未触发退出。"
+  },
+  {
+    "start": 324.03630352020264,
+    "end": 329.0521297454834,
+    "title": "STEP 32 / 34  |  ACTION: chop(target=107281)",
+    "reasoning_summary": "用最多 12 次循环砍树；背包出现木材或目标 ID 消失时停止。",
+    "note": "事后观察：树倒后实体 ID 仍存在；木头在地上，循环未触发退出。"
+  },
+  {
+    "start": 329.0521297454834,
+    "end": 334.06808710098267,
+    "title": "STEP 33 / 34  |  ACTION: chop(target=107281)",
+    "reasoning_summary": "用最多 12 次循环砍树；背包出现木材或目标 ID 消失时停止。",
+    "note": "事后观察：树倒后实体 ID 仍存在；木头在地上，循环未触发退出。"
+  },
+  {
+    "start": 334.06808710098267,
+    "end": 341.8,
+    "title": "STEP 34 / 34  |  ACTION: chop(target=107281)",
+    "reasoning_summary": "用最多 12 次循环砍树；背包出现木材或目标 ID 消失时停止。",
+    "note": "事后观察：树倒后实体 ID 仍存在；木头在地上，循环未触发退出。"
+  },
+  {
+    "start": 341.8,
+    "end": 361.6,
+    "title": "回合结束  |  reward = 0.30  |  success = false",
+    "reasoning_summary": "最后观察到砍树动作持续 running，准备重新检查环境。",
+    "note": "终止：累计 524,901 token，超过 500k 阈值；木材未拾取，未建火过夜。"
+  }
+]

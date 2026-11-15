@@ -1,0 +1,12 @@
+{
+  "seed": 341784114,
+  "day": 1,
+  "phase": "morning",
+  "character": "wilson",
+  "inventory": "empty",
+  "stats": "full",
+  "initialization": "Existing unplayed generated world; reset day phase and character stats before snapshot. No evaluated actions yet.",
+  "sha256": "99b902f93a3a1ee234845a32a3d5e6d4fb87b652d679d9fdcfedabfeefcfebdf",
+  "created_at": 1794731094.4675984,
+  "snapshot": "0000000003"
+}

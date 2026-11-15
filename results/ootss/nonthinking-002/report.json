@@ -1,0 +1,16 @@
+{
+  "status": "valid_failure",
+  "reward": 0,
+  "actions": 217,
+  "resets": 3,
+  "undos": 0,
+  "blocked": 98,
+  "checks": {
+    "action_limit": true,
+    "action_schema": true,
+    "initial_matches": true,
+    "trajectory_replays": true,
+    "latest_matches": true,
+    "browser_goal_agrees": true
+  }
+}

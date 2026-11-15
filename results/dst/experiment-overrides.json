@@ -1,0 +1,14 @@
+{
+  "task": "dst-first-night-v1",
+  "seed": 341784114,
+  "model": "deepseek-flash",
+  "thinking": "enabled",
+  "reasoning_effort": "low",
+  "model_token_limit": 500000,
+  "wall_clock_limit_seconds": 1800,
+  "recording_fps": 10,
+  "state_sampling_game_seconds": 0.5,
+  "startup_intervention": true,
+  "budget_changed_during_startup": true,
+  "benchmark_status": "integration_trial_with_documented_startup_issues"
+}

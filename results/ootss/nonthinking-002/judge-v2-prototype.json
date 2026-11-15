@@ -1,0 +1,15 @@
+{
+  "valid": true,
+  "reward_v2": 0.05,
+  "best_stage": "rod_acquired",
+  "best_step": 38,
+  "terminal_success": false,
+  "first_achieved_step": {
+    "rod_acquired": 38
+  },
+  "actions": 217,
+  "blocked": 98,
+  "resets": 3,
+  "undos": 0,
+  "note": "Prototype only; current Harbor reward.txt remains binary."
+}

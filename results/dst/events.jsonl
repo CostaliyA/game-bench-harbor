@@ -1,0 +1,4 @@
+{"seq": 0, "online": false, "game_time": 101.16667194292, "cycle": 0, "phase": "day", "type": "start", "task": "dst-first-night-v1", "character": "wilson"}
+{"type": "milestone", "name": "starter_materials", "phase": "day", "cycle": 0, "seq": 1, "game_time": 222.16667825356}
+{"type": "milestone", "name": "crafted_axe", "phase": "day", "cycle": 0, "seq": 2, "game_time": 228.93334527314}
+{"type": "timeout", "game_time": 321.96668345854, "phase": "day", "seq": 3, "cycle": 0}
