@@ -1,5 +1,9 @@
 # 交付清单与复现指南
 
+2026-11-16 最新更新：新增第 3 天清晨科学营地任务 `dst-science-settlement-v1`，固定 reward 为阶段分 0.75 + 共同终局条件 0.25。首轮 DeepSeek Flash 结果 **0.000，第一夜死亡，0 个 Harbor 异常**；[任务与失败分析](../results/dst-settlement-001/REPORT.zh-CN.md)、[83 步 action / reasoning 视频](../videos/dst-settlement-v1-annotated.mp4)、[原始视频 Release](https://github.com/CostaliyA/game-bench-harbor/releases/tag/dst-settlement-v1-20261116)、[配置与机制说明](../runtime/dst-settlement/README.zh-CN.md)。本轮尚未进入科技阶段，不能据此认定任务难度已经校准。
+
+此前首夜任务的 500k 配置试跑完整通关，reward **1.00**，该成绩保留。详见[首夜分析](../results/dst-context500k-003/REPORT.zh-CN.md)与[运行说明](../runtime/dst/CONTEXT500K.zh-CN.md)。原始录像位于 [GitHub Release](https://github.com/CostaliyA/game-bench-harbor/releases/tag/dst-context500k-20261116)，注释版在仓库 videos/。PDF 和下方历史复核命令对应此前任务，新任务使用自己的报告与冻结快照。
+
 ## 在线入口
 
 - 公开代码、报告与证据：https://github.com/CostaliyA/game-bench-harbor
@@ -11,9 +15,11 @@
 | 目录 | 用途 |
 |---|---|
 | tasks/dst-first-night | DST任务定义、MCP接口、test.sh及reward scorer；尚无已验证成功oracle |
+| tasks/dst-science-settlement | 两夜科技营地任务、原生挖矿/科技/背包接口与固定分阶段 scorer；尚无完整成功 oracle |
 | tasks/ootss-heroes-artifacts-7 | 固定棋盘环境、MCP截图动作接口、成功reference solution、重放verifier与Judge v2 |
-| configs | 两任务的Harbor + OpenCode + DeepSeek配置 |
+| configs | 各任务的 Harbor + OpenCode + DeepSeek 配置 |
 | runtime/dst | DST的Lua桥接、观察器、HTTP服务、API记录、预算监控与视频注释代码 |
+| runtime/dst-settlement | 科学营地 v1 的独立桥接、观察、机制预检与运行记录代码 |
 | scripts | 不调用模型的历史轨迹重评分，以及OOTSS视频工具 |
 | results | 两款任务的原始试跑轨迹、推理、状态、Judge与Harbor结果 |
 | videos | DST原始/注释视频，OOTSS逐动作轨迹回放 |
@@ -32,11 +38,12 @@
 
 ```bash
 python3 scripts/regrade_dst.py
+python3 scripts/analyze_dst_settlement.py results/dst-settlement-001
 bash scripts/regrade_ootss.sh
 harbor run -p tasks/ootss-heroes-artifacts-7 -a oracle -n 1 --job-name oracle-check
 ```
 
-预期DST独立事件分数0.30；OOTSS模型旧轨迹的重放加v2分数0.24；参考oracle完整Harbor运行分数1.00。后者是参考解验收，不是一个新的模型成绩。
+预期 DST 历史独立事件分数 0.30；科学营地本轮重算为 complete=true、terminal=death、success=false、reward=0.0；OOTSS 模型旧轨迹的重放加 v2 分数 0.24；参考 oracle 完整 Harbor 运行分数 1.00。后者是参考解验收，不是一个新的模型成绩。
 
 ## 3. 新的模型评测
 
@@ -69,3 +76,5 @@ OOTSS视频见videos/ootss-wiki-replay.mp4。视频按原trajectory.jsonl逐步�
 发布版已在a800实际执行两份配置的dry-run、OOTSS oracle Harbor trial，以及两款历史轨迹重算。oracle结果1.00、0 exceptions；历史轨迹重算DST=0.30、OOTSS=0.24。验证文件见validation/。
 
 这份文档不把网页移植等同商业原版，也不把DST启动干预后的试跑等同严格无干预实验。本文和深度报告共同给出可直接使用的结果、复核方式和仍需实现的验收条件。
+
+最新轮次离线核对：`python3 scripts/validate_dst_context500k.py`。实际单次输入最大 165,265 tokens，累计用量 7,456,375；不能把前者配置的 500k 窗口误解为后者的阈值。

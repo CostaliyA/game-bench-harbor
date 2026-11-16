@@ -1,5 +1,5 @@
 from pathlib import Path
-import html
+import html, os
 from weasyprint import HTML
 R=Path(__file__).resolve().parent
 
@@ -19,7 +19,7 @@ svg_flow('ootss-flow.svg',[('Agent 试玩','发现规则与疑点'),('人类先�
 svg_flow('eval-flow.svg',[('Harbor','组织 trial 与预算'),('OpenCode','上下文与 MCP 工具'),('游戏 sandbox','观察 → 动作 → 状态'),('Verifier','校验轨迹 / 写 reward')],'模型：DeepSeek V4.1 Flash（配置名称）；API model ID：deepseek-flash')
 
 style='''
-@font-face{font-family:Body;src:url('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc')} 
+@font-face{font-family:Body;src:url('/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc')}
 @font-face{font-family:Body;src:url('/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc');font-weight:700}
 @font-face{font-family:Title;src:url('/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc')}
 @page{size:A4;margin:17mm 18mm 17mm;@top-left{content:'GAME BENCH HARBOR';font-family:Body;font-size:8pt;color:#7a858f;letter-spacing:1pt}@top-right{content:'实验与实现报告 · 2026.11';font-family:Body;font-size:8pt;color:#7a858f}@bottom-left{content:'DST / ORDER OF THE SINKING STAR';font-family:Body;font-size:7pt;color:#7a858f}@bottom-right{content:counter(page);font-family:Body;font-size:9pt;color:#267c78}}
@@ -138,6 +138,11 @@ P.append('''<section class="page">
 <p>框架参考：<a href="https://docs.harborframework.com/tasks/overview">Harbor Tasks</a>；<a href="https://api-docs.deepseek.com/guides/thinking_mode/">DeepSeek Thinking Mode</a>。实验输入、原始 reasoning 与动作轨迹保存在 results/，视频字幕摘录推理摘要。</p></div>
 <p class="small">日期：2026 年 11 月 15 日。实验机器：a800-server1。部署依赖、镜像内容与复现步骤见交付指南，工程审计另附。</p>
 </section>''')
+# Keep the historical report intact; prepend the evidence-backed latest-run addendum.
+addendum=R/'context500k-addendum.html'
+if addendum.exists():
+ P.insert(0,addendum.read_text())
+style=style.replace('/usr/share/fonts/opentype/noto',os.environ.get('GAME_BENCH_FONT_DIR','/usr/share/fonts/opentype/noto'))
 text='<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>游戏环境 Agent 评测技术报告</title><style>'+style+'</style><body>'+''.join(P)+'</body></html>'
 (R/'report.html').write_text(text)
 out=R.parent/'Game_Bench_Harbor_Report.pdf'

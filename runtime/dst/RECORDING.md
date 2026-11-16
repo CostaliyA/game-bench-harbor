@@ -21,7 +21,7 @@ ffmpeg -i /path/to/run/episode.mp4 \
 
 ## 完整局预算
 
-`DST_TOKEN_LIMIT` 控制累计 API token 上限，`DST_WALL_LIMIT` 控制墙钟时限，默认分别为 500000 和 1800。两者由 proxy 与 watchdog 共同读取；同一运行目录下的 `limits.json` 可覆盖默认值：
+`DST_TOKEN_LIMIT` 控制累计 API token 上限，`DST_WALL_LIMIT` 控制墙钟时限，默认分别为 0 和 1800；0 表示不限制累计 token，用于兼容按上下文窗口配置的实验。两者由 proxy 与 watchdog 共同读取；同一运行目录下的 `limits.json` 可覆盖默认值：
 
 ```json
 {"token_limit": 5000000, "wall_limit_seconds": 1800}

@@ -1,0 +1,51 @@
+{
+  "timeline": "Complete real-time recording; annotated version only pads the frame and adds subtitles. No trim, speed change or replay.",
+  "assets": [
+    {
+      "kind": "original",
+      "filename": "dst-context500k-original.mp4",
+      "url": "https://github.com/CostaliyA/game-bench-harbor/releases/download/dst-context500k-20261116/dst-context500k-original.mp4",
+      "sha256": "560d36c609e9761fce5e90e1471976fad8f4dc7aefba8c6760d47ba7e77db585",
+      "bytes": 137455921,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1280,
+            "height": 720,
+            "r_frame_rate": "10/1",
+            "nb_frames": "5746"
+          }
+        ],
+        "format": {
+          "duration": "574.600000",
+          "size": "137455921"
+        }
+      }
+    },
+    {
+      "kind": "annotated",
+      "filename": "dst-context500k-annotated.mp4",
+      "url": "../../videos/dst-context500k-annotated.mp4",
+      "sha256": "9b9e3f15b1d47e98e600c756be1b5beb79768182b969431425ce727e0020f093",
+      "bytes": 50347741,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "width": 1280,
+            "height": 960,
+            "r_frame_rate": "10/1",
+            "nb_frames": "5746"
+          }
+        ],
+        "format": {
+          "duration": "574.600000",
+          "size": "50347741"
+        }
+      }
+    }
+  ]
+}

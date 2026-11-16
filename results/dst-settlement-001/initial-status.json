@@ -1,0 +1,356 @@
+{
+  "started": false,
+  "terminal": false,
+  "state": {
+    "inventory": [],
+    "active": false,
+    "day_fraction": 0.00041675567626953,
+    "time": 92.333338148892,
+    "camera_target": 45,
+    "hunger": 150,
+    "phase": "day",
+    "sanity": 200,
+    "nearby": [
+      {
+        "cook_product": "seeds_cooked",
+        "food_sanity": 0,
+        "food_health": 0,
+        "id": 108997,
+        "chop": false,
+        "mine": false,
+        "freshness": 0.98790001395861,
+        "pickup": true,
+        "x": -264.50601196289,
+        "count": 1,
+        "z": -202.1609954834,
+        "pickable": false,
+        "food_hunger": 4.6875,
+        "prefab": "seeds",
+        "burning": false
+      },
+      {
+        "id": 111437,
+        "mine": false,
+        "pickup": false,
+        "x": -262.0299987793,
+        "count": 1,
+        "z": -202,
+        "pickable": true,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      },
+      {
+        "cook_product": "cookedsmallmeat",
+        "id": 126522,
+        "health": 25,
+        "mine": false,
+        "freshness": 1,
+        "pickup": true,
+        "x": -258.57043457031,
+        "count": 1,
+        "z": -195.39352416992,
+        "pickable": false,
+        "chop": false,
+        "prefab": "robin",
+        "burning": false
+      },
+      {
+        "cook_product": "seeds_cooked",
+        "food_sanity": 0,
+        "food_health": 0,
+        "id": 108999,
+        "chop": false,
+        "mine": false,
+        "freshness": 0.9904735251157,
+        "pickup": true,
+        "x": -267.67498779297,
+        "count": 1,
+        "z": -191.36799621582,
+        "pickable": false,
+        "food_hunger": 4.6875,
+        "prefab": "seeds",
+        "burning": false
+      },
+      {
+        "id": 114492,
+        "mine": false,
+        "pickup": false,
+        "x": -257.88000488281,
+        "count": 1,
+        "z": -202.88999938965,
+        "pickable": false,
+        "chop": true,
+        "prefab": "evergreen",
+        "burning": false
+      },
+      {
+        "id": 108939,
+        "health": 1,
+        "mine": false,
+        "freshness": 0.98643785022236,
+        "pickup": true,
+        "x": -269,
+        "count": 1,
+        "z": -208,
+        "pickable": false,
+        "chop": false,
+        "prefab": "pumpkin_lantern",
+        "burning": false
+      },
+      {
+        "cook_product": "cookedsmallmeat",
+        "id": 126500,
+        "health": 25,
+        "mine": false,
+        "freshness": 1,
+        "pickup": true,
+        "x": -260.00537109375,
+        "count": 1,
+        "z": -186.57028198242,
+        "pickable": false,
+        "chop": false,
+        "prefab": "robin",
+        "burning": false
+      },
+      {
+        "id": 114500,
+        "mine": false,
+        "pickup": false,
+        "x": -278.35998535156,
+        "count": 1,
+        "z": -197.24000549316,
+        "pickable": false,
+        "chop": true,
+        "prefab": "evergreen",
+        "burning": false
+      },
+      {
+        "id": 108941,
+        "health": 1,
+        "mine": false,
+        "freshness": 0.986251640187,
+        "pickup": true,
+        "x": -267,
+        "count": 1,
+        "z": -212,
+        "pickable": false,
+        "chop": false,
+        "prefab": "pumpkin_lantern",
+        "burning": false
+      },
+      {
+        "id": 102051,
+        "mine": false,
+        "pickup": false,
+        "x": -274,
+        "count": 1,
+        "z": -210,
+        "pickable": false,
+        "chop": false,
+        "prefab": "multiplayer_portal",
+        "burning": false
+      },
+      {
+        "id": 114490,
+        "mine": false,
+        "pickup": false,
+        "x": -262.69000244141,
+        "count": 1,
+        "z": -177.00999450684,
+        "pickable": false,
+        "chop": true,
+        "prefab": "evergreen",
+        "burning": false
+      },
+      {
+        "id": 115802,
+        "mine": false,
+        "pickup": false,
+        "x": -286.23999023438,
+        "count": 1,
+        "z": -197.91999816895,
+        "pickable": true,
+        "chop": false,
+        "prefab": "grass",
+        "burning": false
+      },
+      {
+        "id": 108943,
+        "health": 1,
+        "mine": false,
+        "freshness": 0.98637634561093,
+        "pickup": true,
+        "x": -273,
+        "count": 1,
+        "z": -218,
+        "pickable": false,
+        "chop": false,
+        "prefab": "pumpkin_lantern",
+        "burning": false
+      },
+      {
+        "id": 117090,
+        "mine": false,
+        "pickup": false,
+        "x": -242.38000488281,
+        "count": 1,
+        "z": -194.85000610352,
+        "pickable": true,
+        "chop": false,
+        "prefab": "green_mushroom",
+        "burning": false
+      },
+      {
+        "id": 114424,
+        "mine": false,
+        "pickup": false,
+        "x": -242.30999755859,
+        "count": 1,
+        "z": -202.69000244141,
+        "pickable": false,
+        "chop": true,
+        "prefab": "evergreen",
+        "burning": false
+      },
+      {
+        "id": 111391,
+        "mine": false,
+        "pickup": false,
+        "x": -242.88999938965,
+        "count": 1,
+        "z": -205.72999572754,
+        "pickable": true,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      },
+      {
+        "id": 114498,
+        "mine": false,
+        "pickup": false,
+        "x": -281.95999145508,
+        "count": 1,
+        "z": -213.19999694824,
+        "pickable": false,
+        "chop": true,
+        "prefab": "evergreen",
+        "burning": false
+      }
+    ],
+    "camera_heading": 45,
+    "cycle": 0,
+    "health": 150,
+    "z": -197.64739990234,
+    "alive": true,
+    "recipes": {
+      "researchlab": {
+        "can_prototype_here": true,
+        "known": true,
+        "can_build": false,
+        "ingredients": {
+          "log": 4,
+          "goldnugget": 1,
+          "rocks": 4
+        },
+        "has_ingredients": false
+      },
+      "campfire": {
+        "can_prototype_here": true,
+        "known": true,
+        "can_build": false,
+        "ingredients": {
+          "cutgrass": 3,
+          "log": 2
+        },
+        "has_ingredients": false
+      },
+      "pickaxe": {
+        "can_prototype_here": true,
+        "known": true,
+        "can_build": false,
+        "ingredients": {
+          "twigs": 2,
+          "flint": 2
+        },
+        "has_ingredients": false
+      },
+      "spear": {
+        "can_prototype_here": false,
+        "known": false,
+        "can_build": false,
+        "ingredients": {
+          "flint": 1,
+          "twigs": 2,
+          "rope": 1
+        },
+        "has_ingredients": false
+      },
+      "armorgrass": {
+        "can_prototype_here": true,
+        "known": true,
+        "can_build": false,
+        "ingredients": {
+          "cutgrass": 10,
+          "twigs": 2
+        },
+        "has_ingredients": false
+      },
+      "firepit": {
+        "can_prototype_here": true,
+        "known": true,
+        "can_build": false,
+        "ingredients": {
+          "rocks": 12,
+          "log": 2
+        },
+        "has_ingredients": false
+      },
+      "rope": {
+        "can_prototype_here": false,
+        "known": false,
+        "can_build": false,
+        "ingredients": {
+          "cutgrass": 3
+        },
+        "has_ingredients": false
+      },
+      "axe": {
+        "can_prototype_here": true,
+        "known": true,
+        "can_build": false,
+        "ingredients": {
+          "twigs": 1,
+          "flint": 1
+        },
+        "has_ingredients": false
+      },
+      "torch": {
+        "can_prototype_here": true,
+        "known": true,
+        "can_build": false,
+        "ingredients": {
+          "cutgrass": 2,
+          "twigs": 2
+        },
+        "has_ingredients": false
+      },
+      "backpack": {
+        "can_prototype_here": false,
+        "known": false,
+        "can_build": false,
+        "ingredients": {
+          "cutgrass": 4,
+          "twigs": 4
+        },
+        "has_ingredients": false
+      }
+    },
+    "last_action": {
+      "id": 0,
+      "status": "ready"
+    },
+    "x": -264.53506469727
+  },
+  "events": []
+}

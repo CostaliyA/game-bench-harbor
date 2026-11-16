@@ -10,7 +10,7 @@ while True:
  total=sum(x['usage']['total_tokens'] for x in rows)
  elapsed=time.time()-float((root/'start-time.txt').read_text()) if (root/'start-time.txt').exists() else 0
  limits=read_limits(root)
- if total>=limits['token_limit'] or elapsed>=limits['wall_limit_seconds']:
-  (root/'budget-stop.json').write_text(json.dumps({'tokens':total,'elapsed_wall_s':elapsed,'reason':'token_limit' if total>=limits['token_limit'] else 'wall_time_limit'}))
+ if (limits['token_limit']>0 and total>=limits['token_limit']) or elapsed>=limits['wall_limit_seconds']:
+  (root/'budget-stop.json').write_text(json.dumps({'tokens':total,'elapsed_wall_s':elapsed,'reason':'token_limit' if limits['token_limit']>0 and total>=limits['token_limit'] else 'wall_time_limit'}))
   key('grave');subprocess.run(['xdotool','type','--clearmodifiers','--delay','15','dst_eval_timeout()'],env=env);key('Return');break
  time.sleep(2)

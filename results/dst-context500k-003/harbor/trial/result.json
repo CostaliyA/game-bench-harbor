@@ -1,0 +1,256 @@
+{
+    "schema_version": 1,
+    "id": "de23d3d0-6426-497e-8c6f-bf9b5bdf5db2",
+    "task_name": "first-night",
+    "trial_name": "first-night__4ojga5m",
+    "trial_uri": "file:///root/zyr/dst-sandbox/harbor/jobs/dst-context500k-deepseek-004/first-night__4ojga5m",
+    "task_id": {
+        "path": "tasks/first-night"
+    },
+    "source": null,
+    "task_checksum": "64572e5b577ac9fd86dcbd748ae25f202730ae076754239c8282e9f0cc6f5150",
+    "config": {
+        "schema_version": 1,
+        "task": {
+            "path": "tasks/first-night",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "first-night__4ojga5m",
+        "trials_dir": "jobs/dst-context500k-deepseek-004",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "opencode-v2",
+            "import_path": null,
+            "model_name": "deepseek/deepseek-flash",
+            "base_url": "http://172.17.0.2:18766/v1",
+            "model_api_key_name": "DEEPSEEK_API_KEY",
+            "model_api_format": "openai_chat_completions",
+            "skip_model_parsing": false,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "version": "2.2.5",
+                "disable_web_search": true,
+                "opencode_config": {
+                    "providers": {
+                        "deepseek": {
+                            "name": "DeepSeek",
+                            "env": [
+                                "DEEPSEEK_API_KEY"
+                            ],
+                            "package": "@opencode/ai/providers/openai-compatible",
+                            "settings": {
+                                "baseURL": "http://172.17.0.2:18766/v1"
+                            },
+                            "models": {
+                                "deepseek-flash": {
+                                    "name": "DeepSeek V4.1 Flash",
+                                    "modelID": "deepseek-flash",
+                                    "capabilities": {
+                                        "tools": true,
+                                        "input": [
+                                            "text",
+                                            "image"
+                                        ],
+                                        "output": [
+                                            "text"
+                                        ],
+                                        "reasoning": {
+                                            "supported": true
+                                        }
+                                    },
+                                    "compatibility": {
+                                        "reasoningField": "reasoning_content"
+                                    },
+                                    "body": {
+                                        "thinking": {
+                                            "type": "enabled"
+                                        },
+                                        "reasoning_effort": "low"
+                                    },
+                                    "limit": {
+                                        "context": 500000,
+                                        "input": 495904,
+                                        "output": 4096
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "policies": [
+                        {
+                            "action": "tool.use",
+                            "resource": "shell:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "read:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "edit:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "glob:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "grep:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "list:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "browser:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "webfetch:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "websearch:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "tool.use",
+                            "resource": "subagent:*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "mcp.use",
+                            "resource": "*",
+                            "effect": "deny"
+                        },
+                        {
+                            "action": "mcp.use",
+                            "resource": "dst",
+                            "effect": "allow"
+                        }
+                    ]
+                }
+            },
+            "mcp_servers": [
+                {
+                    "name": "dst",
+                    "transport": "stdio",
+                    "url": null,
+                    "command": "python3",
+                    "args": [
+                        "/app/serve.py"
+                    ]
+                }
+            ]
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "stream": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "override_error_policy": {},
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "2324919e-5313-49ef-a66b-b6ffd6dc5a27",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "opencode-v2",
+        "version": "2.2.5",
+        "model_info": {
+            "name": "deepseek-flash",
+            "provider": "deepseek"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 7440652,
+        "n_cache_tokens": 7290880,
+        "n_output_tokens": 6420,
+        "cost_usd": 0.05377223999999998,
+        "model_usage": {
+            "deepseek/deepseek-flash": {
+                "n_input_tokens": 7440652,
+                "n_cache_tokens": 7290880,
+                "n_output_tokens": 6420,
+                "cost_usd": 0.05377223999999998
+            }
+        },
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "verifier_environment_mode": "shared",
+    "exception_info": null,
+    "started_at": "2026-11-15T17:02:16.771036Z",
+    "finished_at": "2026-11-15T17:11:56.693197Z",
+    "environment_setup": {
+        "started_at": "2026-11-15T17:02:16.784453Z",
+        "finished_at": "2026-11-15T17:02:19.256982Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-11-15T17:02:19.257059Z",
+        "finished_at": "2026-11-15T17:02:20.512045Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-11-15T17:02:20.512505Z",
+        "finished_at": "2026-11-15T17:11:44.412814Z"
+    },
+    "verifier": {
+        "started_at": "2026-11-15T17:11:45.216864Z",
+        "finished_at": "2026-11-15T17:11:45.995112Z"
+    },
+    "step_results": null,
+    "reward_valid": true
+}

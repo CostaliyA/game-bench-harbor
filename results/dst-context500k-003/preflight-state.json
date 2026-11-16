@@ -1,0 +1,222 @@
+{
+  "wall_time": 1794758257.7325943,
+  "inventory": [],
+  "active": false,
+  "day_fraction": 0,
+  "time": 17.400000907481,
+  "camera_target": 45,
+  "hunger": 150,
+  "phase": "day",
+  "sanity": 200,
+  "camera_heading": 45,
+  "alive": true,
+  "cycle": 0,
+  "health": 150,
+  "z": -197.64700317383,
+  "recipes": {
+    "campfire": {
+      "ingredients": {
+        "cutgrass": 3,
+        "log": 2
+      },
+      "can_build": false
+    },
+    "torch": {
+      "ingredients": {
+        "cutgrass": 2,
+        "twigs": 2
+      },
+      "can_build": false
+    },
+    "axe": {
+      "ingredients": {
+        "twigs": 1,
+        "flint": 1
+      },
+      "can_build": false
+    }
+  },
+  "nearby": [
+    {
+      "id": 108997,
+      "pickup": true,
+      "x": -264.50601196289,
+      "count": 1,
+      "z": -202.1609954834,
+      "pickable": false,
+      "chop": false,
+      "prefab": "seeds",
+      "burning": false
+    },
+    {
+      "id": 111437,
+      "pickup": false,
+      "x": -262.0299987793,
+      "count": 1,
+      "z": -202,
+      "pickable": true,
+      "chop": false,
+      "prefab": "sapling",
+      "burning": false
+    },
+    {
+      "id": 108999,
+      "pickup": true,
+      "x": -267.67498779297,
+      "count": 1,
+      "z": -191.36799621582,
+      "pickable": false,
+      "chop": false,
+      "prefab": "seeds",
+      "burning": false
+    },
+    {
+      "id": 126348,
+      "pickup": true,
+      "x": -263.94204711914,
+      "count": 1,
+      "z": -189.94013977051,
+      "pickable": false,
+      "chop": false,
+      "prefab": "robin",
+      "burning": false
+    },
+    {
+      "id": 114492,
+      "pickup": false,
+      "x": -257.88000488281,
+      "count": 1,
+      "z": -202.88999938965,
+      "pickable": false,
+      "chop": true,
+      "prefab": "evergreen",
+      "burning": false
+    },
+    {
+      "id": 108939,
+      "pickup": true,
+      "x": -269,
+      "count": 1,
+      "z": -208,
+      "pickable": false,
+      "chop": false,
+      "prefab": "pumpkin_lantern",
+      "burning": false
+    },
+    {
+      "id": 114500,
+      "pickup": false,
+      "x": -278.35998535156,
+      "count": 1,
+      "z": -197.24000549316,
+      "pickable": false,
+      "chop": true,
+      "prefab": "evergreen",
+      "burning": false
+    },
+    {
+      "id": 108941,
+      "pickup": true,
+      "x": -267,
+      "count": 1,
+      "z": -212,
+      "pickable": false,
+      "chop": false,
+      "prefab": "pumpkin_lantern",
+      "burning": false
+    },
+    {
+      "id": 102051,
+      "pickup": false,
+      "x": -274,
+      "count": 1,
+      "z": -210,
+      "pickable": false,
+      "chop": false,
+      "prefab": "multiplayer_portal",
+      "burning": false
+    },
+    {
+      "id": 114490,
+      "pickup": false,
+      "x": -262.69000244141,
+      "count": 1,
+      "z": -177.00999450684,
+      "pickable": false,
+      "chop": true,
+      "prefab": "evergreen",
+      "burning": false
+    },
+    {
+      "id": 115802,
+      "pickup": false,
+      "x": -286.23999023438,
+      "count": 1,
+      "z": -197.91999816895,
+      "pickable": true,
+      "chop": false,
+      "prefab": "grass",
+      "burning": false
+    },
+    {
+      "id": 108943,
+      "pickup": true,
+      "x": -273,
+      "count": 1,
+      "z": -218,
+      "pickable": false,
+      "chop": false,
+      "prefab": "pumpkin_lantern",
+      "burning": false
+    },
+    {
+      "id": 117090,
+      "pickup": false,
+      "x": -242.38000488281,
+      "count": 1,
+      "z": -194.85000610352,
+      "pickable": true,
+      "chop": false,
+      "prefab": "green_mushroom",
+      "burning": false
+    },
+    {
+      "id": 114424,
+      "pickup": false,
+      "x": -242.30999755859,
+      "count": 1,
+      "z": -202.69000244141,
+      "pickable": false,
+      "chop": true,
+      "prefab": "evergreen",
+      "burning": false
+    },
+    {
+      "id": 111391,
+      "pickup": false,
+      "x": -242.88999938965,
+      "count": 1,
+      "z": -205.72999572754,
+      "pickable": true,
+      "chop": false,
+      "prefab": "sapling",
+      "burning": false
+    },
+    {
+      "id": 114498,
+      "pickup": false,
+      "x": -281.95999145508,
+      "count": 1,
+      "z": -213.19999694824,
+      "pickable": false,
+      "chop": true,
+      "prefab": "evergreen",
+      "burning": false
+    }
+  ],
+  "last_action": {
+    "id": 0,
+    "status": "ready"
+  },
+  "x": -264.53500366211
+}

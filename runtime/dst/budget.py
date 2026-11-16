@@ -5,7 +5,7 @@ from pathlib import Path
 
 def read_limits(run_dir):
     limits = {
-        'token_limit': int(os.environ.get('DST_TOKEN_LIMIT', '500000')),
+        'token_limit': int(os.environ.get('DST_TOKEN_LIMIT', '0')),
         'wall_limit_seconds': int(os.environ.get('DST_WALL_LIMIT', '1800')),
     }
     path = Path(run_dir) / 'limits.json'
@@ -14,6 +14,6 @@ def read_limits(run_dir):
         for key in limits:
             if key in data:
                 limits[key] = int(data[key])
-    if any(value <= 0 for value in limits.values()):
-        raise ValueError('Budget limits must be positive')
+    if limits['token_limit'] < 0 or limits['wall_limit_seconds'] <= 0:
+        raise ValueError('Token limit must be nonnegative; wall limit must be positive')
     return limits

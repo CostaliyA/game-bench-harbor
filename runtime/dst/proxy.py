@@ -13,9 +13,10 @@ class H(http.server.BaseHTTPRequestHandler):
    counter+=1;i=counter
   (OUT/f'{i:04d}-request.json').write_text(json.dumps(data,ensure_ascii=False,indent=2))
   token_limit=read_limits(OUT.parent)['token_limit']
-  if total>=token_limit:
+  if token_limit>0 and total>=token_limit:
    self.send_error(429,'Evaluation token budget exhausted');return
-  data['max_tokens']=min(data.get('max_tokens',4096),4096,max(1,token_limit-total))
+  data['max_tokens']=min(data.get('max_tokens',4096),4096)
+  if token_limit>0:data['max_tokens']=min(data['max_tokens'],max(1,token_limit-total))
   if data.get('stream'):data['stream_options']={'include_usage':True}
   req=urllib.request.Request('https://api.deepseek.com'+self.path,json.dumps(data).encode(),{'Content-Type':'application/json','Authorization':self.headers.get('Authorization','')})
   try:

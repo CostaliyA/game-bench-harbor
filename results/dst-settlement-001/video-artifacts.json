@@ -1,0 +1,40 @@
+[
+  {
+    "server_absolute_path": "/root/zyr/harbor-dst/steam-data/dst-settlement-v1/run-001-settlement-v1/episode.mp4",
+    "sha256": "dc44db124de729877a5b78097be9e41215290dd91d7e96e6a6a301f9d51c97be",
+    "ffprobe": {
+      "programs": [],
+      "streams": [
+        {
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "10/1"
+        }
+      ],
+      "format": {
+        "duration": "570.700000",
+        "size": "84682282"
+      }
+    },
+    "release_url": "https://github.com/CostaliyA/game-bench-harbor/releases/download/dst-settlement-v1-20261116/dst-settlement-v1-original.mp4"
+  },
+  {
+    "server_absolute_path": "/root/zyr/harbor-dst/steam-data/dst-settlement-v1/run-001-settlement-v1/episode-annotated.mp4",
+    "sha256": "0788e90c60e447a44763b73f92fd55d24eaedab733eafc6340f314dc39068ff4",
+    "ffprobe": {
+      "programs": [],
+      "streams": [
+        {
+          "width": 1280,
+          "height": 1080,
+          "r_frame_rate": "10/1"
+        }
+      ],
+      "format": {
+        "duration": "454.300000",
+        "size": "38274976"
+      }
+    },
+    "release_url": "https://github.com/CostaliyA/game-bench-harbor/releases/download/dst-settlement-v1-20261116/dst-settlement-v1-annotated.mp4"
+  }
+]
