@@ -16,7 +16,7 @@ p.components.playercontroller.draggingonground=false
 -- Exact position from the original immutable baseline/initial-observation.json.
 -- Normalize before the trial so desktop setup cannot shift its start position.
 p.Physics:Teleport(-264.53506469727,0,-197.64739990234)
-local clock=G.TheWorld.components.clock
+local clock=G.TheWorld.net.components.clock
 local saved=clock:OnSave()
 saved.cycles=0;saved.phase="day"
 saved.totaltimeinphase=saved.segs.day*G.TUNING.SEG_TIME
