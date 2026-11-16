@@ -1,0 +1,313 @@
+{
+  "started": true,
+  "terminal": true,
+  "state": {
+    "inventory": [
+      {
+        "id": 127697,
+        "pickup": false,
+        "x": -294.58224487305,
+        "count": 1,
+        "z": -191.57850646973,
+        "pickable": false,
+        "chop": false,
+        "prefab": "cutgrass",
+        "burning": false
+      },
+      {
+        "id": 128110,
+        "pickup": false,
+        "x": -294.58224487305,
+        "count": 5,
+        "z": -191.57850646973,
+        "pickable": false,
+        "chop": false,
+        "prefab": "log",
+        "burning": false
+      },
+      {
+        "id": 128383,
+        "pickup": false,
+        "x": -294.58224487305,
+        "count": 1,
+        "z": -191.57850646973,
+        "pickable": false,
+        "chop": false,
+        "prefab": "carrot",
+        "burning": false
+      },
+      {
+        "id": 128718,
+        "pickup": false,
+        "x": -294.58224487305,
+        "count": 1,
+        "z": -191.57850646973,
+        "pickable": false,
+        "chop": false,
+        "prefab": "twigs",
+        "burning": false
+      },
+      {
+        "id": 128006,
+        "equipped": true,
+        "pickup": false,
+        "x": -294.58224487305,
+        "count": 1,
+        "z": -191.57850646973,
+        "pickable": false,
+        "chop": false,
+        "prefab": "axe",
+        "burning": false
+      }
+    ],
+    "active": true,
+    "day_fraction": 0.0011069297790527,
+    "time": 503.83335961029,
+    "camera_target": 45,
+    "hunger": 75,
+    "phase": "day",
+    "sanity": 179.99444340101,
+    "camera_heading": 45,
+    "alive": true,
+    "cycle": 1,
+    "health": 150,
+    "z": -191.57850646973,
+    "recipes": {
+      "campfire": {
+        "ingredients": {
+          "cutgrass": 3,
+          "log": 2
+        },
+        "can_build": false
+      },
+      "torch": {
+        "ingredients": {
+          "cutgrass": 2,
+          "twigs": 2
+        },
+        "can_build": false
+      },
+      "axe": {
+        "ingredients": {
+          "twigs": 1,
+          "flint": 1
+        },
+        "can_build": false
+      }
+    },
+    "nearby": [
+      {
+        "id": 130932,
+        "pickup": false,
+        "x": -294,
+        "count": 1,
+        "z": -191,
+        "pickable": false,
+        "chop": false,
+        "prefab": "campfire",
+        "burning": true
+      },
+      {
+        "id": 128883,
+        "pickup": true,
+        "x": -298.76519775391,
+        "count": 1,
+        "z": -196.77781677246,
+        "pickable": false,
+        "chop": false,
+        "prefab": "seeds",
+        "burning": false
+      },
+      {
+        "id": 107663,
+        "pickup": false,
+        "x": -301.11999511719,
+        "count": 1,
+        "z": -198.05000305176,
+        "pickable": false,
+        "chop": false,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 115802,
+        "pickup": false,
+        "x": -286.23999023438,
+        "count": 1,
+        "z": -197.91999816895,
+        "pickable": false,
+        "chop": false,
+        "prefab": "grass",
+        "burning": false
+      },
+      {
+        "id": 107681,
+        "pickup": false,
+        "x": -306.67999267578,
+        "count": 1,
+        "z": -182.10000610352,
+        "pickable": false,
+        "chop": true,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 111436,
+        "pickup": false,
+        "x": -286.76000976562,
+        "count": 1,
+        "z": -178.08999633789,
+        "pickable": true,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      },
+      {
+        "id": 115778,
+        "pickup": false,
+        "x": -309.57000732422,
+        "count": 1,
+        "z": -185.19000244141,
+        "pickable": true,
+        "chop": false,
+        "prefab": "grass",
+        "burning": false
+      },
+      {
+        "id": 107668,
+        "pickup": false,
+        "x": -309.83999633789,
+        "count": 1,
+        "z": -198.82000732422,
+        "pickable": false,
+        "chop": false,
+        "prefab": "deciduoustree",
+        "burning": false
+      },
+      {
+        "id": 114500,
+        "pickup": false,
+        "x": -278.35998535156,
+        "count": 1,
+        "z": -197.24000549316,
+        "pickable": false,
+        "chop": true,
+        "prefab": "evergreen",
+        "burning": false
+      },
+      {
+        "id": 111438,
+        "pickup": false,
+        "x": -286.75,
+        "count": 1,
+        "z": -174.55000305176,
+        "pickable": true,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      },
+      {
+        "id": 115786,
+        "pickup": false,
+        "x": -302.42001342773,
+        "count": 1,
+        "z": -173.61000061035,
+        "pickable": false,
+        "chop": false,
+        "prefab": "grass",
+        "burning": false
+      },
+      {
+        "id": 127947,
+        "pickup": true,
+        "x": -271.76031494141,
+        "count": 1,
+        "z": -191.36799621582,
+        "pickable": false,
+        "chop": false,
+        "prefab": "seeds",
+        "burning": false
+      },
+      {
+        "id": 104725,
+        "pickup": false,
+        "x": -317.17001342773,
+        "count": 1,
+        "z": -185.41999816895,
+        "pickable": false,
+        "chop": false,
+        "prefab": "molehill",
+        "burning": false
+      }
+    ],
+    "last_action": {
+      "id": 95,
+      "action": "wait",
+      "status": "success"
+    },
+    "x": -294.58224487305
+  },
+  "events": [
+    {
+      "seq": 0,
+      "online": false,
+      "game_time": 23.333334550261,
+      "cycle": 0,
+      "phase": "day",
+      "type": "start",
+      "task": "dst-first-night-v1",
+      "character": "wilson"
+    },
+    {
+      "type": "milestone",
+      "name": "starter_materials",
+      "phase": "day",
+      "cycle": 0,
+      "seq": 1,
+      "game_time": 83.333337679505
+    },
+    {
+      "type": "milestone",
+      "name": "crafted_axe",
+      "phase": "day",
+      "cycle": 0,
+      "seq": 2,
+      "game_time": 86.733337856829
+    },
+    {
+      "type": "milestone",
+      "name": "gathered_logs",
+      "phase": "day",
+      "cycle": 0,
+      "seq": 3,
+      "game_time": 149.33334112167
+    },
+    {
+      "type": "milestone",
+      "name": "built_campfire",
+      "phase": "dusk",
+      "cycle": 0,
+      "seq": 4,
+      "game_time": 382.56668661907
+    },
+    {
+      "type": "milestone",
+      "name": "night_fire_30s",
+      "phase": "night",
+      "cycle": 0,
+      "seq": 5,
+      "game_time": 473.33335801959
+    },
+    {
+      "type": "dawn",
+      "game_time": 503.83335961029,
+      "phase": "day",
+      "cycle": 1,
+      "alive": true,
+      "night_fire_seconds": 60.000003129244,
+      "health": 150,
+      "hunger": 75,
+      "seq": 6
+    }
+  ]
+}

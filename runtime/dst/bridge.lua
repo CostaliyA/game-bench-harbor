@@ -66,19 +66,39 @@ local function execute(c)
 end
 _G.dst_eval_observe=observe
 _G.dst_eval_begin=function()
- assert(not active);c_eval_start();active=true;SetServerPaused(false)
+ assert(not active)
+ dofile("/home/steam/dst-eval-runtime/camera.lua")
+ Profile:SetAutopauseEnabled(false)
+ Profile:SetConsoleAutopauseEnabled(false)
+ Profile:SetCraftingAutopauseEnabled(false)
+ if ThePlayer and ThePlayer.HUD then
+  local popup=ThePlayer.HUD.dressupAvatarPopUpcreen
+  if popup then popup:Kill();ThePlayer.HUD.dressupAvatarPopUpcreen=nil end
+  ThePlayer.HUD:ClosePlayerInfoScreen()
+  ThePlayer.HUD:CloseCrafting(true)
+  for _=1,10 do
+   local screen=TheFrontEnd:GetActiveScreen()
+   if not screen or screen==ThePlayer.HUD then break end
+   TheFrontEnd:PopScreen(screen)
+  end
+ end
+ DoAutopause()
+ c_eval_start();active=true;SetServerPaused(false)
 end
 p:DoPeriodicTask(.5,function() post('/state',observe()) end)
 local querying=false
-p:DoPeriodicTask(.25,function()
- if not active or querying then return end
+p:DoStaticPeriodicTask(.25,function()
+ if querying then return end
  querying=true
  TheSim:QueryServer(url..'/command',function(body,ok)
   querying=false
   if ok and body and #body>2 then
    local good,c=pcall(json.decode,body)
    if good and c and c.action then
-    local success,err=pcall(execute,c)
+    local success,err=pcall(function()
+     if c.action=='__start' then dst_eval_begin()
+     elseif active then execute(c) end
+    end)
     if not success then last={id=c.id,status='error',error=tostring(err)} end
    end
   end

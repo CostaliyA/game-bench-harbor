@@ -4,31 +4,21 @@ lock=threading.RLock();state={};events=[];commands=[];counter=0;started=False;st
 
 def append(name,obj):
  with (OUT/name).open('a') as f:f.write(json.dumps(obj,ensure_ascii=False)+'\n')
-def console(code):
- env={**os.environ,'DISPLAY':':99'}
- def key(k):
-  subprocess.run(['xdotool','keydown',k],env=env,check=True);time.sleep(.2)
-  subprocess.run(['xdotool','keyup',k],env=env,check=True);time.sleep(.4)
- key('grave')
- subprocess.run(['xdotool','type','--clearmodifiers','--delay','15',code],env=env,check=True)
- key('Return')
 def begin():
  global started,started_at
  with lock:
   if started:return
   started=True;started_at=time.monotonic()
+  initial_game_time=state.get('time',0)
  (OUT/'start-time.txt').write_text(str(time.time()))
  log=(OUT/'video.log').open('w')
  proc=subprocess.Popen(['ffmpeg','-y','-loglevel','warning','-f','x11grab','-framerate','10','-video_size','1280x720','-i',':99','-c:v','libx264','-preset','ultrafast','-crf','26','-pix_fmt','yuv420p',str(OUT/'episode.mp4')],stdout=log,stderr=log)
  (OUT/'ffmpeg.pid').write_text(str(proc.pid))
- subprocess.run(['xdotool','keyup','q','e','Left','Right'],env={**os.environ,'DISPLAY':':99'},check=True)
- console('dofile("/home/steam/dst-eval-runtime/camera.lua"); dst_eval_begin()')
- # Console may reveal the pause menu underneath. Close its known button.
- subprocess.run(['xdotool','mousemove','640','530','mousedown','1'],env={**os.environ,'DISPLAY':':99'});time.sleep(.2)
- subprocess.run(['xdotool','mouseup','1'],env={**os.environ,'DISPLAY':':99'})
- # Fail explicitly rather than returning a stale, inactive state.
- for _ in range(100):
-  if events and state.get('active'):return
+ with lock:
+  commands.append({'action':'__start','id':0})
+  append('control-events.jsonl',{'wall_time':time.time(),'action':'start'})
+ for _ in range(150):
+  if events and state.get('active') and state.get('time',0)>initial_game_time:return
   time.sleep(.1)
  raise RuntimeError('Game did not acknowledge evaluation start')
 def terminal():return any(e['type'] in ('dawn','death','timeout','abort','invalid') for e in events)
@@ -49,6 +39,8 @@ class H(http.server.BaseHTTPRequestHandler):
    return self.reply({})
   if self.path=='/event':
    with lock:events.append(data);append('events.jsonl',data)
+   if data.get('type') in ('dawn','death','timeout','abort','invalid'):
+    (OUT/'terminal-time.txt').write_text(str(time.time()))
    return self.reply({})
   if self.path=='/observe':
    begin()

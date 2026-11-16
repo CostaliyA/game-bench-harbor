@@ -1,0 +1,13 @@
+{
+  "api_attempts": 86,
+  "completed_api_calls": 86,
+  "models_returned": [
+    "deepseek-flash"
+  ],
+  "tokens": {
+    "prompt_tokens": 2449940,
+    "completion_tokens": 22847,
+    "total_tokens": 2472787
+  },
+  "reasoning_characters": 42864
+}

@@ -1,0 +1,14 @@
+{
+  "task": "dst-first-night-v1",
+  "complete": true,
+  "terminal": "dawn",
+  "success": true,
+  "reward": 1.0,
+  "milestones": [
+    "built_campfire",
+    "crafted_axe",
+    "gathered_logs",
+    "night_fire_30s",
+    "starter_materials"
+  ]
+}

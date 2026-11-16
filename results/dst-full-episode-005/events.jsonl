@@ -1,0 +1,7 @@
+{"seq": 0, "online": false, "game_time": 23.333334550261, "cycle": 0, "phase": "day", "type": "start", "task": "dst-first-night-v1", "character": "wilson"}
+{"type": "milestone", "name": "starter_materials", "phase": "day", "cycle": 0, "seq": 1, "game_time": 83.333337679505}
+{"type": "milestone", "name": "crafted_axe", "phase": "day", "cycle": 0, "seq": 2, "game_time": 86.733337856829}
+{"type": "milestone", "name": "gathered_logs", "phase": "day", "cycle": 0, "seq": 3, "game_time": 149.33334112167}
+{"type": "milestone", "name": "built_campfire", "phase": "dusk", "cycle": 0, "seq": 4, "game_time": 382.56668661907}
+{"type": "milestone", "name": "night_fire_30s", "phase": "night", "cycle": 0, "seq": 5, "game_time": 473.33335801959}
+{"type": "dawn", "game_time": 503.83335961029, "phase": "day", "cycle": 1, "alive": true, "night_fire_seconds": 60.000003129244, "health": 150, "hunger": 75, "seq": 6}

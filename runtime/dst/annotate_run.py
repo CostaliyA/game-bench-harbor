@@ -24,7 +24,8 @@ def main():
     duration=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nw=1:nk=1',str(r/'episode.mp4')]))
     segments=[]
     budget=json.loads((r/'budget-stop.json').read_text()) if (r/'budget-stop.json').exists() else None
-    stop=min(duration,budget['elapsed_wall_s']) if budget else duration
+    terminal_path=r/'terminal-time.txt'
+    stop=min(duration,float(terminal_path.read_text())-start) if terminal_path.exists() else (min(duration,budget['elapsed_wall_s']) if budget else duration)
     def add(t,end,title,body,label='推理摘要'):
         if end>t:segments.append(dict(start=max(0,t),end=min(duration,end),title=title,body=body,label=label))
     add(0,actions[0]['wall_time']-start,'DST | DeepSeek Flash | 新一轮实测','固定朝向 45° · 原速录像 · 模型读取局部结构化状态')
@@ -36,6 +37,11 @@ def main():
         add(row['wall_time']-start,end,f'STEP {c["id"]:02d}/{len(actions)} | {c["action"]}({args})',summaries[sid])
     if budget:
         add(stop,duration,'预算终止 | 本轮动作已结束',f"累计 {budget['tokens']:,} token；达到预算上限。最终判分与异常详情见本轮报告。",'结果')
+    elif terminal_path.exists():
+        status=json.loads((r/'final-status.json').read_text())
+        event=next((e for e in reversed(status.get('events',[])) if e.get('type') in ['dawn','death','timeout','abort','invalid']),{})
+        reward=json.loads((r/'reward.json').read_text()) if (r/'reward.json').exists() else {}
+        add(stop,duration,'回合结束 | '+event.get('type','terminal'),f"reward={reward.get('reward','待评分')}；成功={reward.get('success',False)}。结果由游戏事件核验。",'结果')
     header='''[Script Info]
 ScriptType: v4.00+
 PlayResX: 1280
