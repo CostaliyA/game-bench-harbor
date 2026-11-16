@@ -52,7 +52,7 @@ G.rawset(G, "settlement_start", function()
             stock=stock, food_hunger=food, hunger_gained=hunger_gained,
             camp_intact=lab~=nil, at_camp=lab~=nil and p:GetDistanceSqToInst(lab)<=144,
             backpack_equipped=body~=nil and body.prefab=="backpack" and crafted.backpack~=nil and crafted.backpack[body.GUID]==true,
-            spear_held=spear, night_seconds=night_seconds, milestones=milestones}
+            spear_held=spear, night_seconds={first=night_seconds[0],second=night_seconds[1]}, milestones=milestones}
     end
     local function finish(kind)
         if not done then done=true; emit(kind, status()); G.SetServerPaused(true) end
