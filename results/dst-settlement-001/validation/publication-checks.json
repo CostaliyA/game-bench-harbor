@@ -1,0 +1,28 @@
+{
+  "frozen_source_files": 25,
+  "checked_repository_and_used_runtime": true,
+  "source_hash_mismatches": [],
+  "publication_files_scanned": 182,
+  "credential_pattern_matches": 0,
+  "annotated_actions": 83,
+  "annotation_segments": 85,
+  "video_sha256_matches_server": true,
+  "visual_review_frames_seconds": [
+    265.8,
+    305.5,
+    448.0
+  ],
+  "reward": {
+    "task": "dst-science-settlement-v1",
+    "complete": true,
+    "terminal": "death",
+    "success": false,
+    "reward": 0.0,
+    "milestones": []
+  },
+  "notes": [
+    "Original 570.7-second recording retained unchanged on server and released separately.",
+    "Annotated export is 454.3 seconds at original 10 FPS; only excess post-terminal pause removed.",
+    "All 83 action IDs are in order; reasoning comes from latest preceding completed API response."
+  ]
+}

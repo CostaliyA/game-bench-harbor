@@ -1,0 +1,176 @@
+{
+  "task": "dst-science-settlement-v1",
+  "complete": true,
+  "terminal": "death",
+  "success": false,
+  "reward": 0.0,
+  "milestones": [],
+  "actions": 83,
+  "action_results": 83,
+  "actions_by_type": {
+    "pickup": 9,
+    "pick": 14,
+    "wait": 36,
+    "move": 20,
+    "craft": 2,
+    "equip": 2
+  },
+  "craft_attempts": {
+    "torch": 2
+  },
+  "status_at_action_return": {
+    "success": 43,
+    "error": 12,
+    "failed": 2,
+    "running": 11,
+    "moving": 15
+  },
+  "status_note": "This is the status at tool return, not a final success count. Native actions can finish later; move status remains moving.",
+  "errors_at_return": [
+    {
+      "id": 2,
+      "status": "error",
+      "error": "[string \"cannot OLDFILEACCESSMETHOD @/home/steam/dst...\"]:87: target is not a loose ground item"
+    },
+    {
+      "id": 3,
+      "status": "failed",
+      "error": null
+    },
+    {
+      "id": 7,
+      "status": "error",
+      "error": "[string \"cannot OLDFILEACCESSMETHOD @/home/steam/dst...\"]:81: target outside observation"
+    },
+    {
+      "id": 8,
+      "status": "error",
+      "error": "[string \"cannot OLDFILEACCESSMETHOD @/home/steam/dst...\"]:81: target outside observation"
+    },
+    {
+      "id": 10,
+      "status": "error",
+      "error": "[string \"cannot OLDFILEACCESSMETHOD @/home/steam/dst...\"]:86: target is not a harvestable plant; ground items use pickup"
+    },
+    {
+      "id": 25,
+      "status": "error",
+      "error": "[string \"cannot OLDFILEACCESSMETHOD @/home/steam/dst...\"]:45: move limited to 30 units"
+    },
+    {
+      "id": 29,
+      "status": "error",
+      "error": "[string \"cannot OLDFILEACCESSMETHOD @/home/steam/dst...\"]:45: move limited to 30 units"
+    },
+    {
+      "id": 51,
+      "status": "error",
+      "error": "[string \"cannot OLDFILEACCESSMETHOD @/home/steam/dst...\"]:45: move limited to 30 units"
+    },
+    {
+      "id": 57,
+      "status": "error",
+      "error": "[string \"cannot OLDFILEACCESSMETHOD @/home/steam/dst...\"]:53: missing ingredients"
+    },
+    {
+      "id": 61,
+      "status": "error",
+      "error": "[string \"cannot OLDFILEACCESSMETHOD @/home/steam/dst...\"]:94: missing target or item"
+    },
+    {
+      "id": 63,
+      "status": "error",
+      "error": "[string \"cannot OLDFILEACCESSMETHOD @/home/steam/dst...\"]:94: missing target or item"
+    },
+    {
+      "id": 69,
+      "status": "error",
+      "error": "[string \"cannot OLDFILEACCESSMETHOD @/home/steam/dst...\"]:46: destination is not land"
+    },
+    {
+      "id": 71,
+      "status": "error",
+      "error": "[string \"cannot OLDFILEACCESSMETHOD @/home/steam/dst...\"]:46: destination is not land"
+    },
+    {
+      "id": 82,
+      "status": "failed",
+      "error": null
+    }
+  ],
+  "elapsed_wall_seconds": 446.2670292854309,
+  "elapsed_game_seconds": 439.00002289563594,
+  "sampled_travel_distance": 649.257105354768,
+  "observed_prefabs": {
+    "seeds": 10,
+    "sapling": 34,
+    "robin": 24,
+    "evergreen": 20,
+    "pumpkin_lantern": 3,
+    "multiplayer_portal": 1,
+    "grass": 32,
+    "green_mushroom": 1,
+    "crow": 10,
+    "deciduoustree": 37,
+    "flower": 37,
+    "messagebottle": 1,
+    "butterfly": 5,
+    "molehill": 2,
+    "puffin": 10,
+    "flint": 8,
+    "carrot_planted": 2,
+    "berrybush_juicy": 3,
+    "berries_juicy": 6,
+    "wobster_den": 3,
+    "bee": 5,
+    "beehive": 5,
+    "trinket_41": 1,
+    "bullkelp_plant": 1,
+    "evergreen_sparse": 6,
+    "trinket_34": 1,
+    "wanderingtrader": 1,
+    "wasphive": 2,
+    "beequeenhivegrown": 1,
+    "beequeenhive": 1,
+    "cookpot": 1,
+    "cookbook": 1,
+    "skeleton": 1,
+    "spoiled_fish_small": 1,
+    "spoiled_food": 1,
+    "cookingrecipecard": 2,
+    "halloween_ornament_10": 1,
+    "rabbithole": 1,
+    "tumbleweed": 6,
+    "marsh_tree": 1,
+    "fireflies": 1
+  },
+  "milestone_times": [],
+  "terminal_event": {
+    "night_seconds": {
+      "second": 0,
+      "first": 0
+    },
+    "spear_held": false,
+    "hunger_gained": 0,
+    "alive": false,
+    "milestones": [],
+    "food_hunger": 9.375,
+    "hunger": 81.40625,
+    "backpack_equipped": false,
+    "type": "death",
+    "game_time": 531.3666943796,
+    "phase": "night",
+    "sanity": 154.39722088688,
+    "cycle": 0,
+    "health": 0,
+    "camp_intact": false,
+    "stock": {
+      "cutgrass": 1,
+      "seeds": 2,
+      "petals": 1,
+      "flint": 4
+    },
+    "seq": 1,
+    "at_camp": false
+  }
+}

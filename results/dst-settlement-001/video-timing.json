@@ -1,0 +1,8 @@
+{
+  "actions": 83,
+  "segments": 85,
+  "original_video_duration": 570.7,
+  "annotated_video_duration": 454.2670292854309,
+  "terminal_video_seconds": 446.2670292854309,
+  "editing": "Original retained unchanged. Annotated export removes only paused footage after terminal + tail-seconds; gameplay is not sped up or trimmed."
+}

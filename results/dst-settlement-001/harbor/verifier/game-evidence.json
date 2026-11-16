@@ -1,0 +1,438 @@
+{
+  "started": true,
+  "terminal": true,
+  "state": {
+    "inventory": [
+      {
+        "cook_product": "seeds_cooked",
+        "container": "inventory",
+        "food_sanity": 0,
+        "food_health": 0,
+        "id": 108997,
+        "chop": false,
+        "mine": false,
+        "freshness": 0.96662442379754,
+        "pickup": false,
+        "x": -359.5,
+        "count": 2,
+        "z": -260.95434570312,
+        "pickable": false,
+        "food_hunger": 4.6875,
+        "prefab": "seeds",
+        "burning": false
+      },
+      {
+        "id": 126754,
+        "mine": false,
+        "container": "inventory",
+        "pickup": false,
+        "x": -359.5,
+        "count": 1,
+        "z": -260.95434570312,
+        "pickable": false,
+        "chop": false,
+        "prefab": "cutgrass",
+        "burning": false
+      },
+      {
+        "container": "inventory",
+        "food_sanity": 0,
+        "food_health": 1,
+        "id": 126982,
+        "chop": false,
+        "mine": false,
+        "freshness": 0.87311062811196,
+        "pickup": false,
+        "x": -359.5,
+        "count": 1,
+        "z": -260.95434570312,
+        "pickable": false,
+        "food_hunger": 0,
+        "prefab": "petals",
+        "burning": false
+      },
+      {
+        "id": 107009,
+        "mine": false,
+        "container": "inventory",
+        "pickup": false,
+        "x": -359.5,
+        "count": 4,
+        "z": -260.95434570312,
+        "pickable": false,
+        "chop": false,
+        "prefab": "flint",
+        "burning": false
+      }
+    ],
+    "active": true,
+    "progress": {
+      "backpack_equipped": false,
+      "camp_intact": false,
+      "stock": {
+        "cutgrass": 1,
+        "seeds": 2,
+        "petals": 1,
+        "flint": 4
+      },
+      "at_camp": false,
+      "sanity": 154.45277644533,
+      "hunger_gained": 0,
+      "night_seconds": {
+        "second": 0,
+        "first": 0
+      },
+      "alive": true,
+      "milestones": [],
+      "spear_held": false,
+      "food_hunger": 9.375,
+      "hunger": 81.40625,
+      "health": 49.95
+    },
+    "day_fraction": 0.91506562232971,
+    "time": 531.33336104453,
+    "camera_target": 45,
+    "hunger": 81.40625,
+    "phase": "night",
+    "sanity": 154.45277644533,
+    "nearby": [
+      {
+        "cook_product": "seeds_cooked",
+        "food_sanity": 0,
+        "food_health": 0,
+        "id": 128844,
+        "chop": false,
+        "mine": false,
+        "freshness": 0.99879165043787,
+        "pickup": true,
+        "x": -349.36309814453,
+        "count": 1,
+        "z": -260.32489013672,
+        "pickable": false,
+        "food_hunger": 4.6875,
+        "prefab": "seeds",
+        "burning": false
+      },
+      {
+        "cook_product": "seeds_cooked",
+        "food_sanity": 0,
+        "food_health": 0,
+        "id": 128736,
+        "chop": false,
+        "mine": false,
+        "freshness": 0.99749930188248,
+        "pickup": true,
+        "x": -364.86312866211,
+        "count": 1,
+        "z": -274.86108398438,
+        "pickable": false,
+        "food_hunger": 4.6875,
+        "prefab": "seeds",
+        "burning": false
+      },
+      {
+        "cook_product": "seeds_cooked",
+        "food_sanity": 0,
+        "food_health": 0,
+        "id": 128683,
+        "chop": false,
+        "mine": false,
+        "freshness": 0.99679746247233,
+        "pickup": true,
+        "x": -354.10180664062,
+        "count": 1,
+        "z": -275.15798950195,
+        "pickable": false,
+        "food_hunger": 4.6875,
+        "prefab": "seeds",
+        "burning": false
+      },
+      {
+        "id": 111410,
+        "mine": false,
+        "pickup": false,
+        "x": -353.98001098633,
+        "count": 1,
+        "z": -246,
+        "pickable": true,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      },
+      {
+        "id": 115792,
+        "mine": false,
+        "pickup": false,
+        "x": -345.48999023438,
+        "count": 1,
+        "z": -250.64999389648,
+        "pickable": true,
+        "chop": false,
+        "prefab": "grass",
+        "burning": false
+      },
+      {
+        "id": 115785,
+        "mine": false,
+        "pickup": false,
+        "x": -358.95999145508,
+        "count": 1,
+        "z": -242.2200012207,
+        "pickable": true,
+        "chop": false,
+        "prefab": "grass",
+        "burning": false
+      },
+      {
+        "id": 100950,
+        "mine": false,
+        "pickup": true,
+        "x": -350.70001220703,
+        "count": 1,
+        "z": -277.94000244141,
+        "pickable": false,
+        "chop": false,
+        "prefab": "fireflies",
+        "burning": false
+      },
+      {
+        "id": 117062,
+        "mine": true,
+        "pickup": false,
+        "x": -340.53799438477,
+        "count": 1,
+        "z": -263.49301147461,
+        "pickable": false,
+        "chop": false,
+        "prefab": "wobster_den",
+        "burning": false
+      },
+      {
+        "id": 105743,
+        "mine": false,
+        "pickup": false,
+        "x": -341.29998779297,
+        "count": 1,
+        "z": -269.73001098633,
+        "pickable": true,
+        "chop": false,
+        "prefab": "flower",
+        "burning": false
+      },
+      {
+        "id": 105736,
+        "mine": false,
+        "pickup": false,
+        "x": -346.30999755859,
+        "count": 1,
+        "z": -277.92001342773,
+        "pickable": true,
+        "chop": false,
+        "prefab": "flower",
+        "burning": false
+      },
+      {
+        "id": 115787,
+        "mine": false,
+        "pickup": false,
+        "x": -358.20001220703,
+        "count": 1,
+        "z": -237.91999816895,
+        "pickable": true,
+        "chop": false,
+        "prefab": "grass",
+        "burning": false
+      },
+      {
+        "id": 117061,
+        "mine": true,
+        "pickup": false,
+        "x": -336.375,
+        "count": 1,
+        "z": -258.59698486328,
+        "pickable": false,
+        "chop": false,
+        "prefab": "wobster_den",
+        "burning": false
+      },
+      {
+        "id": 115776,
+        "mine": false,
+        "pickup": false,
+        "x": -366.95001220703,
+        "count": 1,
+        "z": -237.9700012207,
+        "pickable": true,
+        "chop": false,
+        "prefab": "grass",
+        "burning": false
+      },
+      {
+        "id": 111418,
+        "mine": false,
+        "pickup": false,
+        "x": -337.7799987793,
+        "count": 1,
+        "z": -249.91999816895,
+        "pickable": true,
+        "chop": false,
+        "prefab": "sapling",
+        "burning": false
+      }
+    ],
+    "camera_heading": 45,
+    "cycle": 0,
+    "health": 49.95,
+    "z": -260.95434570312,
+    "alive": true,
+    "recipes": {
+      "researchlab": {
+        "can_prototype_here": true,
+        "known": true,
+        "can_build": false,
+        "ingredients": {
+          "log": 4,
+          "goldnugget": 1,
+          "rocks": 4
+        },
+        "has_ingredients": false
+      },
+      "campfire": {
+        "can_prototype_here": true,
+        "known": true,
+        "can_build": false,
+        "ingredients": {
+          "cutgrass": 3,
+          "log": 2
+        },
+        "has_ingredients": false
+      },
+      "pickaxe": {
+        "can_prototype_here": true,
+        "known": true,
+        "can_build": false,
+        "ingredients": {
+          "twigs": 2,
+          "flint": 2
+        },
+        "has_ingredients": false
+      },
+      "spear": {
+        "can_prototype_here": false,
+        "known": false,
+        "can_build": false,
+        "ingredients": {
+          "flint": 1,
+          "twigs": 2,
+          "rope": 1
+        },
+        "has_ingredients": false
+      },
+      "armorgrass": {
+        "can_prototype_here": true,
+        "known": true,
+        "can_build": false,
+        "ingredients": {
+          "cutgrass": 10,
+          "twigs": 2
+        },
+        "has_ingredients": false
+      },
+      "firepit": {
+        "can_prototype_here": true,
+        "known": true,
+        "can_build": false,
+        "ingredients": {
+          "rocks": 12,
+          "log": 2
+        },
+        "has_ingredients": false
+      },
+      "rope": {
+        "can_prototype_here": false,
+        "known": false,
+        "can_build": false,
+        "ingredients": {
+          "cutgrass": 3
+        },
+        "has_ingredients": false
+      },
+      "axe": {
+        "can_prototype_here": true,
+        "known": true,
+        "can_build": false,
+        "ingredients": {
+          "twigs": 1,
+          "flint": 1
+        },
+        "has_ingredients": false
+      },
+      "torch": {
+        "can_prototype_here": true,
+        "known": true,
+        "can_build": false,
+        "ingredients": {
+          "cutgrass": 2,
+          "twigs": 2
+        },
+        "has_ingredients": false
+      },
+      "backpack": {
+        "can_prototype_here": false,
+        "known": false,
+        "can_build": false,
+        "ingredients": {
+          "cutgrass": 4,
+          "twigs": 4
+        },
+        "has_ingredients": false
+      }
+    },
+    "last_action": {
+      "id": 83,
+      "action": "wait",
+      "status": "success"
+    },
+    "x": -359.5
+  },
+  "events": [
+    {
+      "seq": 0,
+      "online": false,
+      "game_time": 92.366671483964,
+      "cycle": 0,
+      "phase": "day",
+      "type": "start",
+      "task": "dst-science-settlement-v1",
+      "character": "wilson"
+    },
+    {
+      "night_seconds": {
+        "second": 0,
+        "first": 0
+      },
+      "spear_held": false,
+      "hunger_gained": 0,
+      "alive": false,
+      "milestones": [],
+      "food_hunger": 9.375,
+      "hunger": 81.40625,
+      "backpack_equipped": false,
+      "type": "death",
+      "game_time": 531.3666943796,
+      "phase": "night",
+      "sanity": 154.39722088688,
+      "cycle": 0,
+      "health": 0,
+      "camp_intact": false,
+      "stock": {
+        "cutgrass": 1,
+        "seeds": 2,
+        "petals": 1,
+        "flint": 4
+      },
+      "seq": 1,
+      "at_camp": false
+    }
+  ]
+}

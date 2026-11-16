@@ -1,0 +1,131 @@
+{
+  "mcp": {
+    "servers": {
+      "dst": {
+        "type": "local",
+        "command": [
+          "python3",
+          "/app/serve.py"
+        ]
+      }
+    }
+  },
+  "providers": {
+    "deepseek": {
+      "models": {
+        "deepseek-flash": {
+          "name": "DeepSeek V4.1 Flash",
+          "modelID": "deepseek-flash",
+          "capabilities": {
+            "tools": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ],
+            "reasoning": {
+              "supported": true
+            }
+          },
+          "limit": {
+            "context": 500000,
+            "input": 495904,
+            "output": 4096
+          },
+          "compatibility": {
+            "reasoningField": "reasoning_content"
+          },
+          "body": {
+            "thinking": {
+              "type": "enabled"
+            },
+            "reasoning_effort": "low"
+          }
+        }
+      },
+      "name": "DeepSeek",
+      "env": [
+        "DEEPSEEK_API_KEY"
+      ],
+      "settings": {
+        "baseURL": "http://172.17.0.2:18776/v1",
+        "apiKey": "{env:OPENAI_API_KEY}"
+      },
+      "package": "@opencode/ai/providers/openai-compatible"
+    }
+  },
+  "policies": [
+    {
+      "action": "tool.use",
+      "resource": "shell:*",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "read:*",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "edit:*",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "glob:*",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "grep:*",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "list:*",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "browser:*",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "webfetch:*",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "websearch:*",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "subagent:*",
+      "effect": "deny"
+    },
+    {
+      "action": "mcp.use",
+      "resource": "*",
+      "effect": "deny"
+    },
+    {
+      "action": "mcp.use",
+      "resource": "dst",
+      "effect": "allow"
+    },
+    {
+      "action": "tool.use",
+      "resource": "websearch:*",
+      "effect": "deny"
+    },
+    {
+      "action": "tool.use",
+      "resource": "webfetch:*",
+      "effect": "deny"
+    }
+  ]
+}

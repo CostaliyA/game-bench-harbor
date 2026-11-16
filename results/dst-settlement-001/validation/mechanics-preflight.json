@@ -1,0 +1,485 @@
+[
+  {
+    "name": "natural_resources_within_250",
+    "data": {
+      "carrot_planted": {
+        "count": 35,
+        "nearest": 46.541354393205
+      },
+      "rock2": {
+        "count": 1,
+        "nearest": 154.43433380405
+      },
+      "flint": {
+        "count": 27,
+        "nearest": 50.497565293457
+      }
+    }
+  },
+  {
+    "name": "action",
+    "data": {
+      "command": {
+        "recipe": "pickaxe",
+        "action": "craft",
+        "id": 1
+      },
+      "ok": true
+    }
+  },
+  {
+    "name": "action",
+    "data": {
+      "command": {
+        "recipe": "researchlab",
+        "x": -260.53500366211,
+        "action": "craft",
+        "z": -197.64700317383,
+        "id": 2
+      },
+      "ok": true
+    }
+  },
+  {
+    "name": "pickaxe",
+    "data": {
+      "inventory": {
+        "twigs": {
+          "count": 28,
+          "container": "inventory"
+        },
+        "log": {
+          "count": 20,
+          "container": "inventory"
+        },
+        "goldnugget": {
+          "count": 3,
+          "container": "inventory"
+        },
+        "flint": {
+          "count": 8,
+          "container": "inventory"
+        },
+        "cutgrass": {
+          "count": 40,
+          "container": "inventory"
+        },
+        "rocks": {
+          "count": 40,
+          "container": "inventory"
+        },
+        "pickaxe": {
+          "equipped": true,
+          "count": 1,
+          "container": "inventory"
+        },
+        "berries": {
+          "count": 5,
+          "container": "inventory"
+        }
+      },
+      "x": -264.53500366211,
+      "z": -197.64700317383,
+      "structures": [],
+      "last_action": {
+        "id": 1,
+        "action": "craft",
+        "status": "success"
+      }
+    }
+  },
+  {
+    "name": "action",
+    "data": {
+      "command": {
+        "id": 3,
+        "x": -261.53500366211,
+        "action": "move",
+        "z": -197.64700317383
+      },
+      "ok": true
+    }
+  },
+  {
+    "name": "science_machine",
+    "data": {
+      "inventory": {
+        "twigs": {
+          "count": 28,
+          "container": "inventory"
+        },
+        "log": {
+          "count": 16,
+          "container": "inventory"
+        },
+        "goldnugget": {
+          "count": 2,
+          "container": "inventory"
+        },
+        "flint": {
+          "count": 8,
+          "container": "inventory"
+        },
+        "cutgrass": {
+          "count": 40,
+          "container": "inventory"
+        },
+        "rocks": {
+          "count": 36,
+          "container": "inventory"
+        },
+        "pickaxe": {
+          "equipped": true,
+          "count": 1,
+          "container": "inventory"
+        },
+        "berries": {
+          "count": 5,
+          "container": "inventory"
+        }
+      },
+      "x": -261.45452880859,
+      "z": -197.64700317383,
+      "structures": [
+        "researchlab"
+      ],
+      "last_action": {
+        "id": 2,
+        "action": "craft",
+        "status": "success"
+      }
+    }
+  },
+  {
+    "name": "action",
+    "data": {
+      "command": {
+        "recipe": "backpack",
+        "action": "craft",
+        "id": 4
+      },
+      "ok": true
+    }
+  },
+  {
+    "name": "backpack",
+    "data": {
+      "inventory": {
+        "log": {
+          "count": 16,
+          "container": "inventory"
+        },
+        "twigs": {
+          "count": 24,
+          "container": "inventory"
+        },
+        "pickaxe": {
+          "equipped": true,
+          "count": 1,
+          "container": "inventory"
+        },
+        "berries": {
+          "count": 5,
+          "container": "inventory"
+        },
+        "goldnugget": {
+          "count": 2,
+          "container": "inventory"
+        },
+        "flint": {
+          "count": 8,
+          "container": "inventory"
+        },
+        "cutgrass": {
+          "count": 36,
+          "container": "inventory"
+        },
+        "backpack": {
+          "equipped": true,
+          "count": 1,
+          "container": "inventory"
+        },
+        "rocks": {
+          "count": 36,
+          "container": "inventory"
+        }
+      },
+      "x": -261.45452880859,
+      "z": -197.64700317383,
+      "structures": [
+        "researchlab"
+      ],
+      "last_action": {
+        "id": 4,
+        "action": "craft",
+        "status": "success"
+      }
+    }
+  },
+  {
+    "name": "action",
+    "data": {
+      "command": {
+        "recipe": "rope",
+        "action": "craft",
+        "id": 5
+      },
+      "ok": true
+    }
+  },
+  {
+    "name": "action",
+    "data": {
+      "command": {
+        "recipe": "spear",
+        "action": "craft",
+        "id": 6
+      },
+      "ok": true
+    }
+  },
+  {
+    "name": "spear",
+    "data": {
+      "inventory": {
+        "log": {
+          "count": 16,
+          "container": "inventory"
+        },
+        "twigs": {
+          "count": 22,
+          "container": "inventory"
+        },
+        "pickaxe": {
+          "equipped": true,
+          "count": 1,
+          "container": "inventory"
+        },
+        "berries": {
+          "count": 5,
+          "container": "inventory"
+        },
+        "goldnugget": {
+          "count": 2,
+          "container": "inventory"
+        },
+        "flint": {
+          "count": 7,
+          "container": "inventory"
+        },
+        "cutgrass": {
+          "count": 33,
+          "container": "inventory"
+        },
+        "backpack": {
+          "equipped": true,
+          "count": 1,
+          "container": "inventory"
+        },
+        "spear": {
+          "equipped": false,
+          "count": 1,
+          "container": "inventory"
+        },
+        "rocks": {
+          "count": 36,
+          "container": "inventory"
+        }
+      },
+      "x": -261.45452880859,
+      "z": -197.64700317383,
+      "structures": [
+        "researchlab"
+      ],
+      "last_action": {
+        "id": 6,
+        "action": "craft",
+        "status": "success"
+      }
+    }
+  },
+  {
+    "name": "action",
+    "data": {
+      "command": {
+        "recipe": "firepit",
+        "x": -260.53500366211,
+        "action": "craft",
+        "z": -192.64700317383,
+        "id": 7
+      },
+      "ok": true
+    }
+  },
+  {
+    "name": "firepit",
+    "data": {
+      "inventory": {
+        "log": {
+          "count": 14,
+          "container": "inventory"
+        },
+        "twigs": {
+          "count": 22,
+          "container": "inventory"
+        },
+        "pickaxe": {
+          "equipped": true,
+          "count": 1,
+          "container": "inventory"
+        },
+        "berries": {
+          "count": 5,
+          "container": "inventory"
+        },
+        "goldnugget": {
+          "count": 2,
+          "container": "inventory"
+        },
+        "flint": {
+          "count": 7,
+          "container": "inventory"
+        },
+        "cutgrass": {
+          "count": 33,
+          "container": "inventory"
+        },
+        "backpack": {
+          "equipped": true,
+          "count": 1,
+          "container": "inventory"
+        },
+        "spear": {
+          "equipped": false,
+          "count": 1,
+          "container": "inventory"
+        },
+        "rocks": {
+          "count": 24,
+          "container": "inventory"
+        }
+      },
+      "x": -260.68389892578,
+      "z": -193.45141601562,
+      "structures": [
+        "firepit",
+        "researchlab"
+      ],
+      "last_action": {
+        "id": 7,
+        "action": "craft",
+        "status": "success"
+      }
+    }
+  },
+  {
+    "name": "action",
+    "data": {
+      "command": {
+        "target": 126469,
+        "action": "equip",
+        "id": 8
+      },
+      "ok": true
+    }
+  },
+  {
+    "name": "action",
+    "data": {
+      "command": {
+        "target": 126694,
+        "action": "mine",
+        "id": 9
+      },
+      "ok": true
+    }
+  },
+  {
+    "name": "action",
+    "data": {
+      "command": {
+        "target": 126652,
+        "id": 10,
+        "action": "cook",
+        "item": 126426
+      },
+      "ok": true
+    }
+  },
+  {
+    "name": "mine",
+    "data": {
+      "last_action": {
+        "id": 9,
+        "action": "mine",
+        "status": "success"
+      },
+      "workleft": 5
+    }
+  },
+  {
+    "name": "cook_and_overflow",
+    "data": {
+      "inventory": {
+        "log": {
+          "count": 14,
+          "container": "inventory"
+        },
+        "twigs": {
+          "count": 22,
+          "container": "inventory"
+        },
+        "pickaxe": {
+          "equipped": true,
+          "count": 1,
+          "container": "inventory"
+        },
+        "spear": {
+          "equipped": false,
+          "count": 1,
+          "container": "inventory"
+        },
+        "berries_cooked": {
+          "count": 1,
+          "container": "inventory"
+        },
+        "goldnugget": {
+          "count": 2,
+          "container": "inventory"
+        },
+        "flint": {
+          "count": 7,
+          "container": "inventory"
+        },
+        "cutgrass": {
+          "count": 33,
+          "container": "inventory"
+        },
+        "berries": {
+          "count": 4,
+          "container": "backpack"
+        },
+        "backpack": {
+          "equipped": true,
+          "count": 1,
+          "container": "inventory"
+        },
+        "rocks": {
+          "count": 24,
+          "container": "inventory"
+        }
+      },
+      "x": -260.35745239258,
+      "z": -193.4753112793,
+      "structures": [
+        "firepit",
+        "researchlab"
+      ],
+      "last_action": {
+        "id": 10,
+        "action": "cook",
+        "status": "success"
+      }
+    }
+  }
+]

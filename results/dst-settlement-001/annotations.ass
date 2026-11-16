@@ -1,0 +1,433 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 1080
+WrapStyle: 2
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Main,Noto Sans CJK SC,23,&H00FFFFFF,&H00FFFFFF,&H00101820,&H00101820,0,0,0,0,100,100,0,0,1,0,0,7,28,28,20,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:08.44,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}DST | Science Settlement v1 | DeepSeek Flash
+Dialogue: 0,0:00:00.00,0:00:08.44,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}固定任务
+Dialogue: 0,0:00:00.00,0:00:08.44,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}目标：第三天清晨建成科学营地，保留装备、食物和燃料。500k 配置窗口，实时世界，正式开始后无人工游戏操\N作。
+Dialogue: 0,0:00:00.00,0:00:08.44,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:00:08.44,0:00:10.46,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 001/83 | pickup(target=108997, seconds=2)
+Dialogue: 0,0:00:08.44,0:00:10.46,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 6 reasoning 摘要
+Dialogue: 0,0:00:08.44,0:00:10.46,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}先核算工具、科学机器、背包、长矛和营地所需材料；附近未见矿石，打算先收集物资，再寻找岩石区域。
+Dialogue: 0,0:00:08.44,0:00:10.46,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 149.1  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:00:08.44,0:00:10.46,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:00:10.46,0:00:12.47,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 002/83 | pickup(target=126522, seconds=2)
+Dialogue: 0,0:00:10.46,0:00:12.47,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 6 reasoning 摘要
+Dialogue: 0,0:00:10.46,0:00:12.47,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}先核算工具、科学机器、背包、长矛和营地所需材料；附近未见矿石，打算先收集物资，再寻找岩石区域。
+Dialogue: 0,0:00:10.46,0:00:12.47,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 148.8  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:00:10.46,0:00:12.47,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:00:12.47,0:00:14.48,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 003/83 | pickup(target=126500, seconds=2)
+Dialogue: 0,0:00:12.47,0:00:14.48,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 6 reasoning 摘要
+Dialogue: 0,0:00:12.47,0:00:14.48,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}先核算工具、科学机器、背包、长矛和营地所需材料；附近未见矿石，打算先收集物资，再寻找岩石区域。
+Dialogue: 0,0:00:12.47,0:00:14.48,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 148.4  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:00:12.47,0:00:14.48,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:00:14.48,0:00:20.99,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 004/83 | pickup(target=108999, seconds=2)
+Dialogue: 0,0:00:14.48,0:00:20.99,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 6 reasoning 摘要
+Dialogue: 0,0:00:14.48,0:00:20.99,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}先核算工具、科学机器、背包、长矛和营地所需材料；附近未见矿石，打算先收集物资，再寻找岩石区域。
+Dialogue: 0,0:00:14.48,0:00:20.99,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 148.1  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:00:14.48,0:00:20.99,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:00:20.99,0:00:23.00,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 005/83 | pick(target=111437, seconds=2)
+Dialogue: 0,0:00:20.99,0:00:23.00,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 8 reasoning 原文摘录
+Dialogue: 0,0:00:20.99,0:00:23.00,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Inventory shows one stack of seeds count 2 (picked both). Robins are live birds, flew off. Crow near\Nby. Good. Now collect twigs from saplings: (-262,-202) and (-286.8,-178.1). Also grass at (-286.2,-1\N97.9) and green mushroom (-242.4,-194.9)…
+Dialogue: 0,0:00:20.99,0:00:23.00,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 147.0  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:00:20.99,0:00:23.00,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:00:23.00,0:00:25.02,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 006/83 | pick(target=115802, seconds=2)
+Dialogue: 0,0:00:23.00,0:00:25.02,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 8 reasoning 原文摘录
+Dialogue: 0,0:00:23.00,0:00:25.02,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Inventory shows one stack of seeds count 2 (picked both). Robins are live birds, flew off. Crow near\Nby. Good. Now collect twigs from saplings: (-262,-202) and (-286.8,-178.1). Also grass at (-286.2,-1\N97.9) and green mushroom (-242.4,-194.9)…
+Dialogue: 0,0:00:23.00,0:00:25.02,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 146.7  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:00:23.00,0:00:25.02,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:00:25.02,0:00:27.03,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 007/83 | pick(target=111436, seconds=2)
+Dialogue: 0,0:00:25.02,0:00:27.03,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 8 reasoning 原文摘录
+Dialogue: 0,0:00:25.02,0:00:27.03,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Inventory shows one stack of seeds count 2 (picked both). Robins are live birds, flew off. Crow near\Nby. Good. Now collect twigs from saplings: (-262,-202) and (-286.8,-178.1). Also grass at (-286.2,-1\N97.9) and green mushroom (-242.4,-194.9)…
+Dialogue: 0,0:00:25.02,0:00:27.03,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 146.4  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:00:25.02,0:00:27.03,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:00:27.03,0:00:31.10,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 008/83 | pick(target=117090, seconds=2)
+Dialogue: 0,0:00:27.03,0:00:31.10,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 8 reasoning 原文摘录
+Dialogue: 0,0:00:27.03,0:00:31.10,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Inventory shows one stack of seeds count 2 (picked both). Robins are live birds, flew off. Crow near\Nby. Good. Now collect twigs from saplings: (-262,-202) and (-286.8,-178.1). Also grass at (-286.2,-1\N97.9) and green mushroom (-242.4,-194.9)…
+Dialogue: 0,0:00:27.03,0:00:31.10,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 146.1  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:00:27.03,0:00:31.10,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:00:31.10,0:00:38.73,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 009/83 | wait(seconds=5.00)
+Dialogue: 0,0:00:31.10,0:00:38.73,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 9 reasoning 原文摘录
+Dialogue: 0,0:00:31.10,0:00:38.73,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Interesting: picking seems delayed; actions maybe still running and returns early. It picks eventual\Nly. Inventory after 4 picks: seeds 2, cutgrass 1. It seems picking native work takes time, and each \Ncall moves toward target then starts? Po…
+Dialogue: 0,0:00:31.10,0:00:38.73,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 145.5  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:00:31.10,0:00:38.73,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:00:38.73,0:00:44.03,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 010/83 | pick(target=115802, seconds=2)
+Dialogue: 0,0:00:38.73,0:00:44.03,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 10 reasoning 原文摘录
+Dialogue: 0,0:00:38.73,0:00:44.03,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Hmm picks didn't take: grass still pickable, saplings still pickable. Maybe "pick" action name is wr\Nong? Tool description: actions: move, pick plants... The action might be "pick" with target. But not\Nhing happened. Maybe need to be closer? …
+Dialogue: 0,0:00:38.73,0:00:44.03,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 144.4  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:00:38.73,0:00:44.03,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:00:44.03,0:00:47.45,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 011/83 | pick(target=111436, seconds=2)
+Dialogue: 0,0:00:44.03,0:00:47.45,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 11 reasoning 原文摘录
+Dialogue: 0,0:00:44.03,0:00:47.45,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Wait — the grass was already picked! Because previous "pick" action did work; when we observed after\N, the grass at 115802 was still pickable? Actually then the 4th pick (mushroom) showed cutgrass:1, s\No grass was picked. But the saplings sti…
+Dialogue: 0,0:00:44.03,0:00:47.45,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 143.4  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:00:44.03,0:00:47.45,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:00:47.45,0:00:53.41,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 012/83 | wait(seconds=4.00)
+Dialogue: 0,0:00:47.45,0:00:53.41,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 12 reasoning 原文摘录
+Dialogue: 0,0:00:47.45,0:00:53.41,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}last_action missing? It returned undefined maybe because action in progress. Let's wait and observe.
+Dialogue: 0,0:00:47.45,0:00:53.41,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 143.0  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:00:47.45,0:00:53.41,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:00:53.41,0:00:55.42,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 013/83 | pick(target=111438, seconds=2)
+Dialogue: 0,0:00:53.41,0:00:55.42,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 13 reasoning 原文摘录
+Dialogue: 0,0:00:53.41,0:00:55.42,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Sapling picked gave twigs 1. Sapling 111438 at (-287,-175) still pickable nearby. Need 4+ twigs tota\Nl eventually (for backpack 4, spear 2, axe 1, pickaxe 2, torch 2...). Gather all. Let me pick 111438\N now, wait, then also grab nearby grass …
+Dialogue: 0,0:00:53.41,0:00:55.42,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 142.0  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:00:53.41,0:00:55.42,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:00:55.42,0:01:00.57,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 014/83 | wait(seconds=3.00)
+Dialogue: 0,0:00:55.42,0:01:00.57,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 13 reasoning 原文摘录
+Dialogue: 0,0:00:55.42,0:01:00.57,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Sapling picked gave twigs 1. Sapling 111438 at (-287,-175) still pickable nearby. Need 4+ twigs tota\Nl eventually (for backpack 4, spear 2, axe 1, pickaxe 2, torch 2...). Gather all. Let me pick 111438\N now, wait, then also grab nearby grass …
+Dialogue: 0,0:00:55.42,0:01:00.57,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 141.7  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:00:55.42,0:01:00.57,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:00.57,0:01:04.86,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 015/83 | move(x=-302.00, z=-174.00, seconds=2)
+Dialogue: 0,0:01:00.57,0:01:04.86,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 14 reasoning 原文摘录
+Dialogue: 0,0:01:00.57,0:01:04.86,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Twigs 2. Now grass at (-302,-174) and (-310,-185) — about 15 and 25 units. Move to -303,-175 and pic\Nk. Move action up to 30 units. Let's move then pick. Actually could pick grass and flower. Food: flo\Nwer gives petals (sanity food). Not need…
+Dialogue: 0,0:01:00.57,0:01:04.86,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 140.9  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:00.57,0:01:04.86,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:04.86,0:01:06.87,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 016/83 | pick(target=115786, seconds=2)
+Dialogue: 0,0:01:04.86,0:01:06.87,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 15 reasoning 原文摘录
+Dialogue: 0,0:01:04.86,0:01:06.87,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Moved to -294.5 (partial). Good, more grass to the east. Pick grass 115786, flower, then grass 11577\N8, 115773. Also seeds pickup 126866. Need lots of cutgrass: 6 reserve + 3 rope + 4 backpack + 2 torc\Nh + 3 campfire = 18+. That's many grass …
+Dialogue: 0,0:01:04.86,0:01:06.87,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 140.2  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:04.86,0:01:06.87,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:06.87,0:01:08.89,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 017/83 | wait(seconds=2.00)
+Dialogue: 0,0:01:06.87,0:01:08.89,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 15 reasoning 原文摘录
+Dialogue: 0,0:01:06.87,0:01:08.89,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Moved to -294.5 (partial). Good, more grass to the east. Pick grass 115786, flower, then grass 11577\N8, 115773. Also seeds pickup 126866. Need lots of cutgrass: 6 reserve + 3 rope + 4 backpack + 2 torc\Nh + 3 campfire = 18+. That's many grass …
+Dialogue: 0,0:01:06.87,0:01:08.89,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 139.8  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:06.87,0:01:08.89,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:08.89,0:01:10.90,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 018/83 | pick(target=105522, seconds=2)
+Dialogue: 0,0:01:08.89,0:01:10.90,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 15 reasoning 原文摘录
+Dialogue: 0,0:01:08.89,0:01:10.90,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Moved to -294.5 (partial). Good, more grass to the east. Pick grass 115786, flower, then grass 11577\N8, 115773. Also seeds pickup 126866. Need lots of cutgrass: 6 reserve + 3 rope + 4 backpack + 2 torc\Nh + 3 campfire = 18+. That's many grass …
+Dialogue: 0,0:01:08.89,0:01:10.90,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 139.5  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:08.89,0:01:10.90,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:10.90,0:01:12.92,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 019/83 | wait(seconds=2.00)
+Dialogue: 0,0:01:10.90,0:01:12.92,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 15 reasoning 原文摘录
+Dialogue: 0,0:01:10.90,0:01:12.92,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Moved to -294.5 (partial). Good, more grass to the east. Pick grass 115786, flower, then grass 11577\N8, 115773. Also seeds pickup 126866. Need lots of cutgrass: 6 reserve + 3 rope + 4 backpack + 2 torc\Nh + 3 campfire = 18+. That's many grass …
+Dialogue: 0,0:01:10.90,0:01:12.92,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 139.4  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:10.90,0:01:12.92,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:12.92,0:01:14.93,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 020/83 | pick(target=115778, seconds=2)
+Dialogue: 0,0:01:12.92,0:01:14.93,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 15 reasoning 原文摘录
+Dialogue: 0,0:01:12.92,0:01:14.93,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Moved to -294.5 (partial). Good, more grass to the east. Pick grass 115786, flower, then grass 11577\N8, 115773. Also seeds pickup 126866. Need lots of cutgrass: 6 reserve + 3 rope + 4 backpack + 2 torc\Nh + 3 campfire = 18+. That's many grass …
+Dialogue: 0,0:01:12.92,0:01:14.93,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 138.9  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:12.92,0:01:14.93,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:14.93,0:01:18.63,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 021/83 | wait(seconds=2.00)
+Dialogue: 0,0:01:14.93,0:01:18.63,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 15 reasoning 原文摘录
+Dialogue: 0,0:01:14.93,0:01:18.63,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Moved to -294.5 (partial). Good, more grass to the east. Pick grass 115786, flower, then grass 11577\N8, 115773. Also seeds pickup 126866. Need lots of cutgrass: 6 reserve + 3 rope + 4 backpack + 2 torc\Nh + 3 campfire = 18+. That's many grass …
+Dialogue: 0,0:01:14.93,0:01:18.63,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 138.6  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:14.93,0:01:18.63,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:18.63,0:01:28.21,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 022/83 | wait(seconds=3.00)
+Dialogue: 0,0:01:18.63,0:01:28.21,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 16 reasoning 原文摘录
+Dialogue: 0,0:01:18.63,0:01:28.21,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Grass 115778 not picked yet? inventory cutgrass 2. It may need more than 2s. The grass plant harvest\N has an animation. Let's wait more. Also note that maybe "pick" only harvests one at a time and ther\Ne's cooldown. Let's wait 3s and observe.
+Dialogue: 0,0:01:18.63,0:01:28.21,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 138.1  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:18.63,0:01:28.21,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:28.21,0:01:32.01,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 023/83 | move(x=-335.00, z=-185.00, seconds=2)
+Dialogue: 0,0:01:28.21,0:01:32.01,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 17 reasoning 原文摘录
+Dialogue: 0,0:01:28.21,0:01:32.01,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}More grass and saplings to the east/southeast. Still no rocks/flint. We need to explore a lot. Maybe\N there are boulders further. Let's harvest this cluster: grass 115773, sapling 111409, grass 115794,\N 115775, saplings 111407,111417, grass 1…
+Dialogue: 0,0:01:28.21,0:01:32.01,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 136.6  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:28.21,0:01:32.01,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:32.01,0:01:40.45,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 024/83 | move(x=-315.00, z=-203.00, seconds=2)
+Dialogue: 0,0:01:32.01,0:01:40.45,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 18 reasoning 原文摘录
+Dialogue: 0,0:01:32.01,0:01:40.45,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Flint at (-315,-203) pickup! Only 18 away. Also carrots planted (pickable) at -325,-206 — food. Need\N more flint (2 for pickaxe, 1 for axe, 1 for spear = 4). Let's grab flint first, then search for bou\Nlders. Move to flint and pick up. Also p…
+Dialogue: 0,0:01:32.01,0:01:40.45,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 135.9  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:32.01,0:01:40.45,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:40.45,0:01:42.46,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 025/83 | move(x=-343.00, z=-190.00, seconds=2)
+Dialogue: 0,0:01:40.45,0:01:42.46,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 19 reasoning 摘要
+Dialogue: 0,0:01:40.45,0:01:42.46,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}实际移动轨迹与目标方向不一致，怀疑坐标解释或碰撞绕路，尝试继续移动来判断原因。
+Dialogue: 0,0:01:40.45,0:01:42.46,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 134.7  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:40.45,0:01:42.46,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:42.46,0:01:50.77,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 026/83 | wait(seconds=6.00)
+Dialogue: 0,0:01:42.46,0:01:50.77,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 19 reasoning 摘要
+Dialogue: 0,0:01:42.46,0:01:50.77,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}实际移动轨迹与目标方向不一致，怀疑坐标解释或碰撞绕路，尝试继续移动来判断原因。
+Dialogue: 0,0:01:42.46,0:01:50.77,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 134.4  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:42.46,0:01:50.77,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:50.77,0:01:52.78,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 027/83 | pickup(target=107009, seconds=2)
+Dialogue: 0,0:01:50.77,0:01:52.78,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 20 reasoning 原文摘录
+Dialogue: 0,0:01:50.77,0:01:52.78,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Again it went to -315,-203 (the earlier target!) not -343,-190. So the move from earlier actually wa\Ns heading to -315,-203 after all but interrupted by next call? Hmm now at -315.1,-202.9, and flint 1\N07009 right here. Interesting: the earli…
+Dialogue: 0,0:01:50.77,0:01:52.78,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 133.1  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:50.77,0:01:52.78,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:52.78,0:01:56.87,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 028/83 | wait(seconds=2.00)
+Dialogue: 0,0:01:52.78,0:01:56.87,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 20 reasoning 原文摘录
+Dialogue: 0,0:01:52.78,0:01:56.87,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Again it went to -315,-203 (the earlier target!) not -343,-190. So the move from earlier actually wa\Ns heading to -315,-203 after all but interrupted by next call? Hmm now at -315.1,-202.9, and flint 1\N07009 right here. Interesting: the earli…
+Dialogue: 0,0:01:52.78,0:01:56.87,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 132.8  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:52.78,0:01:56.87,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:56.87,0:01:58.88,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 029/83 | move(x=-345.00, z=-205.00, seconds=2)
+Dialogue: 0,0:01:56.87,0:01:58.88,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 21 reasoning 原文摘录
+Dialogue: 0,0:01:56.87,0:01:58.88,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Flint 1. Need 3 more flint minimum, and rocks 16 total, gold 1, logs. Time 205. Need to hurry. Key u\Nncertainty: where is rocky biome? Let's explore. Move options: east/southeast. We'll do long moves w\Nith waits and observe. Since moves take …
+Dialogue: 0,0:01:56.87,0:01:58.88,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 132.2  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:56.87,0:01:58.88,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:01:58.88,0:02:09.79,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 030/83 | wait(seconds=9.00)
+Dialogue: 0,0:01:58.88,0:02:09.79,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 21 reasoning 原文摘录
+Dialogue: 0,0:01:58.88,0:02:09.79,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Flint 1. Need 3 more flint minimum, and rocks 16 total, gold 1, logs. Time 205. Need to hurry. Key u\Nncertainty: where is rocky biome? Let's explore. Move options: east/southeast. We'll do long moves w\Nith waits and observe. Since moves take …
+Dialogue: 0,0:01:58.88,0:02:09.79,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 131.9  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:01:58.88,0:02:09.79,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:02:09.79,0:02:11.80,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 031/83 | move(x=-340.00, z=-210.00, seconds=2)
+Dialogue: 0,0:02:09.79,0:02:11.80,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 22 reasoning 原文摘录
+Dialogue: 0,0:02:09.79,0:02:11.80,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Didn't move! Position unchanged. Maybe the move(-345,-205) was rejected because >30 units? distance \Nfrom (-315,-203) to (-345,-205)=30.07, slightly over 30. So invalid/no movement. Important: within 3\N0 strictly. Use smaller steps. Let's mov…
+Dialogue: 0,0:02:09.79,0:02:11.80,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 130.2  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:02:09.79,0:02:11.80,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:02:11.80,0:02:23.87,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 032/83 | wait(seconds=9.00)
+Dialogue: 0,0:02:11.80,0:02:23.87,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 22 reasoning 原文摘录
+Dialogue: 0,0:02:11.80,0:02:23.87,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Didn't move! Position unchanged. Maybe the move(-345,-205) was rejected because >30 units? distance \Nfrom (-315,-203) to (-345,-205)=30.07, slightly over 30. So invalid/no movement. Important: within 3\N0 strictly. Use smaller steps. Let's mov…
+Dialogue: 0,0:02:11.80,0:02:23.87,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 129.8  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:02:11.80,0:02:23.87,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:02:23.87,0:02:25.88,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 033/83 | move(x=-343.00, z=-190.00, seconds=2)
+Dialogue: 0,0:02:23.87,0:02:25.88,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 23 reasoning 原文摘录
+Dialogue: 0,0:02:23.87,0:02:25.88,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Now three flints in view: -355,-203; -358,-221; -337,-235; plus -343,-190. Also berrybush_juicy at -\N347,-221 and -351,-218 — great food! And carrots. Still no boulders (mine). Need rocks. Likely rocky\N biome further south/east. Since flint i…
+Dialogue: 0,0:02:23.87,0:02:25.88,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 128.1  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:02:23.87,0:02:25.88,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:02:25.88,0:02:31.90,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 034/83 | wait(seconds=6.00)
+Dialogue: 0,0:02:25.88,0:02:31.90,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 23 reasoning 原文摘录
+Dialogue: 0,0:02:25.88,0:02:31.90,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Now three flints in view: -355,-203; -358,-221; -337,-235; plus -343,-190. Also berrybush_juicy at -\N347,-221 and -351,-218 — great food! And carrots. Still no boulders (mine). Need rocks. Likely rocky\N biome further south/east. Since flint i…
+Dialogue: 0,0:02:25.88,0:02:31.90,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 127.8  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:02:25.88,0:02:31.90,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:02:31.90,0:02:33.91,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 035/83 | pickup(target=107019, seconds=2)
+Dialogue: 0,0:02:31.90,0:02:33.91,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 23 reasoning 原文摘录
+Dialogue: 0,0:02:31.90,0:02:33.91,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Now three flints in view: -355,-203; -358,-221; -337,-235; plus -343,-190. Also berrybush_juicy at -\N347,-221 and -351,-218 — great food! And carrots. Still no boulders (mine). Need rocks. Likely rocky\N biome further south/east. Since flint i…
+Dialogue: 0,0:02:31.90,0:02:33.91,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 126.9  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:02:31.90,0:02:33.91,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:02:33.91,0:02:35.92,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 036/83 | wait(seconds=2.00)
+Dialogue: 0,0:02:33.91,0:02:35.92,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 23 reasoning 原文摘录
+Dialogue: 0,0:02:33.91,0:02:35.92,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Now three flints in view: -355,-203; -358,-221; -337,-235; plus -343,-190. Also berrybush_juicy at -\N347,-221 and -351,-218 — great food! And carrots. Still no boulders (mine). Need rocks. Likely rocky\N biome further south/east. Since flint i…
+Dialogue: 0,0:02:33.91,0:02:35.92,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 126.6  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:02:33.91,0:02:35.92,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:02:35.92,0:02:37.94,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 037/83 | move(x=-355.00, z=-203.00, seconds=2)
+Dialogue: 0,0:02:35.92,0:02:37.94,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 23 reasoning 原文摘录
+Dialogue: 0,0:02:35.92,0:02:37.94,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Now three flints in view: -355,-203; -358,-221; -337,-235; plus -343,-190. Also berrybush_juicy at -\N347,-221 and -351,-218 — great food! And carrots. Still no boulders (mine). Need rocks. Likely rocky\N biome further south/east. Since flint i…
+Dialogue: 0,0:02:35.92,0:02:37.94,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 126.4  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:02:35.92,0:02:37.94,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:02:37.94,0:02:43.95,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 038/83 | wait(seconds=6.00)
+Dialogue: 0,0:02:37.94,0:02:43.95,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 23 reasoning 原文摘录
+Dialogue: 0,0:02:37.94,0:02:43.95,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Now three flints in view: -355,-203; -358,-221; -337,-235; plus -343,-190. Also berrybush_juicy at -\N347,-221 and -351,-218 — great food! And carrots. Still no boulders (mine). Need rocks. Likely rocky\N biome further south/east. Since flint i…
+Dialogue: 0,0:02:37.94,0:02:43.95,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 126.1  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:02:37.94,0:02:43.95,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:02:43.95,0:02:45.96,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 039/83 | pickup(target=107015, seconds=2)
+Dialogue: 0,0:02:43.95,0:02:45.96,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 23 reasoning 原文摘录
+Dialogue: 0,0:02:43.95,0:02:45.96,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Now three flints in view: -355,-203; -358,-221; -337,-235; plus -343,-190. Also berrybush_juicy at -\N347,-221 and -351,-218 — great food! And carrots. Still no boulders (mine). Need rocks. Likely rocky\N biome further south/east. Since flint i…
+Dialogue: 0,0:02:43.95,0:02:45.96,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 125.2  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:02:43.95,0:02:45.96,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:02:45.96,0:02:53.37,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 040/83 | wait(seconds=2.00)
+Dialogue: 0,0:02:45.96,0:02:53.37,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 23 reasoning 原文摘录
+Dialogue: 0,0:02:45.96,0:02:53.37,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Now three flints in view: -355,-203; -358,-221; -337,-235; plus -343,-190. Also berrybush_juicy at -\N347,-221 and -351,-218 — great food! And carrots. Still no boulders (mine). Need rocks. Likely rocky\N biome further south/east. Since flint i…
+Dialogue: 0,0:02:45.96,0:02:53.37,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 124.8  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:02:45.96,0:02:53.37,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:02:53.37,0:02:55.38,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 041/83 | move(x=-358.00, z=-221.00, seconds=2)
+Dialogue: 0,0:02:53.37,0:02:55.38,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 24 reasoning 摘要
+Dialogue: 0,0:02:53.37,0:02:55.38,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}核算石头、木头、树枝和草的需求，并估算昼夜时间；计划沿途拾取燧石、采浆果，再向南寻找矿区。
+Dialogue: 0,0:02:53.37,0:02:55.38,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 123.8  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:02:53.37,0:02:55.38,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:02:55.38,0:03:01.40,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 042/83 | wait(seconds=6.00)
+Dialogue: 0,0:02:55.38,0:03:01.40,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 24 reasoning 摘要
+Dialogue: 0,0:02:55.38,0:03:01.40,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}核算石头、木头、树枝和草的需求，并估算昼夜时间；计划沿途拾取燧石、采浆果，再向南寻找矿区。
+Dialogue: 0,0:02:55.38,0:03:01.40,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 123.4  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:02:55.38,0:03:01.40,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:03:01.40,0:03:03.41,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 043/83 | pickup(target=107017, seconds=2)
+Dialogue: 0,0:03:01.40,0:03:03.41,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 24 reasoning 摘要
+Dialogue: 0,0:03:01.40,0:03:03.41,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}核算石头、木头、树枝和草的需求，并估算昼夜时间；计划沿途拾取燧石、采浆果，再向南寻找矿区。
+Dialogue: 0,0:03:01.40,0:03:03.41,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 122.5  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:03:01.40,0:03:03.41,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:03:03.41,0:03:05.42,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 044/83 | pick(target=106607, seconds=2)
+Dialogue: 0,0:03:03.41,0:03:05.42,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 24 reasoning 摘要
+Dialogue: 0,0:03:03.41,0:03:05.42,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}核算石头、木头、树枝和草的需求，并估算昼夜时间；计划沿途拾取燧石、采浆果，再向南寻找矿区。
+Dialogue: 0,0:03:03.41,0:03:05.42,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 122.2  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:03:03.41,0:03:05.42,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:03:05.42,0:03:09.77,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 045/83 | pick(target=106608, seconds=2)
+Dialogue: 0,0:03:05.42,0:03:09.77,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 24 reasoning 摘要
+Dialogue: 0,0:03:05.42,0:03:09.77,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}核算石头、木头、树枝和草的需求，并估算昼夜时间；计划沿途拾取燧石、采浆果，再向南寻找矿区。
+Dialogue: 0,0:03:05.42,0:03:09.77,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 121.9  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:03:05.42,0:03:09.77,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:03:09.77,0:03:12.79,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 046/83 | wait(seconds=3.00)
+Dialogue: 0,0:03:09.77,0:03:12.79,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 25 reasoning 原文摘录
+Dialogue: 0,0:03:09.77,0:03:12.79,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Flint 4. Berries not picked yet (need wait). Note berrybush_juicy gives juicy berries (food). Let's \Nwait and observe. Then need rocks. Actually, maybe I should reconsider: Rocks (mine) come from bould\Ners. Where are they? Standard world: roc…
+Dialogue: 0,0:03:09.77,0:03:12.79,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 121.2  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:03:09.77,0:03:12.79,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:03:12.79,0:03:14.80,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 047/83 | move(x=-347.00, z=-249.00, seconds=2)
+Dialogue: 0,0:03:12.79,0:03:14.80,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 25 reasoning 原文摘录
+Dialogue: 0,0:03:12.79,0:03:14.80,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Flint 4. Berries not picked yet (need wait). Note berrybush_juicy gives juicy berries (food). Let's \Nwait and observe. Then need rocks. Actually, maybe I should reconsider: Rocks (mine) come from bould\Ners. Where are they? Standard world: roc…
+Dialogue: 0,0:03:12.79,0:03:14.80,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 120.8  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:03:12.79,0:03:14.80,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:03:14.80,0:03:25.83,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 048/83 | wait(seconds=9.00)
+Dialogue: 0,0:03:14.80,0:03:25.83,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 25 reasoning 原文摘录
+Dialogue: 0,0:03:14.80,0:03:25.83,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Flint 4. Berries not picked yet (need wait). Note berrybush_juicy gives juicy berries (food). Let's \Nwait and observe. Then need rocks. Actually, maybe I should reconsider: Rocks (mine) come from bould\Ners. Where are they? Standard world: roc…
+Dialogue: 0,0:03:14.80,0:03:25.83,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 120.5  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:03:14.80,0:03:25.83,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:03:25.83,0:03:27.84,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 049/83 | move(x=-347.00, z=-278.00, seconds=2)
+Dialogue: 0,0:03:25.83,0:03:27.84,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 26 reasoning 原文摘录
+Dialogue: 0,0:03:25.83,0:03:27.84,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}wobster_den mine=true! That's not boulder though; cannot mine for rocks. But mine=true maybe mine ac\Ntion works? Wobster den not mineable normally. Hmm. It's likely marked mine because it's "mineable"?\N In DST wobster den can be dug? No. No b…
+Dialogue: 0,0:03:25.83,0:03:27.84,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 118.8  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:03:25.83,0:03:27.84,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:03:27.84,0:03:44.98,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 050/83 | wait(seconds=9.00)
+Dialogue: 0,0:03:27.84,0:03:44.98,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 26 reasoning 原文摘录
+Dialogue: 0,0:03:27.84,0:03:44.98,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}wobster_den mine=true! That's not boulder though; cannot mine for rocks. But mine=true maybe mine ac\Ntion works? Wobster den not mineable normally. Hmm. It's likely marked mine because it's "mineable"?\N In DST wobster den can be dug? No. No b…
+Dialogue: 0,0:03:27.84,0:03:44.98,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 118.4  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:03:27.84,0:03:44.98,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:03:44.98,0:03:46.99,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 051/83 | move(x=-293.00, z=-211.00, seconds=2)
+Dialogue: 0,0:03:44.98,0:03:46.99,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 27 reasoning 原文摘录
+Dialogue: 0,0:03:44.98,0:03:46.99,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Whoa, it moved to (-303,-210.9)! That's not the target. Something strange: it seems moves go to prev\Niously requested coordinates? We requested -347,-278 but ended at -303,-211, far northwest. Weird. W\Nait — maybe there's a hidden "path" or c…
+Dialogue: 0,0:03:44.98,0:03:46.99,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 115.8  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:03:44.98,0:03:46.99,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:03:46.99,0:04:01.09,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 052/83 | wait(seconds=7.00)
+Dialogue: 0,0:03:46.99,0:04:01.09,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 27 reasoning 原文摘录
+Dialogue: 0,0:03:46.99,0:04:01.09,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Whoa, it moved to (-303,-210.9)! That's not the target. Something strange: it seems moves go to prev\Niously requested coordinates? We requested -347,-278 but ended at -303,-211, far northwest. Weird. W\Nait — maybe there's a hidden "path" or c…
+Dialogue: 0,0:03:46.99,0:04:01.09,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 115.5  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:03:46.99,0:04:01.09,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:04:01.09,0:04:07.09,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 053/83 | wait(seconds=3.00)
+Dialogue: 0,0:04:01.09,0:04:07.09,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 28 reasoning 原文摘录
+Dialogue: 0,0:04:01.09,0:04:07.09,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}What?! Before was (-257.3,-221.7) not (-303,-211). So position is changing wildly between observatio\Nns even when waiting. The character is walking continuously toward something. This suggests moves ar\Ne queued and executing one after another…
+Dialogue: 0,0:04:01.09,0:04:07.09,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 day | HP 150.0  Hunger 113.3  Sanity 200.0 | 阶段分 0.000
+Dialogue: 0,0:04:01.09,0:04:07.09,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:04:07.09,0:04:24.96,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 054/83 | wait(seconds=12.00)
+Dialogue: 0,0:04:07.09,0:04:24.96,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 29 reasoning 原文摘录
+Dialogue: 0,0:04:07.09,0:04:24.96,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Still moving even after wait. So a move action is ongoing. It's moving southwest now (-234,-274) -> \N(-248.6,-277.4). Target maybe (-347,-278)! It's heading there. Great, so the move to (-347,-278) is \Nstill executing, and my subsequent move …
+Dialogue: 0,0:04:07.09,0:04:24.96,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 112.5  Sanity 199.9 | 阶段分 0.000
+Dialogue: 0,0:04:07.09,0:04:24.96,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:04:24.96,0:04:28.55,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 055/83 | craft(recipe=torch, seconds=2)
+Dialogue: 0,0:04:24.96,0:04:28.55,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 30 reasoning 摘要
+Dialogue: 0,0:04:24.96,0:04:28.55,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}还没有找到岩石；现有两根树枝和三份草够做火把，打算先造火把，再寻找资源并准备过夜。
+Dialogue: 0,0:04:24.96,0:04:28.55,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 109.7  Sanity 198.4 | 阶段分 0.000
+Dialogue: 0,0:04:24.96,0:04:28.55,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:04:28.55,0:04:30.57,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 056/83 | wait(seconds=2.00)
+Dialogue: 0,0:04:28.55,0:04:30.57,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 31 reasoning 摘要
+Dialogue: 0,0:04:28.55,0:04:30.57,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}看到制作返回后库存似乎没变，怀疑移动尚未结束、制作被拒绝，决定等待后再次制作火把。
+Dialogue: 0,0:04:28.55,0:04:30.57,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 109.2  Sanity 198.2 | 阶段分 0.000
+Dialogue: 0,0:04:28.55,0:04:30.57,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:04:30.57,0:04:37.31,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 057/83 | craft(recipe=torch, seconds=2)
+Dialogue: 0,0:04:30.57,0:04:37.31,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 31 reasoning 摘要
+Dialogue: 0,0:04:30.57,0:04:37.31,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}看到制作返回后库存似乎没变，怀疑移动尚未结束、制作被拒绝，决定等待后再次制作火把。
+Dialogue: 0,0:04:30.57,0:04:37.31,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 108.9  Sanity 198.0 | 阶段分 0.000
+Dialogue: 0,0:04:30.57,0:04:37.31,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:04:37.31,0:04:39.32,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 058/83 | move(x=-352.00, z=-250.00, seconds=2)
+Dialogue: 0,0:04:37.31,0:04:39.32,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 32 reasoning 原文摘录
+Dialogue: 0,0:04:37.31,0:04:39.32,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Torch crafted! (2 cutgrass, 2 twigs consumed → cutgrass 1, twigs 0). The error is stale from previou\Ns craft? last_action id57 error "missing ingredients" maybe because torch now requires? no. Anyway i\Nnventory has torch. Now need equip torch…
+Dialogue: 0,0:04:37.31,0:04:39.32,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 107.8  Sanity 197.5 | 阶段分 0.000
+Dialogue: 0,0:04:37.31,0:04:39.32,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:04:39.32,0:04:54.33,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 059/83 | wait(seconds=12.00)
+Dialogue: 0,0:04:39.32,0:04:54.33,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 32 reasoning 原文摘录
+Dialogue: 0,0:04:39.32,0:04:54.33,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Torch crafted! (2 cutgrass, 2 twigs consumed → cutgrass 1, twigs 0). The error is stale from previou\Ns craft? last_action id57 error "missing ingredients" maybe because torch now requires? no. Anyway i\Nnventory has torch. Now need equip torch…
+Dialogue: 0,0:04:39.32,0:04:54.33,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 107.5  Sanity 197.3 | 阶段分 0.000
+Dialogue: 0,0:04:39.32,0:04:54.33,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:04:54.33,0:05:04.96,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 060/83 | wait(seconds=8.00)
+Dialogue: 0,0:04:54.33,0:05:04.96,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 33 reasoning 原文摘录
+Dialogue: 0,0:04:54.33,0:05:04.96,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Position -351.9,-267.5, still moving to -352,-250? It's at -267, target -250, so it's moving north, \Nnot there yet. It was at -278 and now -267.5, moving toward -250. Good. Steep. Time 376, dusk ~392. \N16s. We should equip torch now or at nig…
+Dialogue: 0,0:04:54.33,0:05:04.96,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 105.3  Sanity 196.1 | 阶段分 0.000
+Dialogue: 0,0:04:54.33,0:05:04.96,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:05:04.96,0:05:09.29,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 061/83 | equip(item=127989, seconds=2)
+Dialogue: 0,0:05:04.96,0:05:09.29,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 34 reasoning 摘要
+Dialogue: 0,0:05:04.96,0:05:09.29,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}黄昏时移动停在目标之前，怀疑海岸地形挡路；认为应该先装备火把保证安全。
+Dialogue: 0,0:05:04.96,0:05:09.29,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 103.6  Sanity 195.2 | 阶段分 0.000
+Dialogue: 0,0:05:04.96,0:05:09.29,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:05:09.29,0:05:11.30,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 062/83 | wait(seconds=2.00)
+Dialogue: 0,0:05:09.29,0:05:11.30,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 35 reasoning 摘要
+Dialogue: 0,0:05:09.29,0:05:11.30,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}认为装备没有生效，怀疑之前动作仍在进行，决定先等一秒，再用同一个物品 ID 重试装备。
+Dialogue: 0,0:05:09.29,0:05:11.30,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 103.0  Sanity 194.9 | 阶段分 0.000
+Dialogue: 0,0:05:09.29,0:05:11.30,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:05:11.30,0:05:15.09,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 063/83 | equip(item=127989, seconds=2)
+Dialogue: 0,0:05:11.30,0:05:15.09,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 35 reasoning 摘要
+Dialogue: 0,0:05:11.30,0:05:15.09,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}认为装备没有生效，怀疑之前动作仍在进行，决定先等一秒，再用同一个物品 ID 重试装备。
+Dialogue: 0,0:05:11.30,0:05:15.09,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 102.7  Sanity 194.7 | 阶段分 0.000
+Dialogue: 0,0:05:11.30,0:05:15.09,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:05:15.09,0:05:22.49,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 064/83 | wait(seconds=3.00)
+Dialogue: 0,0:05:15.09,0:05:22.49,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 36 reasoning 原文摘录
+Dialogue: 0,0:05:15.09,0:05:22.49,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Equip returned nothing and torch still in inventory. Maybe equip takes time and the observation was \Nbefore completion. Let's wait 2 and observe.
+Dialogue: 0,0:05:15.09,0:05:22.49,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 102.0  Sanity 194.4 | 阶段分 0.000
+Dialogue: 0,0:05:15.09,0:05:22.49,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:05:22.49,0:05:24.50,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 065/83 | move(x=-345.00, z=-251.00, seconds=2)
+Dialogue: 0,0:05:22.49,0:05:24.50,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 37 reasoning 原文摘录
+Dialogue: 0,0:05:22.49,0:05:24.50,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Torch equipped (eq:true). Now night approaching (~t=512 if night starts at fraction 0.875? Wait dusk\N start at 387 corresponds fraction (387-92)/480=0.615 ≈ 0.625 yes. Night starts at fraction 0.875 ->\N t=512. So dusk lasts 120s. We have unti…
+Dialogue: 0,0:05:22.49,0:05:24.50,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 100.8  Sanity 193.7 | 阶段分 0.000
+Dialogue: 0,0:05:22.49,0:05:24.50,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:05:24.50,0:05:39.28,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 066/83 | wait(seconds=9.00)
+Dialogue: 0,0:05:24.50,0:05:39.28,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 37 reasoning 原文摘录
+Dialogue: 0,0:05:24.50,0:05:39.28,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Torch equipped (eq:true). Now night approaching (~t=512 if night starts at fraction 0.875? Wait dusk\N start at 387 corresponds fraction (387-92)/480=0.615 ≈ 0.625 yes. Night starts at fraction 0.875 ->\N t=512. So dusk lasts 120s. We have unti…
+Dialogue: 0,0:05:24.50,0:05:39.28,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 100.5  Sanity 193.6 | 阶段分 0.000
+Dialogue: 0,0:05:24.50,0:05:39.28,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:05:39.28,0:05:41.29,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 067/83 | move(x=-365.00, z=-267.00, seconds=2)
+Dialogue: 0,0:05:39.28,0:05:41.29,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 38 reasoning 原文摘录
+Dialogue: 0,0:05:39.28,0:05:41.29,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Moved x only, z stayed -267.5. So z movement north is blocked! It can move in x but not z north? z=-\N250 is north. Maybe there's a cliff/water edge at z=-267.5. Grass at -345,-251 is across the water? \NHmm, but earlier we were at -347,-249 an…
+Dialogue: 0,0:05:39.28,0:05:41.29,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 98.1  Sanity 192.3 | 阶段分 0.000
+Dialogue: 0,0:05:39.28,0:05:41.29,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:05:41.29,0:05:52.86,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 068/83 | wait(seconds=9.00)
+Dialogue: 0,0:05:41.29,0:05:52.86,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 38 reasoning 原文摘录
+Dialogue: 0,0:05:41.29,0:05:52.86,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Moved x only, z stayed -267.5. So z movement north is blocked! It can move in x but not z north? z=-\N250 is north. Maybe there's a cliff/water edge at z=-267.5. Grass at -345,-251 is across the water? \NHmm, but earlier we were at -347,-249 an…
+Dialogue: 0,0:05:41.29,0:05:52.86,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 97.8  Sanity 192.2 | 阶段分 0.000
+Dialogue: 0,0:05:41.29,0:05:52.86,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:05:52.86,0:05:54.87,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 069/83 | move(x=-365.00, z=-252.00, seconds=2)
+Dialogue: 0,0:05:52.86,0:05:54.87,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 39 reasoning 摘要
+Dialogue: 0,0:05:52.86,0:05:54.87,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}尝试从西侧向北找通路；意识到火把可能在入夜前熄灭，但库存还缺制作第二支火把的草和树枝。
+Dialogue: 0,0:05:52.86,0:05:54.87,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 96.1  Sanity 191.2 | 阶段分 0.000
+Dialogue: 0,0:05:52.86,0:05:54.87,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:05:54.87,0:06:05.97,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 070/83 | wait(seconds=8.00)
+Dialogue: 0,0:05:54.87,0:06:05.97,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 39 reasoning 摘要
+Dialogue: 0,0:05:54.87,0:06:05.97,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}尝试从西侧向北找通路；意识到火把可能在入夜前熄灭，但库存还缺制作第二支火把的草和树枝。
+Dialogue: 0,0:05:54.87,0:06:05.97,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 95.8  Sanity 191.0 | 阶段分 0.000
+Dialogue: 0,0:05:54.87,0:06:05.97,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:06:05.97,0:06:07.98,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 071/83 | move(x=-347.00, z=-267.00, seconds=2)
+Dialogue: 0,0:06:05.97,0:06:07.98,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 40 reasoning 原文摘录
+Dialogue: 0,0:06:05.97,0:06:07.98,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}North blocked again at z=-267. So there's a coastline running east-west at z≈-267. We're south of it\N, on a strip? But earlier we were at -347,-249 (north of -267). So how did we get south? We crossed \Nat x=-347 when moving from -347,-249 to …
+Dialogue: 0,0:06:05.97,0:06:07.98,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 94.1  Sanity 190.1 | 阶段分 0.000
+Dialogue: 0,0:06:05.97,0:06:07.98,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:06:07.98,0:06:17.00,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 072/83 | wait(seconds=9.00)
+Dialogue: 0,0:06:07.98,0:06:17.00,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 40 reasoning 原文摘录
+Dialogue: 0,0:06:07.98,0:06:17.00,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}North blocked again at z=-267. So there's a coastline running east-west at z≈-267. We're south of it\N, on a strip? But earlier we were at -347,-249 (north of -267). So how did we get south? We crossed \Nat x=-347 when moving from -347,-249 to …
+Dialogue: 0,0:06:07.98,0:06:17.00,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 93.8  Sanity 189.9 | 阶段分 0.000
+Dialogue: 0,0:06:07.98,0:06:17.00,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:06:17.00,0:06:19.01,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 073/83 | move(x=-347.00, z=-250.00, seconds=2)
+Dialogue: 0,0:06:17.00,0:06:19.01,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 40 reasoning 原文摘录
+Dialogue: 0,0:06:17.00,0:06:19.01,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}North blocked again at z=-267. So there's a coastline running east-west at z≈-267. We're south of it\N, on a strip? But earlier we were at -347,-249 (north of -267). So how did we get south? We crossed \Nat x=-347 when moving from -347,-249 to …
+Dialogue: 0,0:06:17.00,0:06:19.01,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 92.3  Sanity 189.2 | 阶段分 0.000
+Dialogue: 0,0:06:17.00,0:06:19.01,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:06:19.01,0:06:30.75,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 074/83 | wait(seconds=8.00)
+Dialogue: 0,0:06:19.01,0:06:30.75,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 40 reasoning 原文摘录
+Dialogue: 0,0:06:19.01,0:06:30.75,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}North blocked again at z=-267. So there's a coastline running east-west at z≈-267. We're south of it\N, on a strip? But earlier we were at -347,-249 (north of -267). So how did we get south? We crossed \Nat x=-347 when moving from -347,-249 to …
+Dialogue: 0,0:06:19.01,0:06:30.75,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 92.0  Sanity 189.0 | 阶段分 0.000
+Dialogue: 0,0:06:19.01,0:06:30.75,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:06:30.75,0:06:32.76,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 075/83 | move(x=-359.00, z=-243.00, seconds=2)
+Dialogue: 0,0:06:30.75,0:06:32.76,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 41 reasoning 原文摘录
+Dialogue: 0,0:06:30.75,0:06:32.76,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Interesting: move to -347,-267 didn't move at all (still -364.9,-267). Then move to -347,-250 did mo\Nve to -359.5,-260.2 (partial). So movement is weird due to action queue/lag. Time 471.8. Torch likel\Ny expired (inventory no torch! It's equi…
+Dialogue: 0,0:06:30.75,0:06:32.76,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 90.2  Sanity 188.1 | 阶段分 0.000
+Dialogue: 0,0:06:30.75,0:06:32.76,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:06:32.76,0:06:39.78,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 076/83 | wait(seconds=7.00)
+Dialogue: 0,0:06:32.76,0:06:39.78,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 41 reasoning 原文摘录
+Dialogue: 0,0:06:32.76,0:06:39.78,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Interesting: move to -347,-267 didn't move at all (still -364.9,-267). Then move to -347,-250 did mo\Nve to -359.5,-260.2 (partial). So movement is weird due to action queue/lag. Time 471.8. Torch likel\Ny expired (inventory no torch! It's equi…
+Dialogue: 0,0:06:32.76,0:06:39.78,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 89.8  Sanity 187.9 | 阶段分 0.000
+Dialogue: 0,0:06:32.76,0:06:39.78,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:06:39.78,0:06:41.79,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 077/83 | pick(target=115792, seconds=2)
+Dialogue: 0,0:06:39.78,0:06:41.79,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 41 reasoning 原文摘录
+Dialogue: 0,0:06:39.78,0:06:41.79,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Interesting: move to -347,-267 didn't move at all (still -364.9,-267). Then move to -347,-250 did mo\Nve to -359.5,-260.2 (partial). So movement is weird due to action queue/lag. Time 471.8. Torch likel\Ny expired (inventory no torch! It's equi…
+Dialogue: 0,0:06:39.78,0:06:41.79,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 88.8  Sanity 187.3 | 阶段分 0.000
+Dialogue: 0,0:06:39.78,0:06:41.79,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:06:41.79,0:06:43.80,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 078/83 | pick(target=111410, seconds=2)
+Dialogue: 0,0:06:41.79,0:06:43.80,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 41 reasoning 原文摘录
+Dialogue: 0,0:06:41.79,0:06:43.80,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Interesting: move to -347,-267 didn't move at all (still -364.9,-267). Then move to -347,-250 did mo\Nve to -359.5,-260.2 (partial). So movement is weird due to action queue/lag. Time 471.8. Torch likel\Ny expired (inventory no torch! It's equi…
+Dialogue: 0,0:06:41.79,0:06:43.80,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 88.4  Sanity 187.2 | 阶段分 0.000
+Dialogue: 0,0:06:41.79,0:06:43.80,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:06:43.80,0:06:53.54,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 079/83 | wait(seconds=4.00)
+Dialogue: 0,0:06:43.80,0:06:53.54,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 41 reasoning 原文摘录
+Dialogue: 0,0:06:43.80,0:06:53.54,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Interesting: move to -347,-267 didn't move at all (still -364.9,-267). Then move to -347,-250 did mo\Nve to -359.5,-260.2 (partial). So movement is weird due to action queue/lag. Time 471.8. Torch likel\Ny expired (inventory no torch! It's equi…
+Dialogue: 0,0:06:43.80,0:06:53.54,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 88.1  Sanity 187.0 | 阶段分 0.000
+Dialogue: 0,0:06:43.80,0:06:53.54,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:06:53.54,0:06:55.55,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 080/83 | move(x=-345.00, z=-251.00, seconds=2)
+Dialogue: 0,0:06:53.54,0:06:55.55,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 42 reasoning 原文摘录
+Dialogue: 0,0:06:53.54,0:06:55.55,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Movement again stuck at -360.2,-259.5. North blocked at z≈-259.5? We're clearly on a small island/pe\Nninsula with a narrow connection. The move got to -259.5 then stuck. Time 492, night ~512 (20s). We \Nhave no torch. Danger. Need to craft tor…
+Dialogue: 0,0:06:53.54,0:06:55.55,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 86.6  Sanity 186.2 | 阶段分 0.000
+Dialogue: 0,0:06:53.54,0:06:55.55,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:06:55.55,0:07:20.54,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 081/83 | wait(seconds=15.00)
+Dialogue: 0,0:06:55.55,0:07:20.54,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 42 reasoning 原文摘录
+Dialogue: 0,0:06:55.55,0:07:20.54,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}Movement again stuck at -360.2,-259.5. North blocked at z≈-259.5? We're clearly on a small island/pe\Nninsula with a narrow connection. The move got to -259.5 then stuck. Time 492, night ~512 (20s). We \Nhave no torch. Danger. Need to craft tor…
+Dialogue: 0,0:06:55.55,0:07:20.54,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 dusk | HP 150.0  Hunger 86.2  Sanity 186.0 | 阶段分 0.000
+Dialogue: 0,0:06:55.55,0:07:20.54,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:07:20.54,0:07:22.55,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 082/83 | pickup(target=100950, seconds=2)
+Dialogue: 0,0:07:20.54,0:07:22.55,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 43 reasoning 摘要
+Dialogue: 0,0:07:20.54,0:07:22.55,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}入夜后仍被地形阻挡，推断需要绕过海湾；已无照明材料，尝试拾取萤火虫，看能否临时获得光源。
+Dialogue: 0,0:07:20.54,0:07:22.55,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 night | HP 150.0  Hunger 82.3  Sanity 179.5 | 阶段分 0.000
+Dialogue: 0,0:07:20.54,0:07:22.55,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:07:22.55,0:07:26.27,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}STEP 083/83 | wait(seconds=1.00)
+Dialogue: 0,0:07:22.55,0:07:26.27,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}API 43 reasoning 摘要
+Dialogue: 0,0:07:22.55,0:07:26.27,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}入夜后仍被地形阻挡，推断需要绕过海湾；已无照明材料，尝试拾取萤火虫，看能否临时获得光源。
+Dialogue: 0,0:07:22.55,0:07:26.27,Main,,0,0,0,,{\pos(28,978)\fs20\c&H66D9FF&}动作前状态 | Day 1 night | HP 50.0  Hunger 82.0  Sanity 157.8 | 阶段分 0.000
+Dialogue: 0,0:07:22.55,0:07:26.27,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md
+Dialogue: 0,0:07:26.27,0:07:34.27,Main,,0,0,0,,{\pos(28,738)\fs25\c&H66D9FF&}终局 death | reward 0.000 | success False
+Dialogue: 0,0:07:26.27,0:07:34.27,Main,,0,0,0,,{\pos(28,808)\fs20\c&HAAAAAA&}结果
+Dialogue: 0,0:07:26.27,0:07:34.27,Main,,0,0,0,,{\pos(28,837)\fs23\c&HFFFFFF&}分数由开跑前冻结的规则重算；完整 API reasoning、动作返回与逐项分析见本轮报告。旧首夜任务的 1.00 分保\N留。
+Dialogue: 0,0:07:26.27,0:07:34.27,Main,,0,0,0,,{\pos(28,1031)\fs16\c&HAAAAAA&}原速连续录像；摘要仅据该次模型原文整理。完整记录：action-trajectory.jsonl / thinking-actions.md

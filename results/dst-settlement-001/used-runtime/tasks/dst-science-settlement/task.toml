@@ -1,0 +1,16 @@
+schema_version = "1.4"
+artifacts = ["/artifacts"]
+[metadata]
+category = "game-evaluation"
+description = "DST science settlement by day 3 dawn: technology, two nights, nutrition and simultaneous reserves."
+[agent]
+timeout_sec = 1800
+user = "root"
+[verifier]
+timeout_sec = 120
+user = "root"
+[environment]
+build_timeout_sec = 300
+cpus = 2
+memory_mb = 4096
+storage_mb = 2048
